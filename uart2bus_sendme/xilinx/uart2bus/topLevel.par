@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-ESPOSCH-PC::  Mon Dec 18 12:35:04 2017
+ESPOSCH-PC::  Tue Dec 19 09:58:26 2017
 
 par -w -intstyle ise -ol std -mt off topLevel_map.ncd topLevel.ncd topLevel.pcf
  
@@ -98,14 +98,14 @@ Overall effort level (-ol):   Standard
 Router effort level (-rl):    Standard 
 
 Starting initial Timing Analysis.  REAL time: 2 secs 
-Finished initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
 
 Starting Router
 
 
 Phase  1  : 2658 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 2051 unrouted;      REAL time: 3 secs 
+Phase  2  : 2051 unrouted;      REAL time: 4 secs 
 
 Phase  3  : 611 unrouted;      REAL time: 4 secs 
 

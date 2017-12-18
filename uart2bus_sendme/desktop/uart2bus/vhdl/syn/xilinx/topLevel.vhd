@@ -105,7 +105,7 @@ Debug_Out <= debug_internal;
 --)
     port map (
 
-    c3_sys_clk  =>         '0',
+    c3_sys_clk  =>         CLK_In,
   c3_sys_rst_i    =>       '0',                        
 
   --mcb3_dram_dq       =>    b"zzzzzzzzzzzzzzzz",  
