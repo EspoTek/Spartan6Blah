@@ -1,0 +1,8 @@
+vhdl work "../../desktop/uart2bus/vhdl/rtl/uartTx.vhd"
+vhdl work "../../desktop/uart2bus/vhdl/rtl/uartRx.vhd"
+vhdl work "../../desktop/uart2bus/vhdl/rtl/uart2BusTop_pkg.vhd"
+vhdl work "../../desktop/uart2bus/vhdl/rtl/baudGen.vhd"
+vhdl work "../../desktop/uart2bus/vhdl/rtl/uartTop.vhd"
+vhdl work "../../desktop/uart2bus/vhdl/rtl/uartParser.vhd"
+vhdl work "../../desktop/uart2bus/vhdl/rtl/uart2BusTop.vhd"
+vhdl work "../../desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd"

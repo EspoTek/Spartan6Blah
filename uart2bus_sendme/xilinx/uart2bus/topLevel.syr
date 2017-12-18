@@ -1,0 +1,746 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: topLevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "topLevel.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "topLevel"
+Output Format                      : NGC
+Target Device                      : xc6slx45-2-csg324
+
+---- Source Options
+Top Module Name                    : topLevel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTx.vhd" into library work
+Parsing entity <uartTx>.
+Parsing architecture <Behavioral> of entity <uarttx>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartRx.vhd" into library work
+Parsing entity <uartRx>.
+Parsing architecture <Behavioral> of entity <uartrx>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop_pkg.vhd" into library work
+Parsing package <uart2BusTop_pkg>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\baudGen.vhd" into library work
+Parsing entity <baudGen>.
+Parsing architecture <Behavioral> of entity <baudgen>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTop.vhd" into library work
+Parsing entity <uartTop>.
+Parsing architecture <Behavioral> of entity <uarttop>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartParser.vhd" into library work
+Parsing entity <uartParser>.
+Parsing architecture <Behavioral> of entity <uartparser>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop.vhd" into library work
+Parsing entity <uart2BusTop>.
+Parsing architecture <Behavioral> of entity <uart2bustop>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" into library work
+Parsing entity <topLevel>.
+Parsing architecture <Behavioral> of entity <toplevel>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <topLevel> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <uart2BusTop> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <uartTop> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <baudGen> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <uartTx> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <uartRx> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <uartParser> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:634 - "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" Line 44: Net <data_to_read[7]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <topLevel>.
+    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd".
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 60: Output port <intAddress> of the instance <uart> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 60: Output port <intAccessReq> of the instance <uart> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 60: Output port <intRead> of the instance <uart> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <data_to_read> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <LED_Out>.
+    Found 1-bit register for signal <reset_state>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <topLevel> synthesized.
+
+Synthesizing Unit <uart2BusTop>.
+    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop.vhd".
+        AW = 8
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop.vhd" line 43: Output port <baudClk> of the instance <ut> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <uart2BusTop> synthesized.
+
+Synthesizing Unit <uartTop>.
+    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTop.vhd".
+    Summary:
+	no macro.
+Unit <uartTop> synthesized.
+
+Synthesizing Unit <baudGen>.
+    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\baudGen.vhd".
+    Found 1-bit register for signal <ce16>.
+    Found 16-bit register for signal <counter>.
+    Found 16-bit adder for signal <counter[15]_GND_8_o_add_2_OUT> created at line 43.
+    Found 16-bit subtractor for signal <GND_8_o_GND_8_o_sub_2_OUT<15:0>> created at line 40.
+    Found 16-bit comparator lessequal for signal <n0000> created at line 39
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <baudGen> synthesized.
+
+Synthesizing Unit <uartTx>.
+    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTx.vhd".
+    Found 1-bit register for signal <serOut>.
+    Found 1-bit register for signal <iTxBusy>.
+    Found 4-bit register for signal <bitCount>.
+    Found 4-bit register for signal <count16>.
+    Found 9-bit register for signal <dataBuf>.
+    Found 4-bit adder for signal <count16[3]_GND_9_o_add_0_OUT> created at line 1241.
+    Found 4-bit adder for signal <bitCount[3]_GND_9_o_add_5_OUT> created at line 1241.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <uartTx> synthesized.
+
+Synthesizing Unit <uartRx>.
+    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartRx.vhd".
+    Found 2-bit register for signal <inSync>.
+    Found 1-bit register for signal <rxBusy>.
+    Found 1-bit register for signal <newRxData>.
+    Found 4-bit register for signal <count16>.
+    Found 4-bit register for signal <bitCount>.
+    Found 8-bit register for signal <dataBuf>.
+    Found 8-bit register for signal <rxData>.
+    Found 4-bit adder for signal <count16[3]_GND_11_o_add_1_OUT> created at line 1241.
+    Found 4-bit adder for signal <bitCount[3]_GND_11_o_add_6_OUT> created at line 1241.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <uartRx> synthesized.
+
+Synthesizing Unit <uartParser>.
+    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartParser.vhd".
+        AW = 8
+    Found 1-bit register for signal <sTxBusy>.
+    Found 1-bit register for signal <readOp>.
+    Found 1-bit register for signal <writeOp>.
+    Found 1-bit register for signal <binReadOp>.
+    Found 1-bit register for signal <binWriteOp>.
+    Found 1-bit register for signal <sendStatFlag>.
+    Found 1-bit register for signal <addrAutoInc>.
+    Found 1-bit register for signal <iReadReq>.
+    Found 1-bit register for signal <iIntRead>.
+    Found 1-bit register for signal <iWriteReq>.
+    Found 1-bit register for signal <iIntWrite>.
+    Found 1-bit register for signal <readDone>.
+    Found 1-bit register for signal <readDoneS>.
+    Found 1-bit register for signal <newTxData>.
+    Found 8-bit register for signal <dataParam>.
+    Found 8-bit register for signal <binByteCount>.
+    Found 8-bit register for signal <intWrData>.
+    Found 8-bit register for signal <iIntAddress>.
+    Found 8-bit register for signal <readDataS>.
+    Found 8-bit register for signal <txData>.
+    Found 16-bit register for signal <addrParam>.
+    Found 3-bit register for signal <txSm>.
+    Found 4-bit register for signal <mainSm>.
+    Found finite state machine <FSM_1> for signal <mainSm>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 41                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 10                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | clr (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_0> for signal <txSm>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | clr (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <iIntAddress[7]_GND_29_o_add_85_OUT> created at line 1241.
+    Found 8-bit subtractor for signal <GND_29_o_GND_29_o_sub_73_OUT<7:0>> created at line 1308.
+    Found 8-bit comparator lessequal for signal <n0169> created at line 518
+    Found 8-bit comparator lessequal for signal <n0171> created at line 518
+    Found 8-bit comparator lessequal for signal <n0174> created at line 519
+    Found 8-bit comparator lessequal for signal <n0176> created at line 519
+    Found 8-bit comparator lessequal for signal <n0180> created at line 520
+    Found 8-bit comparator lessequal for signal <n0182> created at line 520
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  70 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  27 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <uartParser> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 16-bit addsub                                         : 1
+ 4-bit adder                                           : 4
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+# Registers                                            : 36
+ 1-bit register                                        : 21
+ 16-bit register                                       : 2
+ 2-bit register                                        : 1
+ 4-bit register                                        : 4
+ 8-bit register                                        : 7
+ 9-bit register                                        : 1
+# Comparators                                          : 7
+ 16-bit comparator lessequal                           : 1
+ 8-bit comparator lessequal                            : 6
+# Multiplexers                                         : 34
+ 1-bit 2-to-1 multiplexer                              : 17
+ 16-bit 2-to-1 multiplexer                             : 4
+ 4-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 8
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch reset_state hinder the constant cleaning in the block topLevel.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:2677 - Node <intWrData_1> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <intWrData_2> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <intWrData_3> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <intWrData_4> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <intWrData_5> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <intWrData_6> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <intWrData_7> of sequential type is unconnected in block <up>.
+
+Synthesizing (advanced) Unit <baudGen>.
+The following registers are absorbed into accumulator <counter>: 1 register on signal <counter>.
+Unit <baudGen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uartParser>.
+The following registers are absorbed into counter <binByteCount>: 1 register on signal <binByteCount>.
+Unit <uartParser> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uartRx>.
+The following registers are absorbed into counter <count16>: 1 register on signal <count16>.
+The following registers are absorbed into counter <bitCount>: 1 register on signal <bitCount>.
+Unit <uartRx> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uartTx>.
+The following registers are absorbed into counter <bitCount>: 1 register on signal <bitCount>.
+The following registers are absorbed into counter <count16>: 1 register on signal <count16>.
+Unit <uartTx> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 5
+ 4-bit up counter                                      : 4
+ 8-bit down counter                                    : 1
+# Accumulators                                         : 1
+ 16-bit updown accumulator                             : 1
+# Registers                                            : 96
+ Flip-Flops                                            : 96
+# Comparators                                          : 7
+ 16-bit comparator lessequal                           : 1
+ 8-bit comparator lessequal                            : 6
+# Multiplexers                                         : 65
+ 1-bit 2-to-1 multiplexer                              : 57
+ 16-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 6
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch reset_state hinder the constant cleaning in the block topLevel.
+   You should achieve better results by setting this init to 0.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart/up/FSM_0> on signal <txSm[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 100   | 100
+ 101   | 101
+ 110   | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart/up/FSM_1> on signal <mainSm[1:4]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0101  | 0001
+ 0001  | 0011
+ 0011  | 0010
+ 1000  | 0110
+ 0010  | 0111
+ 0100  | 0101
+ 1001  | 0100
+ 1010  | 1100
+ 1011  | 1101
+ 1100  | 1111
+-------------------
+WARNING:Xst:1710 - FF/Latch <txData_7> (without init value) has a constant value of 0 in block <uartParser>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <addrParam_8> of sequential type is unconnected in block <uartParser>.
+WARNING:Xst:2677 - Node <addrParam_9> of sequential type is unconnected in block <uartParser>.
+WARNING:Xst:2677 - Node <addrParam_10> of sequential type is unconnected in block <uartParser>.
+WARNING:Xst:2677 - Node <addrParam_11> of sequential type is unconnected in block <uartParser>.
+WARNING:Xst:2677 - Node <addrParam_12> of sequential type is unconnected in block <uartParser>.
+WARNING:Xst:2677 - Node <addrParam_13> of sequential type is unconnected in block <uartParser>.
+WARNING:Xst:2677 - Node <addrParam_14> of sequential type is unconnected in block <uartParser>.
+WARNING:Xst:2677 - Node <addrParam_15> of sequential type is unconnected in block <uartParser>.
+INFO:Xst:2261 - The FF/Latch <txData_0> in Unit <uartParser> is equivalent to the following FF/Latch, which will be removed : <txData_2> 
+
+Optimizing unit <topLevel> ...
+
+Optimizing unit <uart2BusTop> ...
+
+Optimizing unit <uartTop> ...
+
+Optimizing unit <uartTx> ...
+
+Optimizing unit <baudGen> ...
+
+Optimizing unit <uartRx> ...
+
+Optimizing unit <uartParser> ...
+WARNING:Xst:2677 - Node <addrAutoInc> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <dataParam_1> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <dataParam_2> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <dataParam_3> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <dataParam_4> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <dataParam_5> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <dataParam_6> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <dataParam_7> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <intWrData_1> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <intWrData_2> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <intWrData_3> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <intWrData_4> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <intWrData_5> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <intWrData_6> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <intWrData_7> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <addrParam_0> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <addrParam_1> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <addrParam_2> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <addrParam_3> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <addrParam_4> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <addrParam_5> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <addrParam_6> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <addrParam_7> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <iIntAddress_0> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <iIntAddress_1> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <iIntAddress_2> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <iIntAddress_3> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <iIntAddress_4> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <iIntAddress_5> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <iIntAddress_6> of sequential type is unconnected in block <up>.
+WARNING:Xst:2677 - Node <iIntAddress_7> of sequential type is unconnected in block <up>.
+WARNING:Xst:1710 - FF/Latch <counter_14> (without init value) has a constant value of 0 in block <bg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counter_15> (without init value) has a constant value of 0 in block <bg>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block topLevel, actual ratio is 0.
+FlipFlop uart/up/mainSm_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop uart/up/mainSm_FSM_FFd4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 102
+ Flip-Flops                                            : 102
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : topLevel.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 201
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 8
+#      LUT2                        : 12
+#      LUT3                        : 20
+#      LUT4                        : 17
+#      LUT5                        : 26
+#      LUT6                        : 67
+#      MUXCY                       : 20
+#      MUXF7                       : 6
+#      VCC                         : 1
+#      XORCY                       : 22
+# FlipFlops/Latches                : 102
+#      FD                          : 2
+#      FDC                         : 39
+#      FDCE                        : 57
+#      FDP                         : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 5
+#      IBUF                        : 2
+#      OBUF                        : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             101  out of  54576     0%  
+ Number of Slice LUTs:                  151  out of  27288     0%  
+    Number used as Logic:               151  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    176
+   Number with an unused Flip Flop:      75  out of    176    42%  
+   Number with an unused LUT:            25  out of    176    14%  
+   Number of fully used LUT-FF pairs:    76  out of    176    43%  
+   Number of unique control sets:        15
+
+IO Utilization: 
+ Number of IOs:                           6
+ Number of bonded IOBs:                   6  out of    218     2%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK_In                             | BUFGP                  | 101   |
+uart/up/iIntWrite                  | NONE(LED_Out)          | 1     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.468ns (Maximum Frequency: 182.882MHz)
+   Minimum input arrival time before clock: 2.083ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: 4.921ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_In'
+  Clock period: 5.468ns (frequency: 182.882MHz)
+  Total number of paths / destination ports: 2893 / 256
+-------------------------------------------------------------------------
+Delay:               5.468ns (Levels of Logic = 7)
+  Source:            uart/ut/ur/rxData_6 (FF)
+  Destination:       uart/up/mainSm_FSM_FFd4 (FF)
+  Source Clock:      CLK_In rising
+  Destination Clock: CLK_In rising
+
+  Data Path: uart/ut/ur/rxData_6 to uart/up/mainSm_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             8   0.525   1.374  rxData_6 (rxData_6)
+     end scope: 'uart/ut/ur:rxData<6>'
+     end scope: 'uart/ut:rxData<6>'
+     begin scope: 'uart/up:rxData<6>'
+     LUT5:I0->O            4   0.254   0.804  GND_29_o_rxData[7]_equal_1_o<7>11 (GND_29_o_rxData[7]_equal_1_o<7>1)
+     LUT6:I5->O            1   0.254   0.000  mainSm_FSM_FFd4-In21_F (N77)
+     MUXF7:I0->O           2   0.163   0.726  mainSm_FSM_FFd4-In21 (mainSm_FSM_FFd4-In21)
+     LUT6:I5->O            1   0.254   0.790  mainSm_FSM_FFd4-In23 (mainSm_FSM_FFd4-In2)
+     LUT6:I4->O            2   0.250   0.000  mainSm_FSM_FFd4-In7 (mainSm_FSM_FFd4-In)
+     FDC:D                     0.074          mainSm_FSM_FFd4
+    ----------------------------------------
+    Total                      5.468ns (1.774ns logic, 3.694ns route)
+                                       (32.4% logic, 67.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_In'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.083ns (Levels of Logic = 3)
+  Source:            Serial_Tx_In (PAD)
+  Destination:       uart/ut/ur/inSync_0 (FF)
+  Destination Clock: CLK_In rising
+
+  Data Path: Serial_Tx_In to uart/ut/ur/inSync_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  Serial_Tx_In_IBUF (Serial_Tx_In_IBUF)
+     begin scope: 'uart:serIn'
+     begin scope: 'uart/ut:serIn'
+     begin scope: 'uart/ut/ur:serIn'
+     FDP:D                     0.074          inSync_0
+    ----------------------------------------
+    Total                      2.083ns (1.402ns logic, 0.681ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_In'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 3)
+  Source:            uart/ut/ut/serOut (FF)
+  Destination:       Serial_Rx_Out (PAD)
+  Source Clock:      CLK_In rising
+
+  Data Path: uart/ut/ut/serOut to Serial_Rx_Out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.525   0.681  serOut (serOut)
+     end scope: 'uart/ut/ut:serOut'
+     end scope: 'uart/ut:serOut'
+     end scope: 'uart:serOut'
+     OBUF:I->O                 2.912          Serial_Rx_Out_OBUF (Serial_Rx_Out)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'uart/up/iIntWrite'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            LED_Out (FF)
+  Destination:       LED_Out (PAD)
+  Source Clock:      uart/up/iIntWrite rising
+
+  Data Path: LED_Out to LED_Out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  LED_Out (LED_Out_OBUF)
+     OBUF:I->O                 2.912          LED_Out_OBUF (LED_Out)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               4.921ns (Levels of Logic = 2)
+  Source:            Debug_in (PAD)
+  Destination:       Debug_out (PAD)
+
+  Data Path: Debug_in to Debug_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  Debug_in_IBUF (Debug_out_OBUF)
+     OBUF:I->O                 2.912          Debug_out_OBUF (Debug_out)
+    ----------------------------------------
+    Total                      4.921ns (4.240ns logic, 0.681ns route)
+                                       (86.2% logic, 13.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK_In
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_In         |    5.468|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/up/iIntWrite
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_In         |    1.364|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.95 secs
+ 
+--> 
+
+Total memory usage is 258084 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   53 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

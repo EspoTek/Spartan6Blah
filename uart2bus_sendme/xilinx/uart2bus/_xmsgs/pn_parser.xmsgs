@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Esposch/Documents/Xilinx/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/baudGen.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Esposch/Documents/Xilinx/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uart2BusTop.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Esposch/Documents/Xilinx/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uart2BusTop_pkg.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Esposch/Documents/Xilinx/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uartParser.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Esposch/Documents/Xilinx/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uartRx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Esposch/Documents/Xilinx/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uartTop.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Esposch/Documents/Xilinx/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uartTx.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Esposch/Documents/Xilinx/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd&quot; into library work</arg>
+</msg>
+
+</messages>
+
