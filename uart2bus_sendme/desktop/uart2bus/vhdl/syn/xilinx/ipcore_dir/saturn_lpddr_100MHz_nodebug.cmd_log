@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Esposch/Documents/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug.xst" -ofn "C:/Users/Esposch/Documents/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug.syr" 
