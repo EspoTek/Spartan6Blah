@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-12-18T09:28:19</DateModified>
+  <DateModified>2017-12-18T11:21:22</DateModified>
   <ModuleName>topLevel</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Esposch/Documents/Xilinx/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/iseconfig/topLevel.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Esposch/Documents/Xilinx/uart2bus_sendme/xilinx/uart2bus\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Esposch/Documents/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/iseconfig/topLevel.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Esposch/Documents/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus\</ImplementationReportsDirectory>
   <DateInitialized>2017-12-14T11:00:47</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

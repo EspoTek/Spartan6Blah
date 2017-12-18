@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: topLevel.prj
 
@@ -99,33 +99,60 @@ DSP48 Utilization Ratio            : 100
 Auto BRAM Packing                  : NO
 Slice Utilization Ratio Delta      : 5
 
+---- Other Options
+Cores Search Directories           : {"../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir"  }
+
 =========================================================================
 
 
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTx.vhd" into library work
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\iodrp_mcb_controller.vhd" into library work
+Parsing entity <iodrp_mcb_controller>.
+Parsing architecture <trans> of entity <iodrp_mcb_controller>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\iodrp_controller.vhd" into library work
+Parsing entity <iodrp_controller>.
+Parsing architecture <trans> of entity <iodrp_controller>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" into library work
+Parsing entity <mcb_soft_calibration>.
+Parsing architecture <trans> of entity <mcb_soft_calibration>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd" into library work
+Parsing entity <mcb_soft_calibration_top>.
+Parsing architecture <trans> of entity <mcb_soft_calibration_top>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" into library work
+Parsing entity <mcb_raw_wrapper>.
+Parsing architecture <aarch> of entity <mcb_raw_wrapper>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" into library work
+Parsing entity <memc3_wrapper>.
+Parsing architecture <acch> of entity <memc3_wrapper>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_infrastructure.vhd" into library work
+Parsing entity <memc3_infrastructure>.
+Parsing architecture <syn> of entity <memc3_infrastructure>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\saturn_lpddr_100MHz_nodebug.vhd" into library work
+Parsing entity <saturn_lpddr_100MHz_nodebug>.
+Parsing architecture <arc> of entity <saturn_lpddr_100mhz_nodebug>.
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTx.vhd" into library work
 Parsing entity <uartTx>.
 Parsing architecture <Behavioral> of entity <uarttx>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartRx.vhd" into library work
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartRx.vhd" into library work
 Parsing entity <uartRx>.
 Parsing architecture <Behavioral> of entity <uartrx>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop_pkg.vhd" into library work
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop_pkg.vhd" into library work
 Parsing package <uart2BusTop_pkg>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\baudGen.vhd" into library work
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\baudGen.vhd" into library work
 Parsing entity <baudGen>.
 Parsing architecture <Behavioral> of entity <baudgen>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTop.vhd" into library work
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTop.vhd" into library work
 Parsing entity <uartTop>.
 Parsing architecture <Behavioral> of entity <uarttop>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartParser.vhd" into library work
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartParser.vhd" into library work
 Parsing entity <uartParser>.
 Parsing architecture <Behavioral> of entity <uartparser>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop.vhd" into library work
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop.vhd" into library work
 Parsing entity <uart2BusTop>.
 Parsing architecture <Behavioral> of entity <uart2bustop>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" into library work
+Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" into library work
 Parsing entity <topLevel>.
 Parsing architecture <Behavioral> of entity <toplevel>.
 
@@ -146,17 +173,80 @@ Elaborating entity <uartTx> (architecture <Behavioral>) from library <work>.
 Elaborating entity <uartRx> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <uartParser> (architecture <Behavioral>) with generics from library <work>.
-WARNING:HDLCompiler:634 - "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" Line 44: Net <data_to_read[7]> does not have a driver.
+
+Elaborating entity <saturn_lpddr_100MHz_nodebug> (architecture <arc>) with generics from library <work>.
+
+Elaborating entity <memc3_infrastructure> (architecture <syn>) with generics from library <work>.
+
+Elaborating entity <memc3_wrapper> (architecture <acch>) with generics from library <work>.
+
+Elaborating entity <mcb_raw_wrapper> (architecture <aarch>) with generics from library <work>.
+WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 582: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 3207: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 3495: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 3757: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 3964: Comparison between arrays of unequal length always returns FALSE.
+
+Elaborating entity <mcb_soft_calibration_top> (architecture <trans>) with generics from library <work>.
+
+Elaborating entity <mcb_soft_calibration> (architecture <trans>) with generics from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" Line 559: Assignment to half_mv_du ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" Line 561: Assignment to half_mv_dd ignored, since the identifier is never used
+
+Elaborating entity <iodrp_controller> (architecture <trans>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\iodrp_controller.vhd" Line 352. Case statement is complete. others clause is never selected
+
+Elaborating entity <iodrp_mcb_controller> (architecture <trans>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\iodrp_mcb_controller.vhd" Line 496. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" Line 623: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:1127 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" Line 911: Assignment to state_start_dyncal_r1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" Line 968: Assignment to mcb_uodatavalid_u ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" Line 1012: Assignment to iodrpctrlr_use_bkst ignored, since the identifier is never used
+WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd" Line 395: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:634 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd" Line 222: Net <ZIO_IODRP_SDO> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd" Line 236: Net <ZIO_IN> does not have a driver.
+WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 7024: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 7050: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 7075: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 7086: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 7091: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:634 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" Line 44: Net <data_to_read[7]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <topLevel>.
-    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd".
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 60: Output port <intAddress> of the instance <uart> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 60: Output port <intAccessReq> of the instance <uart> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 60: Output port <intRead> of the instance <uart> is unconnected or connected to loadless signal.
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd".
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 60: Output port <intAddress> of the instance <uart> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 60: Output port <intAccessReq> of the instance <uart> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 60: Output port <intRead> of the instance <uart> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_a> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_ba> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_wr_count> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_rd_data> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_rd_count> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_cke> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_ras_n> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_cas_n> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_we_n> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_dm> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_udm> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_calib_done> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_clk0> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_rst0> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_ck> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_ck_n> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_cmd_empty> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_cmd_full> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_wr_full> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_wr_empty> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_wr_underrun> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_wr_error> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_rd_full> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_rd_empty> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_rd_overflow> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_rd_error> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <data_to_read> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 1-bit register for signal <LED_Out>.
     Found 1-bit register for signal <reset_state>.
@@ -165,21 +255,21 @@ WARNING:Xst:653 - Signal <data_to_read> is used but never assigned. This sourcel
 Unit <topLevel> synthesized.
 
 Synthesizing Unit <uart2BusTop>.
-    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop.vhd".
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop.vhd".
         AW = 8
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop.vhd" line 43: Output port <baudClk> of the instance <ut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop.vhd" line 43: Output port <baudClk> of the instance <ut> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <uart2BusTop> synthesized.
 
 Synthesizing Unit <uartTop>.
-    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTop.vhd".
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTop.vhd".
     Summary:
 	no macro.
 Unit <uartTop> synthesized.
 
 Synthesizing Unit <baudGen>.
-    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\baudGen.vhd".
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\baudGen.vhd".
     Found 1-bit register for signal <ce16>.
     Found 16-bit register for signal <counter>.
     Found 16-bit adder for signal <counter[15]_GND_8_o_add_2_OUT> created at line 43.
@@ -193,7 +283,7 @@ Synthesizing Unit <baudGen>.
 Unit <baudGen> synthesized.
 
 Synthesizing Unit <uartTx>.
-    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTx.vhd".
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTx.vhd".
     Found 1-bit register for signal <serOut>.
     Found 1-bit register for signal <iTxBusy>.
     Found 4-bit register for signal <bitCount>.
@@ -208,7 +298,7 @@ Synthesizing Unit <uartTx>.
 Unit <uartTx> synthesized.
 
 Synthesizing Unit <uartRx>.
-    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartRx.vhd".
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartRx.vhd".
     Found 2-bit register for signal <inSync>.
     Found 1-bit register for signal <rxBusy>.
     Found 1-bit register for signal <newRxData>.
@@ -225,7 +315,7 @@ Synthesizing Unit <uartRx>.
 Unit <uartRx> synthesized.
 
 Synthesizing Unit <uartParser>.
-    Related source file is "C:\Users\Esposch\Documents\Xilinx\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartParser.vhd".
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartParser.vhd".
         AW = 8
     Found 1-bit register for signal <sTxBusy>.
     Found 1-bit register for signal <readOp>.
@@ -292,32 +382,704 @@ Synthesizing Unit <uartParser>.
 	inferred   2 Finite State Machine(s).
 Unit <uartParser> synthesized.
 
+Synthesizing Unit <saturn_lpddr_100MHz_nodebug>.
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\saturn_lpddr_100MHz_nodebug.vhd".
+        C3_P0_MASK_SIZE = 4
+        C3_P0_DATA_PORT_SIZE = 32
+        C3_P1_MASK_SIZE = 4
+        C3_P1_DATA_PORT_SIZE = 32
+        C3_MEMCLK_PERIOD = 10000
+        C3_RST_ACT_LOW = 0
+        C3_INPUT_CLK_TYPE = "SINGLE_ENDED"
+        C3_CALIB_SOFT_IP = "TRUE"
+        C3_SIMULATION = "FALSE"
+        DEBUG_EN = 0
+        C3_MEM_ADDR_ORDER = "ROW_BANK_COLUMN"
+        C3_NUM_DQ_PINS = 16
+        C3_MEM_ADDR_WIDTH = 13
+        C3_MEM_BANKADDR_WIDTH = 2
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\saturn_lpddr_100MHz_nodebug.vhd" line 458: Output port <selfrefresh_mode> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <saturn_lpddr_100MHz_nodebug> synthesized.
+
+Synthesizing Unit <memc3_infrastructure>.
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_infrastructure.vhd".
+        C_INCLK_PERIOD = 10000
+        C_RST_ACT_LOW = 0
+        C_INPUT_CLK_TYPE = "SINGLE_ENDED"
+        C_CLKOUT0_DIVIDE = 2
+        C_CLKOUT1_DIVIDE = 2
+        C_CLKOUT2_DIVIDE = 16
+        C_CLKOUT3_DIVIDE = 8
+        C_CLKFBOUT_MULT = 4
+        C_DIVCLK_DIVIDE = 1
+    Set property "MAX_FANOUT = 10" for signal <rst0_sync_r>.
+    Set property "syn_maxfan = 10" for signal <rst0_sync_r>.
+    Set property "KEEP = TRUE" for signal <sys_clk_ibufg>.
+WARNING:Xst:647 - Input <sys_clk_p> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sys_clk_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 25-bit register for signal <rst0_sync_r>.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+Unit <memc3_infrastructure> synthesized.
+
+Synthesizing Unit <memc3_wrapper>.
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd".
+        C_MEMCLK_PERIOD = 10000
+        C_P0_MASK_SIZE = 4
+        C_P0_DATA_PORT_SIZE = 32
+        C_P1_MASK_SIZE = 4
+        C_P1_DATA_PORT_SIZE = 32
+        C_ARB_NUM_TIME_SLOTS = 12
+        C_ARB_TIME_SLOT_0 = "000"
+        C_ARB_TIME_SLOT_1 = "000"
+        C_ARB_TIME_SLOT_2 = "000"
+        C_ARB_TIME_SLOT_3 = "000"
+        C_ARB_TIME_SLOT_4 = "000"
+        C_ARB_TIME_SLOT_5 = "000"
+        C_ARB_TIME_SLOT_6 = "000"
+        C_ARB_TIME_SLOT_7 = "000"
+        C_ARB_TIME_SLOT_8 = "000"
+        C_ARB_TIME_SLOT_9 = "000"
+        C_ARB_TIME_SLOT_10 = "000"
+        C_ARB_TIME_SLOT_11 = "000"
+        C_MEM_TRAS = 40000
+        C_MEM_TRCD = 15000
+        C_MEM_TREFI = 7800000
+        C_MEM_TRFC = 97500
+        C_MEM_TRP = 15000
+        C_MEM_TWR = 15000
+        C_MEM_TRTP = 7500
+        C_MEM_TWTR = 2
+        C_MEM_ADDR_ORDER = "ROW_BANK_COLUMN"
+        C_MEM_TYPE = "MDDR"
+        C_MEM_DENSITY = "512Mb"
+        C_NUM_DQ_PINS = 16
+        C_MEM_BURST_LEN = 4
+        C_MEM_CAS_LATENCY = 3
+        C_MEM_ADDR_WIDTH = 13
+        C_MEM_BANKADDR_WIDTH = 2
+        C_MEM_NUM_COL_BITS = 10
+        C_MEM_DDR1_2_ODS = "FULL"
+        C_MEM_DDR2_RTT = "50OHMS"
+        C_MEM_DDR2_DIFF_DQS_EN = "YES"
+        C_MEM_DDR2_3_PA_SR = "FULL"
+        C_MEM_DDR2_3_HIGH_TEMP_SR = "NORMAL"
+        C_MEM_DDR3_CAS_LATENCY = 6
+        C_MEM_DDR3_CAS_WR_LATENCY = 5
+        C_MEM_DDR3_ODS = "DIV6"
+        C_MEM_DDR3_RTT = "DIV2"
+        C_MEM_DDR3_AUTO_SR = "ENABLED"
+        C_MEM_DDR3_DYN_WRT_ODT = "OFF"
+        C_MEM_MOBILE_PA_SR = "FULL"
+        C_MEM_MDDR_ODS = "FULL"
+        C_MC_CALIB_BYPASS = "NO"
+        C_MC_CALIBRATION_RA = "0000000000000000"
+        C_MC_CALIBRATION_BA = "000"
+        C_MC_CALIBRATION_CA = "000000000000"
+        C_LDQSP_TAP_DELAY_VAL = 0
+        C_UDQSP_TAP_DELAY_VAL = 0
+        C_LDQSN_TAP_DELAY_VAL = 0
+        C_UDQSN_TAP_DELAY_VAL = 0
+        C_DQ0_TAP_DELAY_VAL = 0
+        C_DQ1_TAP_DELAY_VAL = 0
+        C_DQ2_TAP_DELAY_VAL = 0
+        C_DQ3_TAP_DELAY_VAL = 0
+        C_DQ4_TAP_DELAY_VAL = 0
+        C_DQ5_TAP_DELAY_VAL = 0
+        C_DQ6_TAP_DELAY_VAL = 0
+        C_DQ7_TAP_DELAY_VAL = 0
+        C_DQ8_TAP_DELAY_VAL = 0
+        C_DQ9_TAP_DELAY_VAL = 0
+        C_DQ10_TAP_DELAY_VAL = 0
+        C_DQ11_TAP_DELAY_VAL = 0
+        C_DQ12_TAP_DELAY_VAL = 0
+        C_DQ13_TAP_DELAY_VAL = 0
+        C_DQ14_TAP_DELAY_VAL = 0
+        C_DQ15_TAP_DELAY_VAL = 0
+        C_SKIP_IN_TERM_CAL = 1
+        C_SKIP_DYNAMIC_CAL = 0
+        C_SIMULATION = "FALSE"
+        C_MC_CALIBRATION_MODE = "CALIBRATION"
+        C_MC_CALIBRATION_DELAY = "HALF"
+        C_CALIB_SOFT_IP = "TRUE"
+WARNING:Xst:647 - Input <selfrefresh_enter> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <uo_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <status> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <mcbx_dram_odt> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <mcbx_dram_ddr3_rst> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <uo_data_valid> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <uo_cmd_ready_in> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <uo_refrsh_flag> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <uo_cal_start> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <uo_sdo> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <memc3_wrapper> synthesized.
+
+Synthesizing Unit <mcb_raw_wrapper>.
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd".
+        C_MEMCLK_PERIOD = 10000
+        C_PORT_ENABLE = "000001"
+        C_MEM_ADDR_ORDER = "ROW_BANK_COLUMN"
+        C_ARB_NUM_TIME_SLOTS = 12
+        C_ARB_TIME_SLOT_0 = "000000000000000000"
+        C_ARB_TIME_SLOT_1 = "000000000000000000"
+        C_ARB_TIME_SLOT_2 = "000000000000000000"
+        C_ARB_TIME_SLOT_3 = "000000000000000000"
+        C_ARB_TIME_SLOT_4 = "000000000000000000"
+        C_ARB_TIME_SLOT_5 = "000000000000000000"
+        C_ARB_TIME_SLOT_6 = "000000000000000000"
+        C_ARB_TIME_SLOT_7 = "000000000000000000"
+        C_ARB_TIME_SLOT_8 = "000000000000000000"
+        C_ARB_TIME_SLOT_9 = "000000000000000000"
+        C_ARB_TIME_SLOT_10 = "000000000000000000"
+        C_ARB_TIME_SLOT_11 = "000000000000000000"
+        C_PORT_CONFIG = "B32_B32_R32_R32_R32_R32"
+        C_MEM_TRAS = 40000
+        C_MEM_TRCD = 15000
+        C_MEM_TREFI = 7800000
+        C_MEM_TRFC = 97500
+        C_MEM_TRP = 15000
+        C_MEM_TWR = 15000
+        C_MEM_TRTP = 7500
+        C_MEM_TWTR = 2
+        C_NUM_DQ_PINS = 16
+        C_MEM_TYPE = "MDDR"
+        C_MEM_DENSITY = "512Mb"
+        C_MEM_BURST_LEN = 4
+        C_MEM_CAS_LATENCY = 3
+        C_MEM_ADDR_WIDTH = 13
+        C_MEM_BANKADDR_WIDTH = 2
+        C_MEM_NUM_COL_BITS = 10
+        C_MEM_DDR3_CAS_LATENCY = 6
+        C_MEM_MOBILE_PA_SR = "FULL"
+        C_MEM_DDR1_2_ODS = "FULL"
+        C_MEM_DDR3_ODS = "DIV6"
+        C_MEM_DDR2_RTT = "50OHMS"
+        C_MEM_DDR3_RTT = "DIV2"
+        C_MEM_MDDR_ODS = "FULL"
+        C_MEM_DDR2_DIFF_DQS_EN = "YES"
+        C_MEM_DDR2_3_PA_SR = "FULL"
+        C_MEM_DDR3_CAS_WR_LATENCY = 5
+        C_MEM_DDR3_AUTO_SR = "ENABLED"
+        C_MEM_DDR2_3_HIGH_TEMP_SR = "NORMAL"
+        C_MEM_DDR3_DYN_WRT_ODT = "OFF"
+        C_MEM_TZQINIT_MAXCNT = "1000010000"
+        C_MC_CALIB_BYPASS = "NO"
+        C_MC_CALIBRATION_RA = "0000000000000000"
+        C_MC_CALIBRATION_BA = "000"
+        C_CALIB_SOFT_IP = "TRUE"
+        C_SKIP_IN_TERM_CAL = 1
+        C_SKIP_DYNAMIC_CAL = 0
+        C_SKIP_DYN_IN_TERM = 1
+        C_SIMULATION = "FALSE"
+        LDQSP_TAP_DELAY_VAL = 0
+        UDQSP_TAP_DELAY_VAL = 0
+        LDQSN_TAP_DELAY_VAL = 0
+        UDQSN_TAP_DELAY_VAL = 0
+        DQ0_TAP_DELAY_VAL = 0
+        DQ1_TAP_DELAY_VAL = 0
+        DQ2_TAP_DELAY_VAL = 0
+        DQ3_TAP_DELAY_VAL = 0
+        DQ4_TAP_DELAY_VAL = 0
+        DQ5_TAP_DELAY_VAL = 0
+        DQ6_TAP_DELAY_VAL = 0
+        DQ7_TAP_DELAY_VAL = 0
+        DQ8_TAP_DELAY_VAL = 0
+        DQ9_TAP_DELAY_VAL = 0
+        DQ10_TAP_DELAY_VAL = 0
+        DQ11_TAP_DELAY_VAL = 0
+        DQ12_TAP_DELAY_VAL = 0
+        DQ13_TAP_DELAY_VAL = 0
+        DQ14_TAP_DELAY_VAL = 0
+        DQ15_TAP_DELAY_VAL = 0
+        C_MC_CALIBRATION_CA = "000000000000"
+        C_MC_CALIBRATION_CLK_DIV = 1
+        C_MC_CALIBRATION_MODE = "CALIBRATION"
+        C_MC_CALIBRATION_DELAY = "HALF"
+        C_P0_MASK_SIZE = 4
+        C_P0_DATA_PORT_SIZE = 32
+        C_P1_MASK_SIZE = 4
+        C_P1_DATA_PORT_SIZE = 32
+    Set property "MAX_FANOUT = 1" for signal <int_sys_rst>.
+    Set property "syn_maxfan = 1" for signal <int_sys_rst>.
+WARNING:Xst:647 - Input <p0_cmd_byte_addr<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p0_cmd_byte_addr<29:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p1_cmd_instr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p1_cmd_bl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p1_cmd_byte_addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p1_wr_mask> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p1_wr_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_cmd_instr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_cmd_bl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_cmd_byte_addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_wr_mask> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_wr_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p3_cmd_instr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p3_cmd_bl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p3_cmd_byte_addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p3_wr_mask> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p3_wr_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p4_cmd_instr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p4_cmd_bl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p4_cmd_byte_addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p4_wr_mask> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p4_wr_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p5_cmd_instr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p5_cmd_bl> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p5_cmd_byte_addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p5_wr_mask> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p5_wr_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_dqcount> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p1_arb_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p1_cmd_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p1_cmd_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p1_wr_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p1_wr_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p1_rd_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p1_rd_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_arb_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_cmd_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_cmd_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_wr_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_wr_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_rd_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p2_rd_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p3_arb_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p3_cmd_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p3_cmd_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p3_wr_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p3_wr_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p3_rd_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p3_rd_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p4_arb_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p4_cmd_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p4_cmd_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p4_wr_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p4_wr_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p4_rd_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p4_rd_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p5_arb_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p5_cmd_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p5_cmd_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p5_wr_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p5_wr_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p5_rd_clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <p5_rd_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <calib_recal> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_read> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_add> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_cs> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_sdi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_broadcast> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_drp_update> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_done_cal> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_cmd> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_cmd_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_cmd_en> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_dq_lower_dec> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_dq_lower_inc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_dq_upper_dec> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_dq_upper_inc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_udqs_inc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_udqs_dec> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_ldqs_inc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ui_ldqs_dec> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2563 - Inout <mcbx_dram_dqs_n> is never assigned. Tied to value Z.
+WARNING:Xst:2563 - Inout <mcbx_dram_udqs_n> is never assigned. Tied to value Z.
+WARNING:Xst:653 - Signal <mcbx_dram_odt> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <mcbx_dram_ddr3_rst> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <normal_operation_window>.
+    Found 1-bit register for signal <soft_cal_selfrefresh_req>.
+    Found 1-bit register for signal <syn_uiclk_pll_lock>.
+    Found 1-bit tristate buffer for signal <mcbx_dram_dqs_n> created at line 416
+    Found 1-bit tristate buffer for signal <mcbx_dram_udqs_n> created at line 418
+    WARNING:Xst:2404 -  FFs/Latches <selfrefresh_enter_r1<0:0>> (without init value) have a constant value of 0 in block <mcb_raw_wrapper>.
+    WARNING:Xst:2404 -  FFs/Latches <selfrefresh_enter_r2<0:0>> (without init value) have a constant value of 0 in block <mcb_raw_wrapper>.
+    WARNING:Xst:2404 -  FFs/Latches <selfrefresh_enter_r3<5:5>> (without init value) have a constant value of 0 in block <mcb_raw_wrapper>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   2 Tristate(s).
+Unit <mcb_raw_wrapper> synthesized.
+
+Synthesizing Unit <mcb_soft_calibration_top>.
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd".
+        C_MEM_TZQINIT_MAXCNT = "1000010000"
+        C_MC_CALIBRATION_MODE = "CALIBRATION"
+        SKIP_IN_TERM_CAL = 1
+        SKIP_DYNAMIC_CAL = 0
+        SKIP_DYN_IN_TERM = 1
+        C_SIMULATION = "FALSE"
+        C_MEM_TYPE = "MDDR"
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd" line 291: Output port <Max_Value> of the instance <mcb_soft_calibration_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd" line 291: Output port <ZIO_IODRP_CS> of the instance <mcb_soft_calibration_inst> is unconnected or connected to loadless signal.
+WARNING:Xst:2563 - Inout <ZIO_PIN> is never assigned. Tied to value Z.
+WARNING:Xst:653 - Signal <ZIO_IODRP_SDO> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <ZIO_IN> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <RZQ_IN_R1>.
+    Found 1-bit register for signal <RZQ_IN_R2>.
+    Found 1-bit tristate buffer for signal <ZIO_PIN> created at line 141
+    WARNING:Xst:2404 -  FFs/Latches <ZIO_IN_R1<0:0>> (without init value) have a constant value of 0 in block <mcb_soft_calibration_top>.
+    WARNING:Xst:2404 -  FFs/Latches <ZIO_IN_R2<0:0>> (without init value) have a constant value of 0 in block <mcb_soft_calibration_top>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Tristate(s).
+Unit <mcb_soft_calibration_top> synthesized.
+
+Synthesizing Unit <mcb_soft_calibration>.
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd".
+        C_MEM_TZQINIT_MAXCNT = "1000010000"
+        SKIP_IN_TERM_CAL = 1
+        SKIP_DYNAMIC_CAL = 0
+        SKIP_DYN_IN_TERM = 1
+        C_MC_CALIBRATION_MODE = "CALIBRATION"
+        C_SIMULATION = "FALSE"
+        C_MEM_TYPE = "MDDR"
+    Set property "syn_preserve = true" for signal <P_Term>.
+    Set property "syn_preserve = true" for signal <N_Term>.
+    Set property "syn_preserve = true" for signal <P_Term_s>.
+    Set property "syn_preserve = true" for signal <N_Term_s>.
+    Set property "syn_preserve = true" for signal <P_Term_w>.
+    Set property "syn_preserve = true" for signal <N_Term_w>.
+    Set property "syn_preserve = true" for signal <P_Term_Prev>.
+    Set property "syn_preserve = true" for signal <N_Term_Prev>.
+    Set property "syn_preserve = true" for signal <IODRPCTRLR_MEMCELL_ADDR>.
+    Set property "syn_preserve = true" for signal <IODRPCTRLR_WRITE_DATA>.
+    Set property "syn_preserve = true" for signal <Max_Value_Previous>.
+    Set property "syn_preserve = true" for signal <DQS_DELAY_INITIAL>.
+    Set property "IOB = FALSE" for signal <DONE_SOFTANDHARD_CAL>.
+WARNING:Xst:647 - Input <MCB_UODATA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MCB_UODATAVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MCB_UOCMDREADY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MCB_UO_CAL_START> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" line 583: Output port <DRP_BKST> of the instance <iodrp_controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" line 601: Output port <read_data> of the instance <iodrp_mcb_controller_inst> is unconnected or connected to loadless signal.
+    Register <MCB_UIUDQSDEC> equivalent to <MCB_UILDQSDEC> has been removed
+    Register <MCB_UIUDQSINC> equivalent to <MCB_UILDQSINC> has been removed
+    Found 1-bit register for signal <Block_Reset>.
+    Found 1-bit register for signal <SELFREFRESH_MCB_MODE_R1>.
+    Found 1-bit register for signal <SELFREFRESH_MCB_MODE_R2>.
+    Found 1-bit register for signal <SELFREFRESH_MCB_MODE_R3>.
+    Found 1-bit register for signal <SELFREFRESH_REQ_R1>.
+    Found 1-bit register for signal <SELFREFRESH_REQ_R2>.
+    Found 1-bit register for signal <SELFREFRESH_REQ_R3>.
+    Found 1-bit register for signal <PLL_LOCK_R1>.
+    Found 1-bit register for signal <PLL_LOCK_R2>.
+    Found 16-bit register for signal <WAIT_200us_COUNTER>.
+    Found 10-bit register for signal <RstCounter>.
+    Found 1-bit register for signal <Rst_condition1>.
+    Found 4-bit register for signal <pre_sysrst_cnt>.
+    Found 1-bit register for signal <SELFREFRESH_MCB_REQ>.
+    Found 1-bit register for signal <WAIT_SELFREFRESH_EXIT_DQS_CAL>.
+    Found 1-bit register for signal <PERFORM_START_DYN_CAL_AFTER_SELFREFRESH>.
+    Found 1-bit register for signal <START_DYN_CAL_STATE_R1>.
+    Found 1-bit register for signal <PERFORM_START_DYN_CAL_AFTER_SELFREFRESH_R1>.
+    Found 1-bit register for signal <SELFREFRESH_MODE_xilinx11>.
+    Found 1-bit register for signal <WaitCountEnable>.
+    Found 8-bit register for signal <WaitTimer>.
+    Found 1-bit register for signal <WarmEnough>.
+    Found 6-bit register for signal <count>.
+    Found 1-bit register for signal <MCB_CMD_VALID>.
+    Found 5-bit register for signal <MCB_UIADDR_int>.
+    Found 1-bit register for signal <MCB_UICMDEN>.
+    Found 1-bit register for signal <MCB_UIDONECAL_xilinx7>.
+    Found 1-bit register for signal <MCB_USE_BKST>.
+    Found 1-bit register for signal <MCB_UIDRPUPDATE>.
+    Found 1-bit register for signal <Pre_SYSRST>.
+    Found 1-bit register for signal <IODRPCTRLR_CMD_VALID>.
+    Found 8-bit register for signal <IODRPCTRLR_MEMCELL_ADDR>.
+    Found 8-bit register for signal <IODRPCTRLR_WRITE_DATA>.
+    Found 1-bit register for signal <IODRPCTRLR_R_WB>.
+    Found 6-bit register for signal <P_Term>.
+    Found 7-bit register for signal <N_Term>.
+    Found 6-bit register for signal <P_Term_s>.
+    Found 7-bit register for signal <N_Term_w>.
+    Found 6-bit register for signal <P_Term_w>.
+    Found 7-bit register for signal <N_Term_s>.
+    Found 7-bit register for signal <N_Term_Prev>.
+    Found 2-bit register for signal <Active_IODRP>.
+    Found 1-bit register for signal <MCB_UILDQSINC>.
+    Found 1-bit register for signal <MCB_UILDQSDEC>.
+    Found 1-bit register for signal <counter_en>.
+    Found 1-bit register for signal <First_Dyn_Cal_Done>.
+    Found 8-bit register for signal <Max_Value_int>.
+    Found 8-bit register for signal <Max_Value_Previous>.
+    Found 6-bit register for signal <STATE>.
+    Found 8-bit register for signal <DQS_DELAY>.
+    Found 8-bit register for signal <DQS_DELAY_INITIAL>.
+    Found 8-bit register for signal <TARGET_DQS_DELAY>.
+    Found 1-bit register for signal <First_In_Term_Done>.
+    Found 1-bit register for signal <MCB_UICMD>.
+    Found 4-bit register for signal <MCB_UIDQCOUNT>.
+    Found 8-bit register for signal <counter_inc>.
+    Found 8-bit register for signal <counter_dec>.
+    Found 1-bit register for signal <DONE_SOFTANDHARD_CAL>.
+    Found 1-bit register for signal <RST_reg>.
+INFO:Xst:1799 - State 000010 is never reached in FSM <STATE>.
+INFO:Xst:1799 - State 000001 is never reached in FSM <STATE>.
+INFO:Xst:1799 - State 000011 is never reached in FSM <STATE>.
+INFO:Xst:1799 - State 000100 is never reached in FSM <STATE>.
+INFO:Xst:1799 - State 000101 is never reached in FSM <STATE>.
+INFO:Xst:1799 - State 000110 is never reached in FSM <STATE>.
+INFO:Xst:1799 - State 000111 is never reached in FSM <STATE>.
+INFO:Xst:1799 - State 001000 is never reached in FSM <STATE>.
+INFO:Xst:1799 - State 001001 is never reached in FSM <STATE>.
+INFO:Xst:1799 - State 001010 is never reached in FSM <STATE>.
+INFO:Xst:1799 - State 001011 is never reached in FSM <STATE>.
+INFO:Xst:1799 - State 001100 is never reached in FSM <STATE>.
+INFO:Xst:1799 - State 111010 is never reached in FSM <STATE>.
+    Found finite state machine <FSM_2> for signal <STATE>.
+    -----------------------------------------------------------------------
+    | States             | 59                                             |
+    | Transitions        | 113                                            |
+    | Inputs             | 22                                             |
+    | Outputs            | 29                                             |
+    | Clock              | UI_CLK (rising_edge)                           |
+    | Reset              | RST_reg (positive)                             |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000000                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <WAIT_200us_COUNTER[15]_GND_66_o_add_13_OUT> created at line 632.
+    Found 10-bit adder for signal <RstCounter[9]_GND_66_o_add_17_OUT> created at line 694.
+    Found 4-bit adder for signal <pre_sysrst_cnt[3]_GND_66_o_add_23_OUT> created at line 761.
+    Found 8-bit adder for signal <WaitTimer[7]_GND_66_o_add_32_OUT> created at line 936.
+    Found 6-bit adder for signal <count[5]_GND_66_o_add_40_OUT> created at line 958.
+    Found 6-bit adder for signal <P_Term[5]_GND_66_o_add_53_OUT> created at line 1134.
+    Found 7-bit adder for signal <N_Term[6]_GND_66_o_add_84_OUT> created at line 1187.
+    Found 8-bit adder for signal <counter_inc[7]_GND_66_o_add_323_OUT> created at line 1699.
+    Found 8-bit adder for signal <DQS_DELAY[7]_GND_66_o_add_326_OUT> created at line 1705.
+    Found 8-bit adder for signal <counter_dec[7]_GND_66_o_add_336_OUT> created at line 1724.
+    Found 8-bit subtractor for signal <Max_Value_Delta_Up> created at line 433.
+    Found 8-bit subtractor for signal <Max_Value_Delta_Dn> created at line 435.
+    Found 6-bit subtractor for signal <GND_66_o_GND_66_o_sub_71_OUT<5:0>> created at line 1139.
+    Found 7-bit subtractor for signal <GND_66_o_GND_66_o_sub_178_OUT<6:0>> created at line 1197.
+    Found 8-bit subtractor for signal <GND_66_o_GND_66_o_sub_340_OUT<7:0>> created at line 1730.
+    Found 15-bit adder for signal <_n0862> created at line 501.
+    Found 15-bit adder for signal <n0737> created at line 501.
+    Found 15-bit adder for signal <n0489> created at line 501.
+    Found 15-bit adder for signal <_n0871> created at line 501.
+    Found 15-bit adder for signal <n0470> created at line 501.
+    Found 15-bit adder for signal <n0537> created at line 501.
+    Found 15-bit adder for signal <_n0880> created at line 501.
+    Found 15-bit adder for signal <n0478[14:0]> created at line 501.
+    Found 15-bit adder for signal <n0480> created at line 501.
+    Found 10-bit comparator greater for signal <RstCounter[9]_GND_66_o_LessThan_17_o> created at line 692
+    Found 8-bit comparator greater for signal <Dec_Flag> created at line 946
+    Found 8-bit comparator greater for signal <Inc_Flag> created at line 947
+    Found 7-bit comparator equal for signal <n0168> created at line 1237
+    Found 6-bit comparator greater for signal <count[5]_PWR_37_o_LessThan_299_o> created at line 1642
+    Found 8-bit comparator greater for signal <Max_Value_int[7]_Max_Value_Previous[7]_LessThan_305_o> created at line 1675
+    Found 8-bit comparator greater for signal <n0249> created at line 1675
+    Found 8-bit comparator greater for signal <Max_Value_Previous[7]_Max_Value_int[7]_LessThan_310_o> created at line 1679
+    Found 8-bit comparator greater for signal <n0253> created at line 1679
+    Found 8-bit comparator greater for signal <DQS_DELAY[7]_DQS_DELAY_UPPER_LIMIT[7]_LessThan_325_o> created at line 1701
+    Found 8-bit comparator lessequal for signal <n0267> created at line 1701
+    Found 8-bit comparator greater for signal <DQS_DELAY_LOWER_LIMIT[7]_DQS_DELAY[7]_LessThan_338_o> created at line 1726
+    Found 8-bit comparator lessequal for signal <n0281> created at line 1726
+    WARNING:Xst:2404 -  FFs/Latches <CKE_Train<0:0>> (without init value) have a constant value of 0 in block <mcb_soft_calibration>.
+    WARNING:Xst:2404 -  FFs/Latches <MCB_UICMDIN<0:0>> (without init value) have a constant value of 0 in block <mcb_soft_calibration>.
+    Summary:
+	inferred  23 Adder/Subtractor(s).
+	inferred 207 D-type flip-flop(s).
+	inferred  13 Comparator(s).
+	inferred  43 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <mcb_soft_calibration> synthesized.
+
+Synthesizing Unit <iodrp_controller>.
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\iodrp_controller.vhd".
+    Found 8-bit register for signal <data_reg>.
+    Found 1-bit register for signal <rd_not_write_reg>.
+    Found 8-bit register for signal <shift_through_reg>.
+    Found 3-bit register for signal <bit_cnt>.
+    Found 8-bit register for signal <read_data>.
+    Found 1-bit register for signal <AddressPhase>.
+    Found 1-bit register for signal <DRP_ADD>.
+    Found 1-bit register for signal <DRP_CS>.
+    Found 1-bit register for signal <DRP_BKST>.
+    Found 3-bit register for signal <state>.
+    Found 8-bit register for signal <memcell_addr_reg>.
+    Found finite state machine <FSM_3> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 8                                              |
+    | Clock              | DRP_CLK (rising_edge)                          |
+    | Reset              | sync_rst (positive)                            |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <bit_cnt[2]_GND_67_o_add_12_OUT> created at line 238.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <iodrp_controller> synthesized.
+
+Synthesizing Unit <iodrp_mcb_controller>.
+    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\iodrp_mcb_controller.vhd".
+    Set property "fsm_encoding = gray" for signal <state>.
+    Set property "fsm_encoding = gray" for signal <nextstate>.
+WARNING:Xst:647 - Input <drp_ioi_addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <data_reg>.
+    Found 1-bit register for signal <rd_not_write_reg>.
+    Found 8-bit register for signal <shift_through_reg<7:0>>.
+    Found 3-bit register for signal <bit_cnt>.
+    Found 8-bit register for signal <read_data>.
+    Found 1-bit register for signal <AddressPhase>.
+    Found 1-bit register for signal <DRP_ADD_xilinx0>.
+    Found 1-bit register for signal <DRP_CS_xilinx1>.
+    Found 1-bit register for signal <MCB_UIREAD>.
+    Found 1-bit register for signal <DRP_BKST>.
+    Found 4-bit register for signal <state>.
+    Found 8-bit register for signal <memcell_addr_reg>.
+    Found finite state machine <FSM_4> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 15                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 9                                              |
+    | Clock              | DRP_CLK (rising_edge)                          |
+    | Reset              | sync_rst (positive)                            |
+    | Reset type         | synchronous                                    |
+    | Reset State        | ready                                          |
+    | Power Up State     | ready                                          |
+    | Encoding           | gray                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <bit_cnt[2]_GND_69_o_add_13_OUT> created at line 372.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  41 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <iodrp_mcb_controller> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 7
+# Adders/Subtractors                                   : 32
+ 10-bit adder                                          : 1
+ 15-bit adder                                          : 9
+ 16-bit adder                                          : 1
  16-bit addsub                                         : 1
- 4-bit adder                                           : 4
- 8-bit adder                                           : 1
- 8-bit subtractor                                      : 1
-# Registers                                            : 36
- 1-bit register                                        : 21
- 16-bit register                                       : 2
- 2-bit register                                        : 1
- 4-bit register                                        : 4
- 8-bit register                                        : 7
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 5
+ 6-bit adder                                           : 2
+ 6-bit subtractor                                      : 1
+ 7-bit adder                                           : 1
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 4
+ 8-bit addsub                                          : 1
+ 8-bit subtractor                                      : 3
+# Registers                                            : 121
+ 1-bit register                                        : 71
+ 10-bit register                                       : 1
+ 16-bit register                                       : 3
+ 2-bit register                                        : 2
+ 25-bit register                                       : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 6
+ 5-bit register                                        : 1
+ 6-bit register                                        : 4
+ 7-bit register                                        : 4
+ 8-bit register                                        : 25
  9-bit register                                        : 1
-# Comparators                                          : 7
+# Comparators                                          : 20
+ 10-bit comparator greater                             : 1
  16-bit comparator lessequal                           : 1
- 8-bit comparator lessequal                            : 6
-# Multiplexers                                         : 34
- 1-bit 2-to-1 multiplexer                              : 17
+ 6-bit comparator greater                              : 1
+ 7-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 8
+ 8-bit comparator lessequal                            : 8
+# Multiplexers                                         : 86
+ 1-bit 2-to-1 multiplexer                              : 34
+ 10-bit 2-to-1 multiplexer                             : 1
  16-bit 2-to-1 multiplexer                             : 4
  4-bit 2-to-1 multiplexer                              : 4
- 8-bit 2-to-1 multiplexer                              : 8
- 9-bit 2-to-1 multiplexer                              : 1
-# FSMs                                                 : 2
+ 6-bit 2-to-1 multiplexer                              : 4
+ 7-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 33
+ 9-bit 2-to-1 multiplexer                              : 3
+# Tristates                                            : 3
+ 1-bit tristate buffer                                 : 3
+# FSMs                                                 : 5
 
 =========================================================================
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -328,6 +1090,29 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 
 WARNING:Xst:1426 - The value init of the FF/Latch reset_state hinder the constant cleaning in the block topLevel.
    You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <soft_cal_selfrefresh_req> (without init value) has a constant value of 0 in block <memc3_mcb_raw_wrapper_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_6> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_5> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_4> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <IODRPCTRLR_MEMCELL_ADDR_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_3> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_1> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UIDQCOUNT_0> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UICMD> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <WarmEnough> (without init value) has a constant value of 1 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SELFREFRESH_MCB_REQ> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SELFREFRESH_REQ_R1> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_6> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_5> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_4> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_2> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_6> (without init value) has a constant value of 0 in block <iodrp_controller_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_5> (without init value) has a constant value of 0 in block <iodrp_controller_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_4> (without init value) has a constant value of 0 in block <iodrp_controller_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_2> (without init value) has a constant value of 0 in block <iodrp_controller_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SELFREFRESH_REQ_R2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SELFREFRESH_REQ_R3> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <intWrData_1> of sequential type is unconnected in block <up>.
 WARNING:Xst:2677 - Node <intWrData_2> of sequential type is unconnected in block <up>.
 WARNING:Xst:2677 - Node <intWrData_3> of sequential type is unconnected in block <up>.
@@ -339,6 +1124,25 @@ WARNING:Xst:2677 - Node <intWrData_7> of sequential type is unconnected in block
 Synthesizing (advanced) Unit <baudGen>.
 The following registers are absorbed into accumulator <counter>: 1 register on signal <counter>.
 Unit <baudGen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <iodrp_controller>.
+The following registers are absorbed into counter <bit_cnt>: 1 register on signal <bit_cnt>.
+Unit <iodrp_controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <iodrp_mcb_controller>.
+The following registers are absorbed into counter <bit_cnt>: 1 register on signal <bit_cnt>.
+Unit <iodrp_mcb_controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mcb_soft_calibration>.
+The following registers are absorbed into counter <pre_sysrst_cnt>: 1 register on signal <pre_sysrst_cnt>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <WAIT_200us_COUNTER>: 1 register on signal <WAIT_200us_COUNTER>.
+The following registers are absorbed into counter <RstCounter>: 1 register on signal <RstCounter>.
+The following registers are absorbed into counter <DQS_DELAY>: 1 register on signal <DQS_DELAY>.
+The following registers are absorbed into counter <counter_inc>: 1 register on signal <counter_inc>.
+The following registers are absorbed into counter <counter_dec>: 1 register on signal <counter_dec>.
+The following registers are absorbed into counter <WaitTimer>: 1 register on signal <WaitTimer>.
+Unit <mcb_soft_calibration> synthesized (advanced).
 
 Synthesizing (advanced) Unit <uartParser>.
 The following registers are absorbed into counter <binByteCount>: 1 register on signal <binByteCount>.
@@ -358,30 +1162,61 @@ Unit <uartTx> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 8-bit adder                                           : 1
-# Counters                                             : 5
- 4-bit up counter                                      : 4
+# Adders/Subtractors                                   : 16
+ 10-bit adder                                          : 3
+ 11-bit adder                                          : 1
+ 6-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 7-bit adder                                           : 1
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 2
+ 9-bit adder                                           : 3
+# Counters                                             : 15
+ 10-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 3-bit up counter                                      : 2
+ 4-bit up counter                                      : 5
+ 6-bit up counter                                      : 1
  8-bit down counter                                    : 1
+ 8-bit up counter                                      : 3
+ 8-bit updown counter                                  : 1
 # Accumulators                                         : 1
  16-bit updown accumulator                             : 1
-# Registers                                            : 96
- Flip-Flops                                            : 96
-# Comparators                                          : 7
+# Registers                                            : 340
+ Flip-Flops                                            : 340
+# Comparators                                          : 20
+ 10-bit comparator greater                             : 1
  16-bit comparator lessequal                           : 1
- 8-bit comparator lessequal                            : 6
-# Multiplexers                                         : 65
- 1-bit 2-to-1 multiplexer                              : 57
+ 6-bit comparator greater                              : 1
+ 7-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 8
+ 8-bit comparator lessequal                            : 8
+# Multiplexers                                         : 125
+ 1-bit 2-to-1 multiplexer                              : 88
  16-bit 2-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 6
- 9-bit 2-to-1 multiplexer                              : 1
-# FSMs                                                 : 2
+ 6-bit 2-to-1 multiplexer                              : 4
+ 7-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 27
+ 9-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 5
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <soft_cal_selfrefresh_req> (without init value) has a constant value of 0 in block <mcb_raw_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <MCB_UICMD> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MCB_UIDQCOUNT_0> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MCB_UIDQCOUNT_1> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MCB_UIDQCOUNT_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <MCB_UIDQCOUNT_3> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IODRPCTRLR_MEMCELL_ADDR_2> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IODRPCTRLR_MEMCELL_ADDR_4> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IODRPCTRLR_MEMCELL_ADDR_5> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IODRPCTRLR_MEMCELL_ADDR_6> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DRP_BKST> (without init value) has a constant value of 0 in block <iodrp_controller>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1426 - The value init of the FF/Latch reset_state hinder the constant cleaning in the block topLevel.
    You should achieve better results by setting this init to 0.
 Analyzing FSM <MFsm> for best encoding.
@@ -412,6 +1247,100 @@ Optimizing FSM <uart/up/FSM_1> on signal <mainSm[1:4]> with gray encoding.
  1011  | 1101
  1100  | 1111
 -------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/FSM_2> on signal <STATE[1:6]> with gray encoding.
+--------------------
+ State  | Encoding
+--------------------
+ 000000 | 000000
+ 001101 | 000001
+ 000010 | unreached
+ 000001 | unreached
+ 000011 | unreached
+ 000100 | unreached
+ 000101 | unreached
+ 000110 | unreached
+ 000111 | unreached
+ 001000 | unreached
+ 001001 | unreached
+ 001010 | unreached
+ 001011 | unreached
+ 001100 | unreached
+ 001110 | 000011
+ 001111 | 000010
+ 010000 | 000110
+ 100010 | 000111
+ 010001 | 000101
+ 010010 | 000100
+ 010011 | 001100
+ 010100 | 001101
+ 010101 | 001111
+ 010110 | 001110
+ 010111 | 001010
+ 011000 | 001011
+ 011001 | 001001
+ 011010 | 001000
+ 011011 | 011000
+ 011100 | 011001
+ 011101 | 011011
+ 011110 | 011010
+ 011111 | 011110
+ 100000 | 011111
+ 100001 | 011101
+ 100011 | 011100
+ 100100 | 010100
+ 100101 | 010101
+ 110010 | 010111
+ 110001 | 010110
+ 100111 | 010010
+ 100110 | 010011
+ 101000 | 010001
+ 101001 | 010000
+ 101010 | 110000
+ 101011 | 110001
+ 101100 | 110011
+ 101101 | 110010
+ 101110 | 110110
+ 101111 | 110111
+ 110000 | 110101
+ 110011 | 110100
+ 110100 | 111100
+ 110101 | 111101
+ 110110 | 111111
+ 111000 | 111110
+ 111001 | 111010
+ 110111 | 111011
+ 111010 | unreached
+--------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/FSM_3> on signal <state[1:8]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00000001
+ 001   | 00000010
+ 010   | 00000100
+ 011   | 00001000
+ 111   | 00010000
+ 100   | 00100000
+ 101   | 01000000
+ 110   | 10000000
+-------------------
+Optimizing FSM <u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/FSM_4> on signal <state[1:4]> with gray encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ ready             | 0000
+ decide            | 0001
+ addr_phase        | 0011
+ addr_to_data_gap  | 0010
+ addr_to_data_gap2 | 0111
+ addr_to_data_gap3 | 0101
+ data_phase        | 0100
+ almost_ready      | 0110
+ almost_ready2     | 1100
+ almost_ready3     | 1101
+-------------------------------
 WARNING:Xst:1710 - FF/Latch <txData_7> (without init value) has a constant value of 0 in block <uartParser>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <addrParam_8> of sequential type is unconnected in block <uartParser>.
 WARNING:Xst:2677 - Node <addrParam_9> of sequential type is unconnected in block <uartParser>.
@@ -421,13 +1350,24 @@ WARNING:Xst:2677 - Node <addrParam_12> of sequential type is unconnected in bloc
 WARNING:Xst:2677 - Node <addrParam_13> of sequential type is unconnected in block <uartParser>.
 WARNING:Xst:2677 - Node <addrParam_14> of sequential type is unconnected in block <uartParser>.
 WARNING:Xst:2677 - Node <addrParam_15> of sequential type is unconnected in block <uartParser>.
+WARNING:Xst:1293 - FF/Latch <DQS_DELAY_INITIAL_7> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_DQS_DELAY_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IODRPCTRLR_WRITE_DATA_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance U_BUFG_CLK1 in unit memc3_infrastructure of type BUFGCE has been replaced by BUFGMUX
 INFO:Xst:2261 - The FF/Latch <txData_0> in Unit <uartParser> is equivalent to the following FF/Latch, which will be removed : <txData_2> 
+INFO:Xst:2261 - The FF/Latch <MCB_UIADDR_int_2> in Unit <mcb_soft_calibration> is equivalent to the following 2 FFs/Latches, which will be removed : <MCB_UIADDR_int_3> <MCB_UIADDR_int_4> 
+WARNING:Xst:2042 - Unit mcb_raw_wrapper: 2 internal tristates are replaced by logic (pull-up yes): mcbx_dram_dqs_n, mcbx_dram_udqs_n.
+WARNING:Xst:2041 - Unit mcb_soft_calibration_top: 1 internal tristate is replaced by logic (pull-up yes): ZIO_PIN.
 
 Optimizing unit <topLevel> ...
 
 Optimizing unit <uart2BusTop> ...
 
 Optimizing unit <uartTop> ...
+
+Optimizing unit <saturn_lpddr_100MHz_nodebug> ...
+
+Optimizing unit <memc3_wrapper> ...
 
 Optimizing unit <uartTx> ...
 
@@ -436,6 +1376,44 @@ Optimizing unit <baudGen> ...
 Optimizing unit <uartRx> ...
 
 Optimizing unit <uartParser> ...
+
+Optimizing unit <memc3_infrastructure> ...
+
+Optimizing unit <mcb_raw_wrapper> ...
+
+Optimizing unit <mcb_soft_calibration_top> ...
+
+Optimizing unit <mcb_soft_calibration> ...
+WARNING:Xst:1293 - FF/Latch <N_Term_s_6> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_s_5> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_s_4> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_s_3> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_s_2> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_s_1> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_s_0> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_w_5> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_w_4> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_w_3> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_w_2> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_w_1> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_w_0> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_w_6> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_w_5> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_w_4> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_w_3> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_w_2> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_w_1> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_w_0> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_s_5> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_s_4> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_s_3> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_s_2> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_s_1> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_s_0> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <iodrp_controller> ...
+
+Optimizing unit <iodrp_mcb_controller> ...
 WARNING:Xst:2677 - Node <addrAutoInc> of sequential type is unconnected in block <up>.
 WARNING:Xst:2677 - Node <dataParam_1> of sequential type is unconnected in block <up>.
 WARNING:Xst:2677 - Node <dataParam_2> of sequential type is unconnected in block <up>.
@@ -467,12 +1445,15 @@ WARNING:Xst:2677 - Node <iIntAddress_4> of sequential type is unconnected in blo
 WARNING:Xst:2677 - Node <iIntAddress_5> of sequential type is unconnected in block <up>.
 WARNING:Xst:2677 - Node <iIntAddress_6> of sequential type is unconnected in block <up>.
 WARNING:Xst:2677 - Node <iIntAddress_7> of sequential type is unconnected in block <up>.
+WARNING:Xst:1290 - Hierarchical block <u_saturn_lpddr_100MHz_nodebug> is unconnected in block <topLevel>.
+   It will be removed from the design.
 WARNING:Xst:1710 - FF/Latch <counter_14> (without init value) has a constant value of 0 in block <bg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <counter_15> (without init value) has a constant value of 0 in block <bg>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block topLevel, actual ratio is 0.
+FlipFlop uart/up/mainSm_FSM_FFd1 has been replicated 1 time(s)
 FlipFlop uart/up/mainSm_FSM_FFd3 has been replicated 1 time(s)
 FlipFlop uart/up/mainSm_FSM_FFd4 has been replicated 1 time(s)
 
@@ -482,8 +1463,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 102
- Flip-Flops                                            : 102
+# Registers                                            : 103
+ Flip-Flops                                            : 103
 
 =========================================================================
 
@@ -506,23 +1487,23 @@ Top Level Output File Name         : topLevel.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 201
+# BELS                             : 207
 #      GND                         : 1
 #      INV                         : 1
 #      LUT1                        : 8
 #      LUT2                        : 12
-#      LUT3                        : 20
-#      LUT4                        : 17
-#      LUT5                        : 26
-#      LUT6                        : 67
+#      LUT3                        : 23
+#      LUT4                        : 16
+#      LUT5                        : 25
+#      LUT6                        : 75
 #      MUXCY                       : 20
-#      MUXF7                       : 6
+#      MUXF7                       : 3
 #      VCC                         : 1
 #      XORCY                       : 22
-# FlipFlops/Latches                : 102
+# FlipFlops/Latches                : 103
 #      FD                          : 2
 #      FDC                         : 39
-#      FDCE                        : 57
+#      FDCE                        : 58
 #      FDP                         : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -537,16 +1518,16 @@ Selected Device : 6slx45csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             101  out of  54576     0%  
- Number of Slice LUTs:                  151  out of  27288     0%  
-    Number used as Logic:               151  out of  27288     0%  
+ Number of Slice Registers:             102  out of  54576     0%  
+ Number of Slice LUTs:                  160  out of  27288     0%  
+    Number used as Logic:               160  out of  27288     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    176
-   Number with an unused Flip Flop:      75  out of    176    42%  
-   Number with an unused LUT:            25  out of    176    14%  
-   Number of fully used LUT-FF pairs:    76  out of    176    43%  
-   Number of unique control sets:        15
+ Number of LUT Flip Flop pairs used:    186
+   Number with an unused Flip Flop:      84  out of    186    45%  
+   Number with an unused LUT:            26  out of    186    13%  
+   Number of fully used LUT-FF pairs:    76  out of    186    40%  
+   Number of unique control sets:        16
 
 IO Utilization: 
  Number of IOs:                           6
@@ -577,7 +1558,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK_In                             | BUFGP                  | 101   |
+CLK_In                             | BUFGP                  | 102   |
 uart/up/iIntWrite                  | NONE(LED_Out)          | 1     |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -590,7 +1571,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 5.468ns (Maximum Frequency: 182.882MHz)
+   Minimum period: 5.476ns (Maximum Frequency: 182.618MHz)
    Minimum input arrival time before clock: 2.083ns
    Maximum output required time after clock: 4.118ns
    Maximum combinational path delay: 4.921ns
@@ -601,32 +1582,31 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK_In'
-  Clock period: 5.468ns (frequency: 182.882MHz)
-  Total number of paths / destination ports: 2893 / 256
+  Clock period: 5.476ns (frequency: 182.618MHz)
+  Total number of paths / destination ports: 2976 / 259
 -------------------------------------------------------------------------
-Delay:               5.468ns (Levels of Logic = 7)
-  Source:            uart/ut/ur/rxData_6 (FF)
-  Destination:       uart/up/mainSm_FSM_FFd4 (FF)
+Delay:               5.476ns (Levels of Logic = 6)
+  Source:            uart/ut/ur/newRxData (FF)
+  Destination:       uart/up/newTxData (FF)
   Source Clock:      CLK_In rising
   Destination Clock: CLK_In rising
 
-  Data Path: uart/ut/ur/rxData_6 to uart/up/mainSm_FSM_FFd4
+  Data Path: uart/ut/ur/newRxData to uart/up/newTxData
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             8   0.525   1.374  rxData_6 (rxData_6)
-     end scope: 'uart/ut/ur:rxData<6>'
-     end scope: 'uart/ut:rxData<6>'
-     begin scope: 'uart/up:rxData<6>'
-     LUT5:I0->O            4   0.254   0.804  GND_29_o_rxData[7]_equal_1_o<7>11 (GND_29_o_rxData[7]_equal_1_o<7>1)
-     LUT6:I5->O            1   0.254   0.000  mainSm_FSM_FFd4-In21_F (N77)
-     MUXF7:I0->O           2   0.163   0.726  mainSm_FSM_FFd4-In21 (mainSm_FSM_FFd4-In21)
-     LUT6:I5->O            1   0.254   0.790  mainSm_FSM_FFd4-In23 (mainSm_FSM_FFd4-In2)
-     LUT6:I4->O            2   0.250   0.000  mainSm_FSM_FFd4-In7 (mainSm_FSM_FFd4-In)
-     FDC:D                     0.074          mainSm_FSM_FFd4
+     FDC:C->Q             36   0.525   1.587  newRxData (newRxData)
+     end scope: 'uart/ut/ur:newRxData'
+     end scope: 'uart/ut:newRxData'
+     begin scope: 'uart/up:newRxData'
+     LUT4:I3->O            1   0.254   0.682  _n0411_inv111 (_n0411_inv11)
+     LUT6:I5->O            1   0.254   0.682  Mmux_txSm[2]_newTxData_Mux_107_o12_SW0_SW1 (N25)
+     LUT6:I5->O            7   0.254   0.910  Mmux_txSm[2]_newTxData_Mux_107_o12 (Mmux_txSm[2]_newTxData_Mux_107_o12)
+     LUT4:I3->O            1   0.254   0.000  Mmux_txSm[2]_newTxData_Mux_107_o13 (txSm[2]_newTxData_Mux_107_o)
+     FDCE:D                    0.074          newTxData
     ----------------------------------------
-    Total                      5.468ns (1.774ns logic, 3.694ns route)
-                                       (32.4% logic, 67.6% route)
+    Total                      5.476ns (1.615ns logic, 3.861ns route)
+                                       (29.5% logic, 70.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_In'
@@ -719,7 +1699,7 @@ Clock to Setup on destination clock CLK_In
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_In         |    5.468|         |         |         |
+CLK_In         |    5.476|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock uart/up/iIntWrite
@@ -727,20 +1707,20 @@ Clock to Setup on destination clock uart/up/iIntWrite
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_In         |    1.364|         |         |         |
+CLK_In         |    1.324|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.95 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.14 secs
  
 --> 
 
-Total memory usage is 258084 kilobytes
+Total memory usage is 285796 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   53 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :  243 (   0 filtered)
+Number of infos    :  127 (   0 filtered)
 

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Dec 15 16:18:59 2017
+// Written by: Map P.20131013 on Mon Dec 18 12:35:02 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -46,10 +46,10 @@ TIMEGRP D_CLK = BEL "reset_state" BEL "uart/ut/ut/dataBuf_0" BEL
         "uart/ut/ur/bitCount_1" BEL "uart/ut/ur/bitCount_2" BEL
         "uart/ut/ur/bitCount_3" BEL "uart/ut/ur/rxBusy" BEL "uart/up/sTxBusy"
         BEL "uart/up/writeOp" BEL "uart/up/readOp" BEL "uart/up/readDone" BEL
-        "uart/up/readDoneS" BEL "uart/up/txData_0" BEL "uart/up/txData_1" BEL
-        "uart/up/txData_3" BEL "uart/up/txData_4" BEL "uart/up/txData_5" BEL
-        "uart/up/txData_6" BEL "uart/up/txSm_FSM_FFd2" BEL
-        "uart/up/txSm_FSM_FFd3" BEL "uart/up/txSm_FSM_FFd1" BEL
+        "uart/up/readDoneS" BEL "uart/up/newTxData" BEL "uart/up/txData_0" BEL
+        "uart/up/txData_1" BEL "uart/up/txData_3" BEL "uart/up/txData_4" BEL
+        "uart/up/txData_5" BEL "uart/up/txData_6" BEL "uart/up/txSm_FSM_FFd2"
+        BEL "uart/up/txSm_FSM_FFd3" BEL "uart/up/txSm_FSM_FFd1" BEL
         "uart/up/mainSm_FSM_FFd4" BEL "uart/up/mainSm_FSM_FFd3" BEL
         "uart/up/mainSm_FSM_FFd2" BEL "uart/up/mainSm_FSM_FFd1" BEL
         "uart/up/binByteCount_0" BEL "uart/up/binByteCount_1" BEL
@@ -57,10 +57,11 @@ TIMEGRP D_CLK = BEL "reset_state" BEL "uart/ut/ut/dataBuf_0" BEL
         "uart/up/binByteCount_4" BEL "uart/up/binByteCount_5" BEL
         "uart/up/binByteCount_6" BEL "uart/up/binByteCount_7" BEL
         "uart/up/binReadOp" BEL "uart/up/binWriteOp" BEL
-        "uart/up/sendStatFlag" BEL "uart/up/dataParam_0" BEL
-        "uart/up/iReadReq" BEL "uart/up/iIntRead" BEL "uart/up/newTxData" BEL
-        "uart/up/intWrData_0" BEL "uart/up/iWriteReq" BEL "uart/up/iIntWrite"
-        BEL "uart/up/mainSm_FSM_FFd3_1" BEL "uart/up/mainSm_FSM_FFd4_1" PIN
+        "uart/up/sendStatFlag" BEL "uart/up/iWriteReq" BEL
+        "uart/up/dataParam_0" BEL "uart/up/iReadReq" BEL "uart/up/iIntWrite"
+        BEL "uart/up/iIntRead" BEL "uart/up/intWrData_0" BEL
+        "uart/up/mainSm_FSM_FFd3_1" BEL "uart/up/mainSm_FSM_FFd4_1" BEL
+        "uart/up/mainSm_FSM_FFd1_1" PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B9KGT0.u_ramb9/U_RAMB9_pins<27>"
         BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT0" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT1" BEL

@@ -81,8 +81,79 @@ begin
 	end if;
 end process byte_received;
 
+--Debug input
 debug_internal <= Debug_in;
 Debug_Out <= debug_internal;
+
+--DDR RAM Controller
+  u_saturn_lpddr_100MHz_nodebug : entity work.saturn_lpddr_100MHz_nodebug
+    --generic map (
+    --C3_P0_MASK_SIZE => C3_P0_MASK_SIZE,
+    --C3_P0_DATA_PORT_SIZE => C3_P0_DATA_PORT_SIZE,
+    --C3_P1_MASK_SIZE => C3_P1_MASK_SIZE,
+    --C3_P1_DATA_PORT_SIZE => C3_P1_DATA_PORT_SIZE,
+    --C3_MEMCLK_PERIOD => C3_MEMCLK_PERIOD,
+    --C3_RST_ACT_LOW => C3_RST_ACT_LOW,
+    --C3_INPUT_CLK_TYPE => C3_INPUT_CLK_TYPE,
+    --C3_CALIB_SOFT_IP => C3_CALIB_SOFT_IP,
+    --C3_SIMULATION => C3_SIMULATION,
+    --DEBUG_EN => DEBUG_EN,
+    --C3_MEM_ADDR_ORDER => C3_MEM_ADDR_ORDER,
+    --C3_NUM_DQ_PINS => C3_NUM_DQ_PINS,
+    --C3_MEM_ADDR_WIDTH => C3_MEM_ADDR_WIDTH,
+    --C3_MEM_BANKADDR_WIDTH => C3_MEM_BANKADDR_WIDTH
+--)
+    port map (
+
+    c3_sys_clk  =>         '0',
+  c3_sys_rst_i    =>       '0',                        
+
+  --mcb3_dram_dq       =>    b"zzzzzzzzzzzzzzzz",  
+  --mcb3_dram_a        =>    b"0000000000000",  
+  --mcb3_dram_ba       =>    b"00",
+  --mcb3_dram_ras_n    =>    '0',                        
+  --mcb3_dram_cas_n    =>    '0',                        
+  --mcb3_dram_we_n     =>    '0',                          
+  --mcb3_dram_cke      =>    '0',                          
+  --mcb3_dram_ck       =>    '0',                          
+  --mcb3_dram_ck_n     =>    '0',       
+  --mcb3_dram_dqs      =>    '0',                          
+  --mcb3_dram_udqs  =>       '0',    -- for X16 parts           
+  --mcb3_dram_udm  =>        '0',     -- for X16 parts
+  --mcb3_dram_dm  =>       '0',
+  --  c3_clk0	=>	        '0',
+  --c3_rst0		=>        '0',
+	
+ 
+  --c3_calib_done      =>    '0',
+  
+   --mcb3_rzq         =>            'z',
+   
+     c3_p0_cmd_clk                           =>  '0',
+   c3_p0_cmd_en                            =>  '0',
+   c3_p0_cmd_instr                         =>  b"000",
+   c3_p0_cmd_bl                            =>  b"000000",
+   c3_p0_cmd_byte_addr                     =>  b"000000000000000000000000000000",
+   --c3_p0_cmd_empty                         =>  '0',
+   --c3_p0_cmd_full                          =>  '0',
+   c3_p0_wr_clk                            =>  '0',
+   c3_p0_wr_en                             =>  '0',
+   c3_p0_wr_mask                           =>  b"0000",
+   c3_p0_wr_data                           =>  x"00000000",
+   --c3_p0_wr_full                           =>  '0',
+   --c3_p0_wr_empty                          =>  '0',
+   --c3_p0_wr_count                          =>  b"0000000",
+   --c3_p0_wr_underrun                       =>  '0',
+   --c3_p0_wr_error                          =>  '0',
+   c3_p0_rd_clk                            =>  '0',
+   c3_p0_rd_en                             =>  '0'
+   --c3_p0_rd_data                           =>  x"00000000",
+   --c3_p0_rd_full                           =>  '0',
+   --c3_p0_rd_empty                          =>  '0',
+   --c3_p0_rd_count                          =>  b"0000000",
+   --c3_p0_rd_overflow                       =>  '0',
+   --3_p0_rd_error                          =>  '0'
+);
 
 
 end Behavioral;
