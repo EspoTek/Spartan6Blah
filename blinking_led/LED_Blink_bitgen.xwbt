@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Esposch\Documents\Xilinx\blinking_led\LED_Blink.ncd
+OUTFILE=C:\Users\Esposch\Documents\Xilinx\blinking_led\LED_Blink.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Users\Esposch\Documents\Xilinx\blinking_led
+LICENSE=WebPack
+USER_INFO=211376204_0_0_935

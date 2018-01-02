@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Dec 12 16:37:48 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CLK_100MHz" LOCATE = SITE "V10" LEVEL 1;
+COMP "LED_out" LOCATE = SITE "G13" LEVEL 1;
+SCHEMATIC END;
+

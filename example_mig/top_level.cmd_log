@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Esposch/Documents/Xilinx/example_mig/top_level.xst" -ofn "C:/Users/Esposch/Documents/Xilinx/example_mig/top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/Esposch/Documents/Xilinx/example_mig/top_level.xst" -ofn "C:/Users/Esposch/Documents/Xilinx/example_mig/top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/Esposch/Documents/Xilinx/example_mig/top_level.xst" -ofn "C:/Users/Esposch/Documents/Xilinx/example_mig/top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/Esposch/Documents/Xilinx/example_mig/top_level.xst" -ofn "C:/Users/Esposch/Documents/Xilinx/example_mig/top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx45-csg324-2 top_level.ngc top_level.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_level_map.ncd top_level.ngd top_level.pcf 

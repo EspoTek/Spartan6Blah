@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Esposch/Documents/Xilinx/blinking_led/testbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="/testbench/clk_100mhz" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_100mhz</obj_property>
+      <obj_property name="ObjectShortName">clk_100mhz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/led_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">led_out</obj_property>
+      <obj_property name="ObjectShortName">led_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/clk_100mhz_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_100mhz_period</obj_property>
+      <obj_property name="ObjectShortName">clk_100mhz_period</obj_property>
+   </wvobject>
+</wave_config>

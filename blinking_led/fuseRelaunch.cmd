@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Esposch/Documents/Xilinx/blinking_led/testbench_isim_beh.exe" -prj "C:/Users/Esposch/Documents/Xilinx/blinking_led/testbench_beh.prj" "work.testbench" 

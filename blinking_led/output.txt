@@ -1,0 +1,8 @@
+Storage Target: SPI Flash Single FPGA
+128M
+FF
+led_blink_cool
+C:\Users\Esposch\Documents\Xilinx\blinking_led\
+
+MCS
+No

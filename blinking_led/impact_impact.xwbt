@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\Esposch\Documents\Xilinx\blinking_led\impact.xsl
+OUTFILE=C:\Users\Esposch\Documents\Xilinx\blinking_led\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Users\Esposch\Documents\Xilinx\blinking_led
+LICENSE=iMPACT
+USER_INFO=iMPACT

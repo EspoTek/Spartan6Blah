@@ -1,0 +1,2 @@
+vhdl isim_temp "LED_Blink.vhd"
+vhdl isim_temp "testbench.vhd"
