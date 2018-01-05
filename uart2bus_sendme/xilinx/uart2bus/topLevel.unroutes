@@ -1,9 +1,23 @@
-Release 14.7 - par P.20131013 (nt64)
+Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Dec 19 09:58:33 2017
+Fri Jan  5 11:16:33 2018
 
 All signals are completely routed.
 
+WARNING:ParHelpers:361 - There are 11 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/uo_cal_start
+   u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/uo_cmd_ready_in
+   u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/uo_data<0>
+   u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/uo_data<1>
+   u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/uo_data<2>
+   u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/uo_data<3>
+   u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/uo_data<4>
+   u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/uo_data<5>
+   u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/uo_data<6>
+   u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/uo_data<7>
+   u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/uo_data_valid
 
 

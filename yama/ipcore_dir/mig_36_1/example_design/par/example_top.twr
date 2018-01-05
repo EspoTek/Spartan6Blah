@@ -1,0 +1,134 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -e 100 example_top.ncd
+example_top.pcf
+
+Design file:              example_top.ncd
+Physical constraint file: example_top.pcf
+Device,package,speed:     xc6slx45,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             error report, limited to 100 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_SYS_CLK3 = PERIOD TIMEGRP "SYS_CLK3" 10 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.334ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_memc3_infrastructure_inst_mcb_drp_clk_bufg_in = PERIOD 
+TIMEGRP         "memc3_infrastructure_inst_mcb_drp_clk_bufg_in" TS_SYS_CLK3 / 
+0.5 HIGH         50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 12492 paths analyzed, 1173 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   7.559ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_memc3_infrastructure_inst_clk_2x_180 = PERIOD TIMEGRP     
+    "memc3_infrastructure_inst_clk_2x_180" TS_SYS_CLK3 / 2 PHASE 2.5 ns         
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.599ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_memc3_infrastructure_inst_clk_2x_0 = PERIOD TIMEGRP       
+  "memc3_infrastructure_inst_clk_2x_0" TS_SYS_CLK3 / 2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.599ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_memc3_infrastructure_inst_clk0_bufg_in = PERIOD TIMEGRP   
+      "memc3_infrastructure_inst_clk0_bufg_in" TS_SYS_CLK3 / 0.25 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 8838 paths analyzed, 2107 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  10.010ns.
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_SYS_CLK3
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_SYS_CLK3                    |     10.000ns|      3.334ns|      3.780ns|            0|            0|            0|        21330|
+| TS_memc3_infrastructure_inst_m|     20.000ns|      7.559ns|          N/A|            0|            0|        12492|            0|
+| cb_drp_clk_bufg_in            |             |             |             |             |             |             |             |
+| TS_memc3_infrastructure_inst_c|      5.000ns|      1.599ns|          N/A|            0|            0|            0|            0|
+| lk_2x_180                     |             |             |             |             |             |             |             |
+| TS_memc3_infrastructure_inst_c|      5.000ns|      1.599ns|          N/A|            0|            0|            0|            0|
+| lk_2x_0                       |             |             |             |             |             |             |             |
+| TS_memc3_infrastructure_inst_c|     40.000ns|     10.010ns|          N/A|            0|            0|         8838|            0|
+| lk0_bufg_in                   |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock c3_sys_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+c3_sys_clk     |   10.010|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 21330 paths, 0 nets, and 3874 connections
+
+Design statistics:
+   Minimum period:  10.010ns   (Maximum frequency:  99.900MHz)
+
+
+Analysis completed Tue Jan  2 16:40:22 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 457 MB
+
+
+

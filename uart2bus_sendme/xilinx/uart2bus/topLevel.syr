@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.03 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.03 secs
  
---> Reading design: topLevel.prj
+--> 
+Reading design: topLevel.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -81,7 +84,7 @@ Equivalent register Removal        : YES
 
 ---- General Options
 Optimization Goal                  : Speed
-Optimization Effort                : 1
+Optimization Effort                : 0
 Power Reduction                    : NO
 Keep Hierarchy                     : Yes
 Netlist Hierarchy                  : As_Optimized
@@ -108,51 +111,51 @@ Cores Search Directories           : {"../../desktop/uart2bus/vhdl/syn/xilinx/ip
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\iodrp_mcb_controller.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/iodrp_mcb_controller.vhd" into library work
 Parsing entity <iodrp_mcb_controller>.
 Parsing architecture <trans> of entity <iodrp_mcb_controller>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\iodrp_controller.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/iodrp_controller.vhd" into library work
 Parsing entity <iodrp_controller>.
 Parsing architecture <trans> of entity <iodrp_controller>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration.vhd" into library work
 Parsing entity <mcb_soft_calibration>.
 Parsing architecture <trans> of entity <mcb_soft_calibration>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration_top.vhd" into library work
 Parsing entity <mcb_soft_calibration_top>.
 Parsing architecture <trans> of entity <mcb_soft_calibration_top>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_raw_wrapper.vhd" into library work
 Parsing entity <mcb_raw_wrapper>.
 Parsing architecture <aarch> of entity <mcb_raw_wrapper>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" into library work
 Parsing entity <memc3_wrapper>.
 Parsing architecture <acch> of entity <memc3_wrapper>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_infrastructure.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_infrastructure.vhd" into library work
 Parsing entity <memc3_infrastructure>.
 Parsing architecture <syn> of entity <memc3_infrastructure>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\saturn_lpddr_100MHz_nodebug.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/saturn_lpddr_100MHz_nodebug.vhd" into library work
 Parsing entity <saturn_lpddr_100MHz_nodebug>.
 Parsing architecture <arc> of entity <saturn_lpddr_100mhz_nodebug>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTx.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uartTx.vhd" into library work
 Parsing entity <uartTx>.
 Parsing architecture <Behavioral> of entity <uarttx>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartRx.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uartRx.vhd" into library work
 Parsing entity <uartRx>.
 Parsing architecture <Behavioral> of entity <uartrx>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop_pkg.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uart2BusTop_pkg.vhd" into library work
 Parsing package <uart2BusTop_pkg>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\baudGen.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/baudGen.vhd" into library work
 Parsing entity <baudGen>.
 Parsing architecture <Behavioral> of entity <baudgen>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTop.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uartTop.vhd" into library work
 Parsing entity <uartTop>.
 Parsing architecture <Behavioral> of entity <uarttop>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartParser.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uartParser.vhd" into library work
 Parsing entity <uartParser>.
 Parsing architecture <Behavioral> of entity <uartparser>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uart2BusTop.vhd" into library work
 Parsing entity <uart2BusTop>.
 Parsing architecture <Behavioral> of entity <uart2bustop>.
-Parsing VHDL file "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" into library work
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" into library work
 Parsing entity <topLevel>.
 Parsing architecture <Behavioral> of entity <toplevel>.
 
@@ -181,72 +184,71 @@ Elaborating entity <memc3_infrastructure> (architecture <syn>) with generics fro
 Elaborating entity <memc3_wrapper> (architecture <acch>) with generics from library <work>.
 
 Elaborating entity <mcb_raw_wrapper> (architecture <aarch>) with generics from library <work>.
-WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 582: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 3207: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 3495: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 3757: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 3964: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_raw_wrapper.vhd" Line 582: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_raw_wrapper.vhd" Line 3207: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_raw_wrapper.vhd" Line 3495: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_raw_wrapper.vhd" Line 3757: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_raw_wrapper.vhd" Line 3964: Comparison between arrays of unequal length always returns FALSE.
 
 Elaborating entity <mcb_soft_calibration_top> (architecture <trans>) with generics from library <work>.
 
 Elaborating entity <mcb_soft_calibration> (architecture <trans>) with generics from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" Line 559: Assignment to half_mv_du ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" Line 561: Assignment to half_mv_dd ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration.vhd" Line 559: Assignment to half_mv_du ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration.vhd" Line 561: Assignment to half_mv_dd ignored, since the identifier is never used
 
 Elaborating entity <iodrp_controller> (architecture <trans>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\iodrp_controller.vhd" Line 352. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/iodrp_controller.vhd" Line 352. Case statement is complete. others clause is never selected
 
 Elaborating entity <iodrp_mcb_controller> (architecture <trans>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\iodrp_mcb_controller.vhd" Line 496. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" Line 623: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:1127 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" Line 911: Assignment to state_start_dyncal_r1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" Line 968: Assignment to mcb_uodatavalid_u ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" Line 1012: Assignment to iodrpctrlr_use_bkst ignored, since the identifier is never used
-WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd" Line 395: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:634 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd" Line 222: Net <ZIO_IODRP_SDO> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd" Line 236: Net <ZIO_IN> does not have a driver.
-WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 7024: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 7050: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 7075: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 7086: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:321 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd" Line 7091: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:634 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" Line 44: Net <data_to_read[7]> does not have a driver.
+INFO:HDLCompiler:679 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/iodrp_mcb_controller.vhd" Line 496. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration.vhd" Line 623: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:1127 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration.vhd" Line 911: Assignment to state_start_dyncal_r1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration.vhd" Line 968: Assignment to mcb_uodatavalid_u ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration.vhd" Line 1012: Assignment to iodrpctrlr_use_bkst ignored, since the identifier is never used
+WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration_top.vhd" Line 395: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration_top.vhd" Line 222: Net <ZIO_IODRP_SDO> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration_top.vhd" Line 236: Net <ZIO_IN> does not have a driver.
+WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_raw_wrapper.vhd" Line 7024: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_raw_wrapper.vhd" Line 7050: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_raw_wrapper.vhd" Line 7075: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_raw_wrapper.vhd" Line 7086: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_raw_wrapper.vhd" Line 7091: Comparison between arrays of unequal length always returns FALSE.
+WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" Line 44: Net <data_to_read[7]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <topLevel>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd".
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 60: Output port <intAddress> of the instance <uart> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 60: Output port <intAccessReq> of the instance <uart> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 60: Output port <intRead> of the instance <uart> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_a> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_ba> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_wr_count> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_rd_data> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_rd_count> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_cke> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_ras_n> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_cas_n> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_we_n> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_dm> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_udm> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_calib_done> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_clk0> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_rst0> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_ck> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <mcb3_dram_ck_n> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_cmd_empty> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_cmd_full> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_wr_full> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_wr_empty> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_wr_underrun> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_wr_error> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_rd_full> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_rd_empty> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_rd_overflow> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\topLevel.vhd" line 89: Output port <c3_p0_rd_error> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd".
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 61: Output port <intAddress> of the instance <uart> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 61: Output port <intAccessReq> of the instance <uart> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 61: Output port <intRead> of the instance <uart> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <mcb3_dram_a> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <mcb3_dram_ba> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_p0_wr_count> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_p0_rd_data> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_p0_rd_count> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <mcb3_dram_cke> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <mcb3_dram_ras_n> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <mcb3_dram_cas_n> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <mcb3_dram_we_n> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <mcb3_dram_dm> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <mcb3_dram_udm> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_calib_done> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_rst0> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <mcb3_dram_ck> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <mcb3_dram_ck_n> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_p0_cmd_empty> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_p0_cmd_full> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_p0_wr_full> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_p0_wr_empty> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_p0_wr_underrun> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_p0_wr_error> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_p0_rd_full> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_p0_rd_empty> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_p0_rd_overflow> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/topLevel.vhd" line 90: Output port <c3_p0_rd_error> of the instance <u_saturn_lpddr_100MHz_nodebug> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <data_to_read> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 1-bit register for signal <LED_Out>.
     Found 1-bit register for signal <reset_state>.
@@ -255,25 +257,25 @@ WARNING:Xst:653 - Signal <data_to_read> is used but never assigned. This sourcel
 Unit <topLevel> synthesized.
 
 Synthesizing Unit <uart2BusTop>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uart2BusTop.vhd".
         AW = 8
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uart2BusTop.vhd" line 43: Output port <baudClk> of the instance <ut> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uart2BusTop.vhd" line 43: Output port <baudClk> of the instance <ut> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <uart2BusTop> synthesized.
 
 Synthesizing Unit <uartTop>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTop.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uartTop.vhd".
     Summary:
 	no macro.
 Unit <uartTop> synthesized.
 
 Synthesizing Unit <baudGen>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\baudGen.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/baudGen.vhd".
     Found 1-bit register for signal <ce16>.
     Found 16-bit register for signal <counter>.
-    Found 16-bit adder for signal <counter[15]_GND_8_o_add_2_OUT> created at line 43.
-    Found 16-bit subtractor for signal <GND_8_o_GND_8_o_sub_2_OUT<15:0>> created at line 40.
+    Found 16-bit adder for signal <counter[15]_GND_9_o_add_2_OUT> created at line 43.
+    Found 16-bit subtractor for signal <GND_9_o_GND_9_o_sub_2_OUT<15:0>> created at line 40.
     Found 16-bit comparator lessequal for signal <n0000> created at line 39
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -283,14 +285,14 @@ Synthesizing Unit <baudGen>.
 Unit <baudGen> synthesized.
 
 Synthesizing Unit <uartTx>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartTx.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uartTx.vhd".
     Found 1-bit register for signal <serOut>.
     Found 1-bit register for signal <iTxBusy>.
     Found 4-bit register for signal <bitCount>.
     Found 4-bit register for signal <count16>.
     Found 9-bit register for signal <dataBuf>.
-    Found 4-bit adder for signal <count16[3]_GND_9_o_add_0_OUT> created at line 1241.
-    Found 4-bit adder for signal <bitCount[3]_GND_9_o_add_5_OUT> created at line 1241.
+    Found 4-bit adder for signal <count16[3]_GND_10_o_add_0_OUT> created at line 1241.
+    Found 4-bit adder for signal <bitCount[3]_GND_10_o_add_5_OUT> created at line 1241.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  19 D-type flip-flop(s).
@@ -298,7 +300,7 @@ Synthesizing Unit <uartTx>.
 Unit <uartTx> synthesized.
 
 Synthesizing Unit <uartRx>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartRx.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uartRx.vhd".
     Found 2-bit register for signal <inSync>.
     Found 1-bit register for signal <rxBusy>.
     Found 1-bit register for signal <newRxData>.
@@ -306,8 +308,8 @@ Synthesizing Unit <uartRx>.
     Found 4-bit register for signal <bitCount>.
     Found 8-bit register for signal <dataBuf>.
     Found 8-bit register for signal <rxData>.
-    Found 4-bit adder for signal <count16[3]_GND_11_o_add_1_OUT> created at line 1241.
-    Found 4-bit adder for signal <bitCount[3]_GND_11_o_add_6_OUT> created at line 1241.
+    Found 4-bit adder for signal <count16[3]_GND_12_o_add_1_OUT> created at line 1241.
+    Found 4-bit adder for signal <bitCount[3]_GND_12_o_add_6_OUT> created at line 1241.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  28 D-type flip-flop(s).
@@ -315,7 +317,7 @@ Synthesizing Unit <uartRx>.
 Unit <uartRx> synthesized.
 
 Synthesizing Unit <uartParser>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\rtl\uartParser.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/rtl/uartParser.vhd".
         AW = 8
     Found 1-bit register for signal <sTxBusy>.
     Found 1-bit register for signal <readOp>.
@@ -366,8 +368,8 @@ Synthesizing Unit <uartParser>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8-bit adder for signal <iIntAddress[7]_GND_29_o_add_85_OUT> created at line 1241.
-    Found 8-bit subtractor for signal <GND_29_o_GND_29_o_sub_73_OUT<7:0>> created at line 1308.
+    Found 8-bit adder for signal <iIntAddress[7]_GND_30_o_add_85_OUT> created at line 1241.
+    Found 8-bit subtractor for signal <GND_30_o_GND_30_o_sub_73_OUT<7:0>> created at line 1308.
     Found 8-bit comparator lessequal for signal <n0169> created at line 518
     Found 8-bit comparator lessequal for signal <n0171> created at line 518
     Found 8-bit comparator lessequal for signal <n0174> created at line 519
@@ -383,7 +385,7 @@ Synthesizing Unit <uartParser>.
 Unit <uartParser> synthesized.
 
 Synthesizing Unit <saturn_lpddr_100MHz_nodebug>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\saturn_lpddr_100MHz_nodebug.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/saturn_lpddr_100MHz_nodebug.vhd".
         C3_P0_MASK_SIZE = 4
         C3_P0_DATA_PORT_SIZE = 32
         C3_P1_MASK_SIZE = 4
@@ -398,13 +400,13 @@ Synthesizing Unit <saturn_lpddr_100MHz_nodebug>.
         C3_NUM_DQ_PINS = 16
         C3_MEM_ADDR_WIDTH = 13
         C3_MEM_BANKADDR_WIDTH = 2
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\saturn_lpddr_100MHz_nodebug.vhd" line 458: Output port <selfrefresh_mode> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/saturn_lpddr_100MHz_nodebug.vhd" line 458: Output port <selfrefresh_mode> of the instance <memc3_wrapper_inst> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <saturn_lpddr_100MHz_nodebug> synthesized.
 
 Synthesizing Unit <memc3_infrastructure>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_infrastructure.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_infrastructure.vhd".
         C_INCLK_PERIOD = 10000
         C_RST_ACT_LOW = 0
         C_INPUT_CLK_TYPE = "SINGLE_ENDED"
@@ -425,7 +427,7 @@ WARNING:Xst:647 - Input <sys_clk_n> is never used. This port will be preserved a
 Unit <memc3_infrastructure> synthesized.
 
 Synthesizing Unit <memc3_wrapper>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd".
         C_MEMCLK_PERIOD = 10000
         C_P0_MASK_SIZE = 4
         C_P0_DATA_PORT_SIZE = 32
@@ -505,86 +507,86 @@ Synthesizing Unit <memc3_wrapper>.
         C_MC_CALIBRATION_DELAY = "HALF"
         C_CALIB_SOFT_IP = "TRUE"
 WARNING:Xst:647 - Input <selfrefresh_enter> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <uo_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <status> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p1_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p2_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p3_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p4_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <p5_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <mcbx_dram_odt> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <mcbx_dram_ddr3_rst> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <uo_data_valid> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <uo_cmd_ready_in> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <uo_refrsh_flag> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <uo_cal_start> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\memc3_wrapper.vhd" line 599: Output port <uo_sdo> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p1_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p1_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p1_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p2_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p2_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p2_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p3_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p3_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p3_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p4_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p4_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p4_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p5_wr_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p5_rd_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p5_rd_count> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <uo_data> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <status> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p1_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p1_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p1_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p1_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p1_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p1_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p1_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p1_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p1_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p1_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p2_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p2_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p2_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p2_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p2_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p2_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p2_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p2_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p2_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p2_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p3_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p3_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p3_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p3_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p3_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p3_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p3_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p3_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p3_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p3_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p4_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p4_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p4_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p4_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p4_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p4_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p4_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p4_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p4_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p4_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p5_cmd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p5_cmd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p5_wr_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p5_wr_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p5_wr_underrun> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p5_wr_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p5_rd_full> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p5_rd_empty> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p5_rd_overflow> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <p5_rd_error> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <mcbx_dram_odt> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <mcbx_dram_ddr3_rst> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <uo_data_valid> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <uo_cmd_ready_in> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <uo_refrsh_flag> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <uo_cal_start> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd" line 599: Output port <uo_sdo> of the instance <memc3_mcb_raw_wrapper_inst> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <memc3_wrapper> synthesized.
 
 Synthesizing Unit <mcb_raw_wrapper>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_raw_wrapper.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_raw_wrapper.vhd".
         C_MEMCLK_PERIOD = 10000
         C_PORT_ENABLE = "000001"
         C_MEM_ADDR_ORDER = "ROW_BANK_COLUMN"
@@ -772,7 +774,7 @@ WARNING:Xst:653 - Signal <mcbx_dram_ddr3_rst> is used but never assigned. This s
 Unit <mcb_raw_wrapper> synthesized.
 
 Synthesizing Unit <mcb_soft_calibration_top>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration_top.vhd".
         C_MEM_TZQINIT_MAXCNT = "1000010000"
         C_MC_CALIBRATION_MODE = "CALIBRATION"
         SKIP_IN_TERM_CAL = 1
@@ -780,8 +782,8 @@ Synthesizing Unit <mcb_soft_calibration_top>.
         SKIP_DYN_IN_TERM = 1
         C_SIMULATION = "FALSE"
         C_MEM_TYPE = "MDDR"
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd" line 291: Output port <Max_Value> of the instance <mcb_soft_calibration_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration_top.vhd" line 291: Output port <ZIO_IODRP_CS> of the instance <mcb_soft_calibration_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration_top.vhd" line 291: Output port <Max_Value> of the instance <mcb_soft_calibration_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration_top.vhd" line 291: Output port <ZIO_IODRP_CS> of the instance <mcb_soft_calibration_inst> is unconnected or connected to loadless signal.
 WARNING:Xst:2563 - Inout <ZIO_PIN> is never assigned. Tied to value Z.
 WARNING:Xst:653 - Signal <ZIO_IODRP_SDO> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <ZIO_IN> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -796,7 +798,7 @@ WARNING:Xst:653 - Signal <ZIO_IN> is used but never assigned. This sourceless si
 Unit <mcb_soft_calibration_top> synthesized.
 
 Synthesizing Unit <mcb_soft_calibration>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration.vhd".
         C_MEM_TZQINIT_MAXCNT = "1000010000"
         SKIP_IN_TERM_CAL = 1
         SKIP_DYNAMIC_CAL = 0
@@ -821,8 +823,8 @@ WARNING:Xst:647 - Input <MCB_UODATA> is never used. This port will be preserved 
 WARNING:Xst:647 - Input <MCB_UODATAVALID> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <MCB_UOCMDREADY> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <MCB_UO_CAL_START> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" line 583: Output port <DRP_BKST> of the instance <iodrp_controller_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\mcb_soft_calibration.vhd" line 601: Output port <read_data> of the instance <iodrp_mcb_controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration.vhd" line 583: Output port <DRP_BKST> of the instance <iodrp_controller_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration.vhd" line 601: Output port <read_data> of the instance <iodrp_mcb_controller_inst> is unconnected or connected to loadless signal.
     Register <MCB_UIUDQSDEC> equivalent to <MCB_UILDQSDEC> has been removed
     Register <MCB_UIUDQSINC> equivalent to <MCB_UILDQSINC> has been removed
     Found 1-bit register for signal <Block_Reset>.
@@ -958,7 +960,7 @@ INFO:Xst:1799 - State 111010 is never reached in FSM <STATE>.
 Unit <mcb_soft_calibration> synthesized.
 
 Synthesizing Unit <iodrp_controller>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\iodrp_controller.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/iodrp_controller.vhd".
     Found 8-bit register for signal <data_reg>.
     Found 1-bit register for signal <rd_not_write_reg>.
     Found 8-bit register for signal <shift_through_reg>.
@@ -992,7 +994,7 @@ Synthesizing Unit <iodrp_controller>.
 Unit <iodrp_controller> synthesized.
 
 Synthesizing Unit <iodrp_mcb_controller>.
-    Related source file is "C:\Users\Esposch\Documents\Git\Spartan6Blah\uart2bus_sendme\desktop\uart2bus\vhdl\syn\xilinx\ipcore_dir\saturn_lpddr_100MHz_nodebug\user_design\rtl\iodrp_mcb_controller.vhd".
+    Related source file is "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/iodrp_mcb_controller.vhd".
     Set property "fsm_encoding = gray" for signal <state>.
     Set property "fsm_encoding = gray" for signal <nextstate>.
 WARNING:Xst:647 - Input <drp_ioi_addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1220,34 +1222,6 @@ WARNING:Xst:1710 - FF/Latch <DRP_BKST> (without init value) has a constant value
 WARNING:Xst:1426 - The value init of the FF/Latch reset_state hinder the constant cleaning in the block topLevel.
    You should achieve better results by setting this init to 0.
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <uart/up/FSM_0> on signal <txSm[1:3]> with user encoding.
--------------------
- State | Encoding
--------------------
- 000   | 000
- 001   | 001
- 100   | 100
- 101   | 101
- 110   | 110
--------------------
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <uart/up/FSM_1> on signal <mainSm[1:4]> with gray encoding.
--------------------
- State | Encoding
--------------------
- 0000  | 0000
- 0101  | 0001
- 0001  | 0011
- 0011  | 0010
- 1000  | 0110
- 0010  | 0111
- 0100  | 0101
- 1001  | 0100
- 1010  | 1100
- 1011  | 1101
- 1100  | 1111
--------------------
-Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/FSM_2> on signal <STATE[1:6]> with gray encoding.
 --------------------
  State  | Encoding
@@ -1341,6 +1315,37 @@ Optimizing FSM <u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_w
  almost_ready2     | 1100
  almost_ready3     | 1101
 -------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart/up/FSM_0> on signal <txSm[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 100   | 100
+ 101   | 101
+ 110   | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uart/up/FSM_1> on signal <mainSm[1:4]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0101  | 0001
+ 0001  | 0011
+ 0011  | 0010
+ 1000  | 0110
+ 0010  | 0111
+ 0100  | 0101
+ 1001  | 0100
+ 1010  | 1100
+ 1011  | 1101
+ 1100  | 1111
+-------------------
+WARNING:Xst:1293 - FF/Latch <DQS_DELAY_INITIAL_7> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_DQS_DELAY_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IODRPCTRLR_WRITE_DATA_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <txData_7> (without init value) has a constant value of 0 in block <uartParser>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <addrParam_8> of sequential type is unconnected in block <uartParser>.
 WARNING:Xst:2677 - Node <addrParam_9> of sequential type is unconnected in block <uartParser>.
@@ -1350,32 +1355,21 @@ WARNING:Xst:2677 - Node <addrParam_12> of sequential type is unconnected in bloc
 WARNING:Xst:2677 - Node <addrParam_13> of sequential type is unconnected in block <uartParser>.
 WARNING:Xst:2677 - Node <addrParam_14> of sequential type is unconnected in block <uartParser>.
 WARNING:Xst:2677 - Node <addrParam_15> of sequential type is unconnected in block <uartParser>.
-WARNING:Xst:1293 - FF/Latch <DQS_DELAY_INITIAL_7> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <TARGET_DQS_DELAY_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <IODRPCTRLR_WRITE_DATA_7> (without init value) has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:1901 - Instance U_BUFG_CLK1 in unit memc3_infrastructure of type BUFGCE has been replaced by BUFGMUX
-INFO:Xst:2261 - The FF/Latch <txData_0> in Unit <uartParser> is equivalent to the following FF/Latch, which will be removed : <txData_2> 
 INFO:Xst:2261 - The FF/Latch <MCB_UIADDR_int_2> in Unit <mcb_soft_calibration> is equivalent to the following 2 FFs/Latches, which will be removed : <MCB_UIADDR_int_3> <MCB_UIADDR_int_4> 
+INFO:Xst:2261 - The FF/Latch <txData_0> in Unit <uartParser> is equivalent to the following FF/Latch, which will be removed : <txData_2> 
 WARNING:Xst:2042 - Unit mcb_raw_wrapper: 2 internal tristates are replaced by logic (pull-up yes): mcbx_dram_dqs_n, mcbx_dram_udqs_n.
 WARNING:Xst:2041 - Unit mcb_soft_calibration_top: 1 internal tristate is replaced by logic (pull-up yes): ZIO_PIN.
 
 Optimizing unit <topLevel> ...
 
-Optimizing unit <uart2BusTop> ...
-
-Optimizing unit <uartTop> ...
-
 Optimizing unit <saturn_lpddr_100MHz_nodebug> ...
 
 Optimizing unit <memc3_wrapper> ...
 
-Optimizing unit <uartTx> ...
+Optimizing unit <uart2BusTop> ...
 
-Optimizing unit <baudGen> ...
-
-Optimizing unit <uartRx> ...
-
-Optimizing unit <uartParser> ...
+Optimizing unit <uartTop> ...
 
 Optimizing unit <memc3_infrastructure> ...
 
@@ -1414,6 +1408,14 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_s_0> has a c
 Optimizing unit <iodrp_controller> ...
 
 Optimizing unit <iodrp_mcb_controller> ...
+
+Optimizing unit <uartTx> ...
+
+Optimizing unit <baudGen> ...
+
+Optimizing unit <uartRx> ...
+
+Optimizing unit <uartParser> ...
 WARNING:Xst:1710 - FF/Latch <SELFREFRESH_REQ_R1> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <SELFREFRESH_MCB_REQ> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <WarmEnough> (without init value) has a constant value of 1 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
@@ -1429,6 +1431,17 @@ WARNING:Xst:1710 - FF/Latch <memcell_addr_reg_6> (without init value) has a cons
 WARNING:Xst:1710 - FF/Latch <data_reg_7> (without init value) has a constant value of 0 in block <iodrp_mcb_controller_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SELFREFRESH_REQ_R2> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SELFREFRESH_REQ_R3> (without init value) has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <RZQ_IN_R1> of sequential type is unconnected in block <gen_term_calib.mcb_soft_calibration_top_inst>.
+WARNING:Xst:2677 - Node <RZQ_IN_R2> of sequential type is unconnected in block <gen_term_calib.mcb_soft_calibration_top_inst>.
+WARNING:Xst:2677 - Node <DONE_SOFTANDHARD_CAL> of sequential type is unconnected in block <mcb_soft_calibration_inst>.
+WARNING:Xst:2677 - Node <read_data_0> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
+WARNING:Xst:2677 - Node <read_data_1> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
+WARNING:Xst:2677 - Node <read_data_2> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
+WARNING:Xst:2677 - Node <read_data_3> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
+WARNING:Xst:2677 - Node <read_data_4> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
+WARNING:Xst:2677 - Node <read_data_5> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
+WARNING:Xst:2677 - Node <read_data_6> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
+WARNING:Xst:2677 - Node <read_data_7> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
 WARNING:Xst:2677 - Node <addrAutoInc> of sequential type is unconnected in block <up>.
 WARNING:Xst:2677 - Node <dataParam_1> of sequential type is unconnected in block <up>.
 WARNING:Xst:2677 - Node <dataParam_2> of sequential type is unconnected in block <up>.
@@ -1460,17 +1473,6 @@ WARNING:Xst:2677 - Node <iIntAddress_4> of sequential type is unconnected in blo
 WARNING:Xst:2677 - Node <iIntAddress_5> of sequential type is unconnected in block <up>.
 WARNING:Xst:2677 - Node <iIntAddress_6> of sequential type is unconnected in block <up>.
 WARNING:Xst:2677 - Node <iIntAddress_7> of sequential type is unconnected in block <up>.
-WARNING:Xst:2677 - Node <RZQ_IN_R1> of sequential type is unconnected in block <gen_term_calib.mcb_soft_calibration_top_inst>.
-WARNING:Xst:2677 - Node <RZQ_IN_R2> of sequential type is unconnected in block <gen_term_calib.mcb_soft_calibration_top_inst>.
-WARNING:Xst:2677 - Node <DONE_SOFTANDHARD_CAL> of sequential type is unconnected in block <mcb_soft_calibration_inst>.
-WARNING:Xst:2677 - Node <read_data_0> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
-WARNING:Xst:2677 - Node <read_data_1> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
-WARNING:Xst:2677 - Node <read_data_2> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
-WARNING:Xst:2677 - Node <read_data_3> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
-WARNING:Xst:2677 - Node <read_data_4> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
-WARNING:Xst:2677 - Node <read_data_5> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
-WARNING:Xst:2677 - Node <read_data_6> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
-WARNING:Xst:2677 - Node <read_data_7> of sequential type is unconnected in block <iodrp_mcb_controller_inst>.
 WARNING:Xst:2677 - Node <WAIT_SELFREFRESH_EXIT_DQS_CAL> of sequential type is unconnected in block <mcb_soft_calibration_inst>.
 WARNING:Xst:2677 - Node <PERFORM_START_DYN_CAL_AFTER_SELFREFRESH> of sequential type is unconnected in block <mcb_soft_calibration_inst>.
 WARNING:Xst:2677 - Node <WaitCountEnable> of sequential type is unconnected in block <mcb_soft_calibration_inst>.
@@ -1485,8 +1487,6 @@ WARNING:Xst:2677 - Node <WaitTimer_3> of sequential type is unconnected in block
 WARNING:Xst:2677 - Node <WaitTimer_7> of sequential type is unconnected in block <mcb_soft_calibration_inst>.
 WARNING:Xst:2677 - Node <WaitTimer_5> of sequential type is unconnected in block <mcb_soft_calibration_inst>.
 WARNING:Xst:2677 - Node <WaitTimer_6> of sequential type is unconnected in block <mcb_soft_calibration_inst>.
-WARNING:Xst:1710 - FF/Latch <counter_14> (without init value) has a constant value of 0 in block <bg>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <counter_15> (without init value) has a constant value of 0 in block <bg>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <rst0_sync_r_0> (without init value) has a constant value of 0 in block <memc3_infrastructure_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <RstCounter_9> has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <RstCounter_8> has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
@@ -1514,42 +1514,306 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_Prev_5> has 
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_Prev_6> has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_Prev_1> has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_Prev_0> has a constant value of 0 in block <mcb_soft_calibration_inst>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counter_14> (without init value) has a constant value of 0 in block <bg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <counter_15> (without init value) has a constant value of 0 in block <bg>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
-ERROR:Xst:2035 - Port <CLK_In> has illegal connections. This port is connected to an input buffer and other components.
-Input Buffer:
-   Port <I> of node <se_input_clk.u_ibufg_sys_clk> (IBUFG) in unit <memc3_infrastructure_inst>
-Other Components:
-   Port <C> of node <reset_state> (FD) in unit <topLevel>
-   Port <C> of node <iTxBusy> (FDCE) in unit <ut>
-   Port <C> of node <dataBuf_0> (FDCE) in unit <ut>
-   Port <C> of node <dataBuf_1> (FDCE) in unit <ut>
-   Port <C> of node <dataBuf_2> (FDCE) in unit <ut>
-   Port <C> of node <dataBuf_3> (FDCE) in unit <ut>
-   Port <C> of node <dataBuf_4> (FDCE) in unit <ut>
-   Port <C> of node <dataBuf_5> (FDCE) in unit <ut>
-   Port <C> of node <dataBuf_6> (FDCE) in unit <ut>
-   Port <C> of node <dataBuf_7> (FDCE) in unit <ut>
-   Port <C> of node <dataBuf_8> (FDCE) in unit <ut>
-   Port <C> of node <serOut> (FDP) in unit <ut>
-   Port <C> of node <bitCount_0> (FDCE) in unit <ut>
-   Port <C> of node <bitCount_1> (FDCE) in unit <ut>
-   Port <C> of node <bitCount_2> (FDCE) in unit <ut>
-   Port <C> of node <bitCount_3> (FDCE) in unit <ut>
-   Port <C> of node <count16_0> (FDCE) in unit <ut>
-   Port <C> of node <count16_1> (FDCE) in unit <ut>
-   Port <C> of node <count16_2> (FDCE) in unit <ut>
-   Port <C> of node <count16_3> (FDCE) in unit <ut>
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block topLevel, actual ratio is 0.
+FlipFlop u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd4 has been replicated 1 time(s)
+FlipFlop u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd5 has been replicated 1 time(s)
+FlipFlop u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd6 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 333
+ Flip-Flops                                            : 333
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : topLevel.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 685
+#      GND                         : 5
+#      INV                         : 9
+#      LUT1                        : 23
+#      LUT2                        : 83
+#      LUT3                        : 75
+#      LUT4                        : 66
+#      LUT5                        : 65
+#      LUT6                        : 184
+#      MULT_AND                    : 6
+#      MUXCY                       : 73
+#      MUXF7                       : 9
+#      VCC                         : 5
+#      XORCY                       : 82
+# FlipFlops/Latches                : 333
+#      FD                          : 39
+#      FDC                         : 42
+#      FDCE                        : 78
+#      FDE                         : 25
+#      FDP                         : 5
+#      FDR                         : 67
+#      FDRE                        : 73
+#      FDS                         : 4
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGMUX                     : 1
+# IO Buffers                       : 47
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      IOBUF                       : 19
+#      OBUF                        : 3
+#      OBUFT                       : 21
+#      OBUFTDS                     : 1
+# Others                           : 70
+#      BUFPLL_MCB                  : 1
+#      IODRP2                      : 1
+#      IODRP2_MCB                  : 22
+#      MCB                         : 1
+#      OSERDES2                    : 42
+#      PLL_ADV                     : 1
+#      PULLDOWN                    : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-2 
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.02 secs
+Slice Logic Utilization: 
+ Number of Slice Registers:             332  out of  54576     0%  
+ Number of Slice LUTs:                  505  out of  27288     1%  
+    Number used as Logic:               505  out of  27288     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    603
+   Number with an unused Flip Flop:     271  out of    603    44%  
+   Number with an unused LUT:            98  out of    603    16%  
+   Number of fully used LUT-FF pairs:   234  out of    603    38%  
+   Number of unique control sets:        44
+
+IO Utilization: 
+ Number of IOs:                           6
+ Number of bonded IOBs:                   5  out of    218     2%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of PLL_ADVs:                      1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK_In                             | PLL_ADV:CLKOUT2        | 123   |
+uart/up/iIntWrite                  | NONE(LED_Out)          | 1     |
+CLK_In                             | PLL_ADV:CLKOUT3        | 209   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.809ns (Maximum Frequency: 262.536MHz)
+   Minimum input arrival time before clock: 4.674ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: 4.921ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_In'
+  Clock period: 3.809ns (frequency: 262.536MHz)
+  Total number of paths / destination ports: 16718 / 772
+-------------------------------------------------------------------------
+Delay:               7.618ns (Levels of Logic = 5)
+  Source:            u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_int_7 (FF)
+  Destination:       u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_0 (FF)
+  Source Clock:      CLK_In rising 0.5X
+  Destination Clock: CLK_In rising 0.5X
+
+  Data Path: u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_int_7 to u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            18   0.525   1.343  Max_Value_int_7 (Max_Value_int_7)
+     LUT4:I2->O            1   0.250   0.910  DQS_DELAY_LOWER_LIMIT[7]_DQS_DELAY[7]_LessThan_338_o2_SW0 (N29)
+     LUT6:I3->O            3   0.235   0.766  DQS_DELAY_LOWER_LIMIT[7]_DQS_DELAY[7]_LessThan_338_o2 (DQS_DELAY_LOWER_LIMIT[7]_DQS_DELAY[7]_LessThan_338_o)
+     LUT6:I5->O            2   0.254   0.834  DQS_DELAY_LOWER_LIMIT[7]_GND_66_o_AND_153_o (DQS_DELAY_LOWER_LIMIT[7]_GND_66_o_AND_153_o)
+     LUT6:I4->O            1   0.250   0.790  _n1647_inv_SW2 (N46)
+     LUT6:I4->O            7   0.250   0.909  _n1647_inv (_n1647_inv)
+     FDRE:CE                   0.302          DQS_DELAY_0
+    ----------------------------------------
+    Total                      7.618ns (2.066ns logic, 5.552ns route)
+                                       (27.1% logic, 72.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_In'
+  Total number of paths / destination ports: 96 / 78
+-------------------------------------------------------------------------
+Offset:              4.674ns (Levels of Logic = 5)
+  Source:            u_saturn_lpddr_100MHz_nodebug/memc3_infrastructure_inst/BUFPLL_MCB_INST:LOCK (PAD)
+  Destination:       u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg (FF)
+  Destination Clock: CLK_In rising 0.5X
+
+  Data Path: u_saturn_lpddr_100MHz_nodebug/memc3_infrastructure_inst/BUFPLL_MCB_INST:LOCK to u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BUFPLL_MCB:LOCK        5   0.000   0.000  BUFPLL_MCB_INST (pll_lock)
+     end scope: 'u_saturn_lpddr_100MHz_nodebug/memc3_infrastructure_inst:pll_lock'
+     begin scope: 'u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst:pll_lock'
+     begin scope: 'u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst:pll_lock'
+     LUT3:I0->O           70   0.235   1.976  int_sys_rst1 (int_sys_rst)
+     begin scope: 'u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst:RST'
+     begin scope: 'u_saturn_lpddr_100MHz_nodebug/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst:RST'
+     LUT2:I1->O            1   0.254   0.681  non_violating_rst1 (non_violating_rst)
+     FDP:PRE                   0.459          RST_reg
+    ----------------------------------------
+    Total                      4.674ns (2.017ns logic, 2.657ns route)
+                                       (43.2% logic, 56.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_In'
+  Total number of paths / destination ports: 111 / 64
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 3)
+  Source:            uart/ut/ut/serOut (FF)
+  Destination:       Serial_Rx_Out (PAD)
+  Source Clock:      CLK_In rising 0.2X
+
+  Data Path: uart/ut/ut/serOut to Serial_Rx_Out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              1   0.525   0.681  serOut (serOut)
+     end scope: 'uart/ut/ut:serOut'
+     end scope: 'uart/ut:serOut'
+     end scope: 'uart:serOut'
+     OBUF:I->O                 2.912          Serial_Rx_Out_OBUF (Serial_Rx_Out)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'uart/up/iIntWrite'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            LED_Out (FF)
+  Destination:       LED_Out (PAD)
+  Source Clock:      uart/up/iIntWrite rising
+
+  Data Path: LED_Out to LED_Out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  LED_Out (LED_Out_OBUF)
+     OBUF:I->O                 2.912          LED_Out_OBUF (LED_Out)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 624 / 624
+-------------------------------------------------------------------------
+Delay:               4.921ns (Levels of Logic = 2)
+  Source:            Debug_in (PAD)
+  Destination:       Debug_out (PAD)
+
+  Data Path: Debug_in to Debug_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  Debug_in_IBUF (Debug_out_OBUF)
+     OBUF:I->O                 2.912          Debug_out_OBUF (Debug_out)
+    ----------------------------------------
+    Total                      4.921ns (4.240ns logic, 0.681ns route)
+                                       (86.2% logic, 13.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK_In
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_In         |    7.618|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock uart/up/iIntWrite
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_In         |    1.324|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.25 secs
  
 --> 
 
-Total memory usage is 284772 kilobytes
 
-Number of errors   :    1 (   0 filtered)
+Total memory usage is 428732 kilobytes
+
+Number of errors   :    0 (   0 filtered)
 Number of warnings :  309 (   0 filtered)
 Number of infos    :  126 (   0 filtered)
 

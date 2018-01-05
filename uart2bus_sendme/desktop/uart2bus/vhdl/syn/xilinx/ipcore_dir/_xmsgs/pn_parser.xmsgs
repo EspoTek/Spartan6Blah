@@ -8,28 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/iodrp_controller.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/iodrp_mcb_controller.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_raw_wrapper.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/mcb_soft_calibration_top.vhd&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_infrastructure.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/memc3_wrapper.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir/saturn_lpddr_100MHz_nodebug/user_design/rtl/saturn_lpddr_100MHz_nodebug.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

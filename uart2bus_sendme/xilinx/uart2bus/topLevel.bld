@@ -1,32 +1,160 @@
-Release 14.7 ngdbuild P.20131013 (nt64)
+Release 14.7 ngdbuild P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
--intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt
-timestamp -uc
-C:/Users/Esposch/Documents/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhd
-l/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp
+-uc
+/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/
+config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd
 
 Reading NGO file
-"C:/Users/Esposch/Documents/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/top
-Level_cs.ngc" ...
+"/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel_cs.ngc"
+...
 Gathering constraint information from source properties...
 Done.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_a<12>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_a<12>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_a<11>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_a<11>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_a<10>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_a<10>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_a<9>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_a<9>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_a<8>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_a<8>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_a<7>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_a<7>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_a<6>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_a<6>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_a<5>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_a<5>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_a<4>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_a<4>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_a<3>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_a<3>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_a<2>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_a<2>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_a<1>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_a<1>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_a<0>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_a<0>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_ba<1>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_ba<1>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_ba<0>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_ba<0>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<15>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<15>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<14>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<14>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<13>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<13>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<12>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<12>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<11>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<11>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<10>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<10>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<9>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<9>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<8>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<8>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<7>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<7>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<6>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<6>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<5>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<5>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<4>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<4>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<3>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<3>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<2>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<2>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<1>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<1>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dq<0>' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_dq<0>' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_ck' is not
+   connected to an external port in this design.  A new port 'mcb3_dram_ck' has
+   been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_ck_n' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_ck_n' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_ras_n' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_ras_n' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_cas_n' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_cas_n' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_we_n' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_we_n' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_cke' is not
+   connected to an external port in this design.  A new port 'mcb3_dram_cke' has
+   been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dqs' is not
+   connected to an external port in this design.  A new port 'mcb3_dram_dqs' has
+   been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_udqs' is
+   not connected to an external port in this design.  A new port
+   'mcb3_dram_udqs' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_udm' is not
+   connected to an external port in this design.  A new port 'mcb3_dram_udm' has
+   been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_dram_dm' is not
+   connected to an external port in this design.  A new port 'mcb3_dram_dm' has
+   been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'u_saturn_lpddr_100MHz_nodebug/mcb3_rzq' is not
+   connected to an external port in this design.  A new port 'mcb3_rzq' has been
+   added and is connected to this signal.
 
 Annotating constraints to design from ucf file
-"C:/Users/Esposch/Documents/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vh
-dl/syn/xilinx/config.ucf" ...
+"/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx
+/config.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
 WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_CLK = PERIOD "CLK" 100 MHz
    HIGH 50%;>
-   [C:/Users/Esposch/Documents/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus
-   /vhdl/syn/xilinx/config.ucf(4)]: Unable to find an active 'TNM' or 'TimeGrp'
-   constraint named 'CLK'.
+   [/home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xil
+   inx/config.ucf(4)]: Unable to find an active 'TNM' or 'TimeGrp' constraint
+   named 'CLK'.
 
 Done...
 
 Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'u_saturn_lpddr_100MHz_nodebug/c3_calib_done'
+   has no driver
 WARNING:NgdBuild:452 - logical net 'uart/txData<7>' has no driver
 WARNING:NgdBuild:452 - logical net 'uart/intAddress<7>' has no driver
 WARNING:NgdBuild:452 - logical net 'uart/intAddress<6>' has no driver
@@ -54,9 +182,9 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  18
+  Number of warnings:  19
 
-Total memory usage is 168836 kilobytes
+Total memory usage is 470432 kilobytes
 
 Writing NGD file "topLevel.ngd" ...
 Total REAL time to NGDBUILD completion:  2 sec

@@ -26,8 +26,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+library UNISIM;
+use UNISIM.VComponents.all;
 
 entity topLevel is
     Port ( CLK_In : in  STD_LOGIC;
@@ -46,12 +46,13 @@ architecture Behavioral of topLevel is
 	signal write_enable_pulse : STD_LOGIC := '0';
 	signal read_enable_pulse : STD_LOGIC := '0';
 	signal debug_internal : STD_LOGIC := '0';
+	signal clk_from_mig : STD_LOGIC := '0';
 begin
 
 --Reset on first clock cycle
-initial_reset : process (CLK_In)
+initial_reset : process (clk_from_mig)
 begin
-	if rising_edge(CLK_In) then
+	if rising_edge(clk_from_mig) then
 		reset_state <= '0';  --Set the reset state to 0 immediately, after 1 clock cycle;
 	end if;
 end process initial_reset;
@@ -60,7 +61,7 @@ end process initial_reset;
 uart: entity work.uart2BusTop
   port map ( -- global signals
          clr => reset_state,                         
-         clk => CLK_In,                          
+         clk => clk_from_mig,                          
          -- uart serial signals
          serIn => Serial_Tx_In,                          
          serOut => Serial_Rx_Out,                         
@@ -121,7 +122,7 @@ Debug_Out <= debug_internal;
   --mcb3_dram_udqs  =>       '0',    -- for X16 parts           
   --mcb3_dram_udm  =>        '0',     -- for X16 parts
   --mcb3_dram_dm  =>       '0',
-  --  c3_clk0	=>	        '0',
+   c3_clk0	=>	        clk_from_mig,
   --c3_rst0		=>        '0',
 	
  

@@ -78,3 +78,48 @@ par -w -intstyle ise -ol std -mt off topLevel_map.ncd topLevel.ncd topLevel.pcf
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml topLevel.twx topLevel.ncd -o topLevel.twr topLevel.pcf 
 bitgen -intstyle ise -f topLevel.ut topLevel.ncd 
 xst -intstyle ise -ifn "C:/Users/Esposch/Documents/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "C:/Users/Esposch/Documents/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+xst -intstyle ise -ifn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.xst" -ofn "/home/esposch/Git/Spartan6Blah/uart2bus_sendme/xilinx/uart2bus/topLevel.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o topLevel_map.ncd topLevel.ngd topLevel.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o topLevel_map.ncd topLevel.ngd topLevel.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o topLevel_map.ncd topLevel.ngd topLevel.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o topLevel_map.ncd topLevel.ngd topLevel.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o topLevel_map.ncd topLevel.ngd topLevel.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../../desktop/uart2bus/vhdl/syn/xilinx/ipcore_dir -nt timestamp -uc /home/esposch/Git/Spartan6Blah/uart2bus_sendme/desktop/uart2bus/vhdl/syn/xilinx/config.ucf -p xc6slx45-csg324-2 topLevel_cs.ngc topLevel.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o topLevel_map.ncd topLevel.ngd topLevel.pcf 
+par -w -intstyle ise -ol std -mt off topLevel_map.ncd topLevel.ncd topLevel.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml topLevel.twx topLevel.ncd -o topLevel.twr topLevel.pcf 
+bitgen -intstyle ise -f topLevel.ut topLevel.ncd 

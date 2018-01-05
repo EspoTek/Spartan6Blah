@@ -1,14 +1,56 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Dec 19 09:58:24 2017
+// Written by: Map P.20131013 on Fri Jan 05 11:16:24 2018
 //! **************************************************************************
 
 SCHEMATIC START;
 CONFIG VCCAUX = "3.3";
 COMP "Debug_in" LOCATE = SITE "H12" LEVEL 1;
+COMP "CLK_In" LOCATE = SITE "V10" LEVEL 1;
+COMP "mcb3_rzq" LOCATE = SITE "N4" LEVEL 1;
 COMP "Debug_out" LOCATE = SITE "K14" LEVEL 1;
 COMP "Serial_Tx_In" LOCATE = SITE "A3" LEVEL 1;
 COMP "LED_Out" LOCATE = SITE "G13" LEVEL 1;
-COMP "CLK_In" LOCATE = SITE "V10" LEVEL 1;
+COMP "mcb3_dram_dq<10>" LOCATE = SITE "N2" LEVEL 1;
+COMP "mcb3_dram_dq<11>" LOCATE = SITE "N1" LEVEL 1;
+COMP "mcb3_dram_dq<12>" LOCATE = SITE "T2" LEVEL 1;
+COMP "mcb3_dram_dq<13>" LOCATE = SITE "T1" LEVEL 1;
+COMP "mcb3_dram_dq<14>" LOCATE = SITE "U2" LEVEL 1;
+COMP "mcb3_dram_dq<15>" LOCATE = SITE "U1" LEVEL 1;
+COMP "mcb3_dram_ck" LOCATE = SITE "G3" LEVEL 1;
+COMP "mcb3_dram_dm" LOCATE = SITE "K3" LEVEL 1;
+COMP "mcb3_dram_a<10>" LOCATE = SITE "F4" LEVEL 1;
+COMP "mcb3_dram_a<11>" LOCATE = SITE "D3" LEVEL 1;
+COMP "mcb3_dram_a<12>" LOCATE = SITE "G6" LEVEL 1;
+COMP "mcb3_dram_ba<0>" LOCATE = SITE "F2" LEVEL 1;
+COMP "mcb3_dram_ba<1>" LOCATE = SITE "F1" LEVEL 1;
+COMP "mcb3_dram_dq<0>" LOCATE = SITE "L2" LEVEL 1;
+COMP "mcb3_dram_dq<1>" LOCATE = SITE "L1" LEVEL 1;
+COMP "mcb3_dram_dq<2>" LOCATE = SITE "K2" LEVEL 1;
+COMP "mcb3_dram_dq<3>" LOCATE = SITE "K1" LEVEL 1;
+COMP "mcb3_dram_dq<4>" LOCATE = SITE "H2" LEVEL 1;
+COMP "mcb3_dram_dq<5>" LOCATE = SITE "H1" LEVEL 1;
+COMP "mcb3_dram_dq<6>" LOCATE = SITE "J3" LEVEL 1;
+COMP "mcb3_dram_dq<7>" LOCATE = SITE "J1" LEVEL 1;
+COMP "mcb3_dram_dq<8>" LOCATE = SITE "M3" LEVEL 1;
+COMP "mcb3_dram_dq<9>" LOCATE = SITE "M1" LEVEL 1;
+COMP "mcb3_dram_cas_n" LOCATE = SITE "K5" LEVEL 1;
+COMP "mcb3_dram_ras_n" LOCATE = SITE "L5" LEVEL 1;
+COMP "mcb3_dram_a<0>" LOCATE = SITE "J7" LEVEL 1;
+COMP "mcb3_dram_a<1>" LOCATE = SITE "J6" LEVEL 1;
+COMP "mcb3_dram_a<2>" LOCATE = SITE "H5" LEVEL 1;
+COMP "mcb3_dram_a<3>" LOCATE = SITE "L7" LEVEL 1;
+COMP "mcb3_dram_a<4>" LOCATE = SITE "F3" LEVEL 1;
+COMP "mcb3_dram_a<5>" LOCATE = SITE "H4" LEVEL 1;
+COMP "mcb3_dram_a<6>" LOCATE = SITE "H3" LEVEL 1;
+COMP "mcb3_dram_a<7>" LOCATE = SITE "H6" LEVEL 1;
+COMP "mcb3_dram_a<8>" LOCATE = SITE "D2" LEVEL 1;
+COMP "mcb3_dram_a<9>" LOCATE = SITE "D1" LEVEL 1;
+COMP "mcb3_dram_ck_n" LOCATE = SITE "G1" LEVEL 1;
+COMP "mcb3_dram_we_n" LOCATE = SITE "E3" LEVEL 1;
+COMP "mcb3_dram_udqs" LOCATE = SITE "P2" LEVEL 1;
+COMP "mcb3_dram_cke" LOCATE = SITE "H7" LEVEL 1;
+COMP "mcb3_dram_dqs" LOCATE = SITE "L4" LEVEL 1;
+COMP "mcb3_dram_udm" LOCATE = SITE "K4" LEVEL 1;
 PIN
         U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B9KGT0.u_ramb9/U_RAMB9_pins<27>
         = BEL
@@ -46,10 +88,10 @@ TIMEGRP D_CLK = BEL "reset_state" BEL "uart/ut/ut/dataBuf_0" BEL
         "uart/ut/ur/bitCount_1" BEL "uart/ut/ur/bitCount_2" BEL
         "uart/ut/ur/bitCount_3" BEL "uart/ut/ur/rxBusy" BEL "uart/up/sTxBusy"
         BEL "uart/up/writeOp" BEL "uart/up/readOp" BEL "uart/up/readDone" BEL
-        "uart/up/readDoneS" BEL "uart/up/newTxData" BEL "uart/up/txData_0" BEL
-        "uart/up/txData_1" BEL "uart/up/txData_3" BEL "uart/up/txData_4" BEL
-        "uart/up/txData_5" BEL "uart/up/txData_6" BEL "uart/up/txSm_FSM_FFd2"
-        BEL "uart/up/txSm_FSM_FFd3" BEL "uart/up/txSm_FSM_FFd1" BEL
+        "uart/up/readDoneS" BEL "uart/up/txData_0" BEL "uart/up/txData_1" BEL
+        "uart/up/txData_3" BEL "uart/up/txData_4" BEL "uart/up/txData_5" BEL
+        "uart/up/txData_6" BEL "uart/up/txSm_FSM_FFd2" BEL
+        "uart/up/txSm_FSM_FFd3" BEL "uart/up/txSm_FSM_FFd1" BEL
         "uart/up/mainSm_FSM_FFd4" BEL "uart/up/mainSm_FSM_FFd3" BEL
         "uart/up/mainSm_FSM_FFd2" BEL "uart/up/mainSm_FSM_FFd1" BEL
         "uart/up/binByteCount_0" BEL "uart/up/binByteCount_1" BEL
@@ -60,8 +102,7 @@ TIMEGRP D_CLK = BEL "reset_state" BEL "uart/ut/ut/dataBuf_0" BEL
         "uart/up/sendStatFlag" BEL "uart/up/iWriteReq" BEL
         "uart/up/dataParam_0" BEL "uart/up/iReadReq" BEL "uart/up/iIntWrite"
         BEL "uart/up/iIntRead" BEL "uart/up/intWrData_0" BEL
-        "uart/up/mainSm_FSM_FFd3_1" BEL "uart/up/mainSm_FSM_FFd4_1" BEL
-        "uart/up/mainSm_FSM_FFd1_1" PIN
+        "uart/up/newTxData" PIN
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_YES_TB.U_TRACE_BUFFER/U_RAM/I_S6.U_CS_BRAM_CASCADE_S6/I_DEPTH_LTEQ_16K.U_SBRAM_0/I_B9KGT0.u_ramb9/U_RAMB9_pins<27>"
         BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT0" BEL
         "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT1" BEL
