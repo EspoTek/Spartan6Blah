@@ -1,0 +1,53 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Jan 08 15:17:40 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+CONFIG VCCAUX = "3.3";
+COMP "c3_sys_clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "mcb3_dram_a<0>" LOCATE = SITE "J7" LEVEL 1;
+COMP "mcb3_dram_a<1>" LOCATE = SITE "J6" LEVEL 1;
+COMP "mcb3_dram_a<2>" LOCATE = SITE "H5" LEVEL 1;
+COMP "mcb3_dram_a<3>" LOCATE = SITE "L7" LEVEL 1;
+COMP "mcb3_dram_a<4>" LOCATE = SITE "F3" LEVEL 1;
+COMP "mcb3_dram_a<5>" LOCATE = SITE "H4" LEVEL 1;
+COMP "mcb3_dram_a<6>" LOCATE = SITE "H3" LEVEL 1;
+COMP "mcb3_dram_a<7>" LOCATE = SITE "H6" LEVEL 1;
+COMP "mcb3_dram_a<8>" LOCATE = SITE "D2" LEVEL 1;
+COMP "mcb3_dram_a<9>" LOCATE = SITE "D1" LEVEL 1;
+COMP "rzq3" LOCATE = SITE "N4" LEVEL 1;
+COMP "mcb3_dram_ck_n" LOCATE = SITE "G1" LEVEL 1;
+COMP "mcb3_dram_we_n" LOCATE = SITE "E3" LEVEL 1;
+COMP "mcb3_dram_udqs" LOCATE = SITE "P2" LEVEL 1;
+COMP "c3_sys_rst_i" LOCATE = SITE "M13" LEVEL 1;
+COMP "mcb3_dram_ck" LOCATE = SITE "G3" LEVEL 1;
+COMP "mcb3_dram_dm" LOCATE = SITE "K3" LEVEL 1;
+COMP "mcb3_dram_a<10>" LOCATE = SITE "F4" LEVEL 1;
+COMP "mcb3_dram_a<11>" LOCATE = SITE "D3" LEVEL 1;
+COMP "mcb3_dram_a<12>" LOCATE = SITE "G6" LEVEL 1;
+COMP "mcb3_dram_ba<0>" LOCATE = SITE "F2" LEVEL 1;
+COMP "mcb3_dram_ba<1>" LOCATE = SITE "F1" LEVEL 1;
+COMP "mcb3_dram_dq<0>" LOCATE = SITE "L2" LEVEL 1;
+COMP "mcb3_dram_dq<1>" LOCATE = SITE "L1" LEVEL 1;
+COMP "mcb3_dram_dq<2>" LOCATE = SITE "K2" LEVEL 1;
+COMP "mcb3_dram_dq<3>" LOCATE = SITE "K1" LEVEL 1;
+COMP "mcb3_dram_dq<4>" LOCATE = SITE "H2" LEVEL 1;
+COMP "mcb3_dram_dq<5>" LOCATE = SITE "H1" LEVEL 1;
+COMP "mcb3_dram_dq<6>" LOCATE = SITE "J3" LEVEL 1;
+COMP "mcb3_dram_dq<7>" LOCATE = SITE "J1" LEVEL 1;
+COMP "mcb3_dram_dq<8>" LOCATE = SITE "M3" LEVEL 1;
+COMP "mcb3_dram_dq<9>" LOCATE = SITE "M1" LEVEL 1;
+COMP "mcb3_dram_cas_n" LOCATE = SITE "K5" LEVEL 1;
+COMP "mcb3_dram_ras_n" LOCATE = SITE "L5" LEVEL 1;
+COMP "mcb3_dram_cke" LOCATE = SITE "H7" LEVEL 1;
+COMP "mcb3_dram_dqs" LOCATE = SITE "L4" LEVEL 1;
+COMP "mcb3_dram_udm" LOCATE = SITE "K4" LEVEL 1;
+COMP "mcb3_dram_dq<10>" LOCATE = SITE "N2" LEVEL 1;
+COMP "mcb3_dram_dq<11>" LOCATE = SITE "N1" LEVEL 1;
+COMP "mcb3_dram_dq<12>" LOCATE = SITE "T2" LEVEL 1;
+COMP "mcb3_dram_dq<13>" LOCATE = SITE "T1" LEVEL 1;
+COMP "mcb3_dram_dq<14>" LOCATE = SITE "U2" LEVEL 1;
+COMP "mcb3_dram_dq<15>" LOCATE = SITE "U1" LEVEL 1;
+COMP "c3_calib_done" LOCATE = SITE "K13" LEVEL 1;
+SCHEMATIC END;
+

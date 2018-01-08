@@ -1,0 +1,121 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml top_level.twx top_level.ncd -o top_level.twr top_level.pcf
+-ucf constraints.ucf
+
+Design file:              top_level.ncd
+Physical constraint file: top_level.pcf
+Device,package,speed:     xc6slx45,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock c3_sys_clk
+------------+------------+------------+------------+------------+----------------------------------------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                                                                | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                                               | Phase  |
+------------+------------+------------+------------+------------+----------------------------------------------------------------+--------+
+c3_sys_rst_i|    6.571(R)|      SLOW  |    0.025(R)|      SLOW  |u_mig_100mhz_lpddr/c3_mcb_drp_clk                               |   0.000|
+            |    6.629(R)|      SLOW  |   -3.291(R)|      FAST  |u_mig_100mhz_lpddr/memc3_infrastructure_inst/mcb_drp_clk_bufg_in|   0.000|
+------------+------------+------------+------------+------------+----------------------------------------------------------------+--------+
+
+Clock c3_sys_clk to Pad
+----------------+-----------------+------------+-----------------+------------+-----------------------------------+--------+
+                |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                   | Clock  |
+Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                  | Phase  |
+----------------+-----------------+------------+-----------------+------------+-----------------------------------+--------+
+c3_calib_done   |        16.014(R)|      SLOW  |         7.576(R)|      FAST  |u_mig_100mhz_lpddr/c3_mcb_drp_clk  |   0.000|
+mcb3_dram_a<0>  |        12.791(R)|      SLOW  |         6.164(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_a<1>  |        12.791(R)|      SLOW  |         6.164(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_a<2>  |        12.781(R)|      SLOW  |         6.154(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_a<3>  |        12.791(R)|      SLOW  |         6.164(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_a<4>  |        12.781(R)|      SLOW  |         6.154(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_a<5>  |        12.791(R)|      SLOW  |         6.164(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_a<6>  |        12.791(R)|      SLOW  |         6.164(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_a<7>  |        12.781(R)|      SLOW  |         6.154(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_a<8>  |        12.781(R)|      SLOW  |         6.154(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_a<9>  |        12.781(R)|      SLOW  |         6.154(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_a<10> |        12.781(R)|      SLOW  |         6.154(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_a<11> |        12.772(R)|      SLOW  |         6.145(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_a<12> |        12.772(R)|      SLOW  |         6.145(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_ba<0> |        12.791(R)|      SLOW  |         6.164(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_ba<1> |        12.791(R)|      SLOW  |         6.164(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_cas_n |        12.791(R)|      SLOW  |         6.164(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_ck    |        12.191(R)|      SLOW  |         5.599(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_ck_n  |        12.252(R)|      SLOW  |         5.624(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_cke   |        12.772(R)|      SLOW  |         6.145(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_dm    |        12.934(R)|      SLOW  |         6.255(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<0> |        12.934(R)|      SLOW  |         6.255(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<1> |        12.934(R)|      SLOW  |         6.255(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<2> |        12.934(R)|      SLOW  |         6.255(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<3> |        12.934(R)|      SLOW  |         6.255(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<4> |        12.934(R)|      SLOW  |         6.255(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<5> |        12.934(R)|      SLOW  |         6.255(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<6> |        12.934(R)|      SLOW  |         6.255(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<7> |        12.934(R)|      SLOW  |         6.255(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<8> |        12.934(R)|      SLOW  |         6.255(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<9> |        12.934(R)|      SLOW  |         6.255(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<10>|        12.925(R)|      SLOW  |         6.246(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<11>|        12.925(R)|      SLOW  |         6.246(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<12>|        12.925(R)|      SLOW  |         6.246(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<13>|        12.925(R)|      SLOW  |         6.246(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<14>|        12.916(R)|      SLOW  |         6.237(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dq<15>|        12.916(R)|      SLOW  |         6.237(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_dqs   |        12.916(R)|      SLOW  |         6.237(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_ras_n |        12.791(R)|      SLOW  |         6.164(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_udm   |        12.934(R)|      SLOW  |         6.255(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
+mcb3_dram_udqs  |        12.916(R)|      SLOW  |         6.237(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+mcb3_dram_we_n  |        12.781(R)|      SLOW  |         6.154(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
+rzq3            |        19.342(R)|      SLOW  |         8.552(R)|      FAST  |u_mig_100mhz_lpddr/c3_mcb_drp_clk  |   0.000|
+----------------+-----------------+------------+-----------------+------------+-----------------------------------+--------+
+
+Clock to Setup on destination clock c3_sys_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+c3_sys_clk     |    8.960|    8.960|         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+c3_sys_clk     |rzq3           |   21.267|
+c3_sys_rst_i   |rzq3           |   18.878|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Jan  8 15:17:52 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 445 MB
+
+
+

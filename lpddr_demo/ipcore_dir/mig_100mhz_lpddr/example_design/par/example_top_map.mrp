@@ -1,0 +1,1697 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'example_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -detail -w -pr off -c 100 -o
+example_top_map.ncd example_top.ngd example_top.pcf 
+Target Device  : xc6slx45
+Target Package : csg324
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Mon Jan  8 15:01:15 2018
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    6
+Slice Logic Utilization:
+  Number of Slice Registers:                   739 out of  54,576    1%
+    Number used as Flip Flops:                 739
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        997 out of  27,288    3%
+    Number used as logic:                      924 out of  27,288    3%
+      Number using O6 output only:             626
+      Number using O5 output only:              98
+      Number using O5 and O6:                  200
+      Number used as ROM:                        0
+    Number used as Memory:                      30 out of   6,408    1%
+      Number used as Dual Port RAM:             28
+        Number using O6 output only:             4
+        Number using O5 output only:             0
+        Number using O5 and O6:                 24
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             2
+        Number using O6 output only:             2
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:     43
+      Number with same-slice register load:     34
+      Number with same-slice carry load:         9
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   357 out of   6,822    5%
+  Number of MUXCYs used:                       284 out of  13,644    2%
+  Number of LUT Flip Flop pairs used:        1,090
+    Number with an unused Flip Flop:           465 out of   1,090   42%
+    Number with an unused LUT:                  93 out of   1,090    8%
+    Number of fully used LUT-FF pairs:         532 out of   1,090   48%
+    Number of unique control sets:              64
+    Number of slice register sites lost
+      to control set restrictions:             207 out of  54,576    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        46 out of     218   21%
+    Number of LOCed IOBs:                       46 out of      46  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of     116    0%
+  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       2 out of      16   12%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      1
+  Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     376    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:        23 out of     376    6%
+    Number used as IODELAY2s:                    0
+    Number used as IODRP2s:                      1
+    Number used as IODRP2_MCBs:                 22
+  Number of OLOGIC2/OSERDES2s:                  43 out of     376   11%
+    Number used as OLOGIC2s:                     0
+    Number used as OSERDES2s:                   43
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         1 out of       4   25%
+  Number of DSP48A1s:                            0 out of      58    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                1 out of       2   50%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       4   25%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                3.33
+
+Peak Memory Usage:  813 MB
+Total REAL time to MAP completion:  19 secs 
+Total CPU time to MAP completion:   19 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:367 - The signal
+   <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
+   fo/rd_fifo/Mram_mem3_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
+   fo/rd_fifo/Mram_mem4_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
+   fo/rd_fifo/Mram_mem5_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
+   fo/rd_fifo/Mram_mem1_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
+   fo/rd_fifo/Mram_mem2_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
+   fo/rd_fifo/Mram_mem6_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network memc3_tb_top_inst/m_traffic_gen_p0/mcb_wr_full_r1
+   has no load.
+INFO:LIT:243 - Logical network memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<1> has
+   no load.
+INFO:LIT:243 - Logical network memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<2> has
+   no load.
+INFO:LIT:243 - Logical network memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<3> has
+   no load.
+INFO:LIT:243 - Logical network memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<4> has
+   no load.
+INFO:LIT:243 - Logical network memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<7> has
+   no load.
+INFO:LIT:243 - Logical network memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<8> has
+   no load.
+INFO:LIT:243 - Logical network memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<9> has
+   no load.
+INFO:LIT:243 - Logical network memc3_tb_top_inst/m_traffic_gen_p0/rst_ra<1> has
+   no load.
+INFO:LIT:243 - Logical network memc3_tb_top_inst/m_traffic_gen_p0/rst_ra<7> has
+   no load.
+INFO:LIT:243 - Logical network
+   memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfif
+   o/rd_fifo/Mram_mem72/SPO has no load.
+INFO:LIT:243 - Logical network
+   memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfif
+   o/rd_fifo/Mram_mem71/SPO has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 138 block(s) removed
+  13 block(s) optimized away
+  81 signal(s) removed
+ 109 Block(s) redundant
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "memc3_tb_top_inst/m_traffic_gen_p0/mcb_wr_full_r1" is loadless and
+has been removed.
+ Loadless block "memc3_tb_top_inst/m_traffic_gen_p0/mcb_wr_full_r1" (SFF)
+removed.
+  The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/GND_1009_o_mcb_wr_fifo_counts[6]_LessThan_16
+_o" is loadless and has been removed.
+   Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/GND_1009_o_mcb_wr_fifo_counts[6]_LessThan_16
+_o1" (ROM) removed.
+    The signal "c3_p0_wr_count<6>" is loadless and has been removed.
+    The signal "c3_p0_wr_count<5>" is loadless and has been removed.
+    The signal "c3_p0_wr_count<4>" is loadless and has been removed.
+    The signal "c3_p0_wr_count<3>" is loadless and has been removed.
+    The signal "c3_p0_wr_count<2>" is loadless and has been removed.
+    The signal "N85" is loadless and has been removed.
+     Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/GND_1009_o_mcb_wr_fifo_counts[6]_LessThan_16
+_o1_SW0" (ROM) removed.
+      The signal "c3_p0_wr_count<1>" is loadless and has been removed.
+      The signal "c3_p0_wr_count<0>" is loadless and has been removed.
+The signal "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<1>" is loadless and has
+been removed.
+ Loadless block "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb_1" (FF) removed.
+The signal "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<2>" is loadless and has
+been removed.
+ Loadless block "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb_2" (FF) removed.
+The signal "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<3>" is loadless and has
+been removed.
+ Loadless block "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb_3" (FF) removed.
+The signal "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<4>" is loadless and has
+been removed.
+ Loadless block "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb_4" (FF) removed.
+The signal "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<7>" is loadless and has
+been removed.
+ Loadless block "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb_7" (FF) removed.
+The signal "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<8>" is loadless and has
+been removed.
+ Loadless block "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb_8" (FF) removed.
+The signal "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<9>" is loadless and has
+been removed.
+ Loadless block "memc3_tb_top_inst/m_traffic_gen_p0/rst_rb_9" (FF) removed.
+The signal "memc3_tb_top_inst/m_traffic_gen_p0/rst_ra<1>" is loadless and has
+been removed.
+ Loadless block "memc3_tb_top_inst/m_traffic_gen_p0/rst_ra_1" (FF) removed.
+The signal "memc3_tb_top_inst/m_traffic_gen_p0/rst_ra<7>" is loadless and has
+been removed.
+ Loadless block "memc3_tb_top_inst/m_traffic_gen_p0/rst_ra_7" (FF) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT31" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>1" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>10" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT9" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT9" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>11" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT10" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT10" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>12" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT11" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT11" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>13" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT12" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT12" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>14" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT13" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT13" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>15" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT14" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT14" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>16" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT15" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT15" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>17" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT16" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT16" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>18" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT17" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT17" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>19" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT18" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT18" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>2" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT1" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT1" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>20" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT19" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT19" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>21" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT20" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT20" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>22" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT21" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT21" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>23" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT22" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT22" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>24" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT23" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT23" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>25" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT24" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT24" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>26" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT25" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT25" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>27" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT26" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT26" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>28" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT27" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT27" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>29" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT28" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT28" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>3" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT2" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT2" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>30" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT29" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT29" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>31" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT30" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT30" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>4" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT3" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT3" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>5" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT4" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT4" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>6" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT5" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT5" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>7" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT6" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT6" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>8" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT7" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT7" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT_lut<0>9" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT8" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2
+.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1022_o_add
+_1_OUT8" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT31" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>1" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>10" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT9" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT9" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>11" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT10" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT10" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>12" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT11" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT11" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>13" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT12" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT12" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>14" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT13" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT13" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>15" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT14" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT14" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>16" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT15" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT15" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>17" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT16" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT16" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>18" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT17" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT17" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>19" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT18" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT18" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>2" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT1" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT1" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>20" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT19" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT19" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>21" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT20" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT20" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>22" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT21" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT21" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>23" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT22" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT22" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>24" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT23" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT23" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>25" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT24" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT24" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>26" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT25" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT25" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>27" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT26" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT26" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>28" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT27" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT27" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>29" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT28" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT28" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>3" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT2" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT2" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>30" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT29" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT29" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>31" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT30" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT30" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>4" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT3" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT3" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>5" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT4" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT4" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>6" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT5" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT5" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>7" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT6" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT6" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>8" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT7" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT7" (ROM) removed.
+Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT_lut<0>9" (ROM) removed.
+ The signal
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT8" is loadless and has been removed.
+  Loadless block
+"memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst
+/s6_wdgen.sp6_data_gen_inst/xhdl11.data_prbs_gen_inst/Madd_prbs_seed_i[31]_GND_1
+022_o_add_1_OUT8" (ROM) removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "memc3_tb_top_inst/m_traffic_gen_p0/mcb_wr_full_r2" is unused and has
+been removed.
+ Unused block "memc3_tb_top_inst/m_traffic_gen_p0/mcb_wr_full_r2" (FF) removed.
+  The signal "memc3_tb_top_inst/m_traffic_gen_p0/mcb_wr_full_r2_rstpot" is unused
+and has been removed.
+   Unused block "memc3_tb_top_inst/m_traffic_gen_p0/mcb_wr_full_r2_rstpot" (ROM)
+removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+LUT2
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_GND_1010_o_GND_1010_o_add_53_O
+UT1
+   optimized to 1
+LUT2
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_GND_1010_o_GND_1010_o_add_53_O
+UT2
+   optimized to 1
+LUT2
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_GND_1010_o_GND_1010_o_add_53_O
+UT3
+   optimized to 1
+LUT2
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_GND_1010_o_GND_1010_o_add_53_O
+UT4
+   optimized to 1
+LUT2
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_GND_1010_o_GND_1010_o_add_53_O
+UT5
+   optimized to 1
+LUT3
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_GND_1010_o_GND_1010_o_add_53_O
+UT_lut<0>3
+   optimized to 1
+LUT3
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_GND_1010_o_GND_1010_o_add_53_O
+UT_lut<0>4
+   optimized to 1
+LUT3
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_GND_1010_o_GND_1010_o_add_53_O
+UT_lut<0>5
+   optimized to 1
+LUT3
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_GND_1010_o_GND_1010_o_add_53_O
+UT_lut<0>6
+   optimized to 1
+LUT3
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_GND_1010_o_GND_1010_o_add_53_O
+UT_lut<0>7
+   optimized to 1
+INV
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_GND_1010_o_GND_1010_o_add_53_O
+UT_lut<0>81_INV_0
+
+Redundant Block(s):
+TYPE 		BLOCK
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_dec_cy<6>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_dec_cy<5>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_dec_cy<4>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_dec_cy<3>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_dec_cy<2>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_dec_cy<1>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_inc_cy<6>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_inc_cy<5>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_inc_cy<4>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_inc_cy<3>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_inc_cy<2>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_inc_cy<1>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<14>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<13>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<12>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<11>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<10>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<9>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<8>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<7>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<6>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<5>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<4>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<3>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<2>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_cy<1>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Mcount_force_rd_counts_cy<2>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Mcount_force_rd_counts_cy<1>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_addr_counts[31]_GND_1010_o_add
+_62_OUT_cy<9>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_addr_out[31]_GND_1010_o_add_89
+_OUT_cy<9>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Madd_addr_out[31]_GND_1010_o_add_89
+_OUT_cy<8>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<30>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<29>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<28>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<27>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<26>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<25>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<24>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<23>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<22>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<21>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<20>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<19>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<18>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<17>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<16>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<15>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<14>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<13>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<12>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<11>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<10>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<9>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<8>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<7>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<6>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<5>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<4>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<3>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<3>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<4>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<5>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<6>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<7>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<8>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<9>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<10>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<11>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<12>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<13>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<14>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<15>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<16>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<17>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<18>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<19>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<20>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<21>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<22>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<23>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<24>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<25>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<26>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<27>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<28>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<29>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_cy<30>_rt
+LUT1
+		memc3_tb_top_inst/init_mem_pattern_ctr_p0/Madd_current_address[31]_GND_1001_o_
+add_6_OUT_cy<14>_rt
+LUT1
+		memc3_tb_top_inst/init_mem_pattern_ctr_p0/Madd_current_address[31]_GND_1001_o_
+add_6_OUT_cy<13>_rt
+LUT1
+		memc3_tb_top_inst/init_mem_pattern_ctr_p0/Madd_current_address[31]_GND_1001_o_
+add_6_OUT_cy<12>_rt
+LUT1
+		memc3_tb_top_inst/init_mem_pattern_ctr_p0/Madd_current_address[31]_GND_1001_o_
+add_6_OUT_cy<11>_rt
+LUT1
+		memc3_tb_top_inst/init_mem_pattern_ctr_p0/Madd_current_address[31]_GND_1001_o_
+add_6_OUT_cy<10>_rt
+LUT1
+		memc3_tb_top_inst/init_mem_pattern_ctr_p0/Madd_current_address[31]_GND_1001_o_
+add_6_OUT_cy<9>_rt
+LUT1
+		memc3_tb_top_inst/init_mem_pattern_ctr_p0/Madd_current_address[31]_GND_1001_o_
+add_6_OUT_cy<8>_rt
+LUT1
+		memc3_tb_top_inst/init_mem_pattern_ctr_p0/Madd_current_address[31]_GND_1001_o_
+add_6_OUT_cy<7>_rt
+LUT1
+		memc3_tb_top_inst/init_mem_pattern_ctr_p0/Madd_current_address[31]_GND_1001_o_
+add_6_OUT_cy<6>_rt
+LUT1
+		memc3_tb_top_inst/init_mem_pattern_ctr_p0/Madd_current_address[31]_GND_1001_o_
+add_6_OUT_cy<5>_rt
+LUT1
+		memc3_tb_top_inst/init_mem_pattern_ctr_p0/Madd_current_address[31]_GND_1001_o_
+add_6_OUT_cy<4>_rt
+LUT1
+		memc3_tb_top_inst/init_mem_pattern_ctr_p0/Madd_current_address[31]_GND_1001_o_
+add_6_OUT_cy<3>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_dec_xor<7>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_counter_inc_xor<7>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Mcount_WAIT_200us_COUNTER_xor<15>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Mcount_force_rd_counts_xor<3>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl
+2.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_xor<31>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo
+/Maccum_rd_data_counts_asked_xor<6>_rt
+LUT1
+		memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_ins
+t/s6_wdgen.sp6_data_gen_inst/Madd_adata[31]_GND_1021_o_add_34_OUT_xor<31>_rt
+LUT1
+		memc3_tb_top_inst/init_mem_pattern_ctr_p0/Madd_current_address[31]_GND_1001_o_
+add_6_OUT_xor<15>_rt
+LUT1
+		memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibrat
+ion_top_inst/mcb_soft_calibration_inst/Madd_n0489_Madd_cy<1>_rt
+INV 		memc3_infrastructure_inst/locked_INV1_INV_0
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| c3_sys_clk                         | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| c3_sys_rst_i                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
+| calib_done                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| error                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| mcb3_dram_a<0>                     | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<1>                     | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<2>                     | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<3>                     | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<4>                     | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<5>                     | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<6>                     | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<7>                     | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<8>                     | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<9>                     | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<10>                    | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<11>                    | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_a<12>                    | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_ba<0>                    | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_ba<1>                    | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_cas_n                    | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_ck                       | IOB              | OUTPUT    | DIFF_MOBILE_DDR      |       |          |      | OSERDES      |          |          |
+| mcb3_dram_ck_n                     | IOB              | OUTPUT    | DIFF_MOBILE_DDR      |       |          |      | OSERDES      |          |          |
+| mcb3_dram_cke                      | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_dm                       | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<0>                    | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<1>                    | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<2>                    | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<3>                    | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<4>                    | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<5>                    | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<6>                    | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<7>                    | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<8>                    | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<9>                    | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<10>                   | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<11>                   | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<12>                   | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<13>                   | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<14>                   | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dq<15>                   | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_dqs                      | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              | PULLDOWN |          |
+| mcb3_dram_ras_n                    | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_dram_udm                      | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      |              |          |          |
+| mcb3_dram_udqs                     | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              | PULLDOWN |          |
+| mcb3_dram_we_n                     | IOB              | OUTPUT    | MOBILE_DDR           |       |          |      | OSERDES      |          |          |
+| mcb3_rzq                           | IOB              | BIDIR     | MOBILE_DDR           |       |          |      |              |          | DEFAULT  |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+PLL_ADV "memc3_infrastructure_inst/u_pll_adv":
+BANDWIDTH:OPTIMIZED
+CLK_FEEDBACK:CLKFBOUT
+COMPENSATION:INTERNAL
+PLL_ADD_LEAKAGE:2
+PLL_AVDD_COMP_SET:2
+PLL_CLAMP_BYPASS:FALSE
+PLL_CLAMP_REF_SEL:1
+PLL_CLK0MX:0
+PLL_CLK1MX:0
+PLL_CLK2MX:0
+PLL_CLK3MX:0
+PLL_CLK4MX:0
+PLL_CLK5MX:0
+PLL_CLKBURST_CNT:0
+PLL_CLKBURST_ENABLE:TRUE
+PLL_CLKCNTRL:0
+PLL_CLKFBMX:0
+PLL_CLKFBOUT2_EDGE:TRUE
+PLL_CLKFBOUT2_NOCOUNT:TRUE
+PLL_CLKFBOUT_EDGE:TRUE
+PLL_CLKFBOUT_EN:FALSE
+PLL_CLKFBOUT_NOCOUNT:TRUE
+PLL_CLKOUT0_EDGE:TRUE
+PLL_CLKOUT0_EN:FALSE
+PLL_CLKOUT0_NOCOUNT:TRUE
+PLL_CLKOUT1_EDGE:TRUE
+PLL_CLKOUT1_EN:FALSE
+PLL_CLKOUT1_NOCOUNT:TRUE
+PLL_CLKOUT2_EDGE:TRUE
+PLL_CLKOUT2_EN:FALSE
+PLL_CLKOUT2_NOCOUNT:TRUE
+PLL_CLKOUT3_EDGE:TRUE
+PLL_CLKOUT3_EN:FALSE
+PLL_CLKOUT3_NOCOUNT:TRUE
+PLL_CLKOUT4_EDGE:TRUE
+PLL_CLKOUT4_EN:FALSE
+PLL_CLKOUT4_NOCOUNT:TRUE
+PLL_CLKOUT5_EDGE:TRUE
+PLL_CLKOUT5_EN:FALSE
+PLL_CLKOUT5_NOCOUNT:TRUE
+PLL_CLK_LOST_DETECT:FALSE
+PLL_CP:1
+PLL_CP_BIAS_TRIP_SHIFT:TRUE
+PLL_CP_REPL:1
+PLL_CP_RES:0
+PLL_DIRECT_PATH_CNTRL:TRUE
+PLL_DIVCLK_EDGE:TRUE
+PLL_DIVCLK_NOCOUNT:TRUE
+PLL_DVDD_COMP_SET:2
+PLL_EN:FALSE
+PLL_EN_DLY:TRUE
+PLL_EN_LEAKAGE:2
+PLL_EN_TCLK0:TRUE
+PLL_EN_TCLK1:TRUE
+PLL_EN_TCLK2:TRUE
+PLL_EN_TCLK3:TRUE
+PLL_EN_VCO0:FALSE
+PLL_EN_VCO1:FALSE
+PLL_EN_VCO2:FALSE
+PLL_EN_VCO3:FALSE
+PLL_EN_VCO4:FALSE
+PLL_EN_VCO5:FALSE
+PLL_EN_VCO6:FALSE
+PLL_EN_VCO7:FALSE
+PLL_EN_VCO_DIV1:FALSE
+PLL_EN_VCO_DIV6:TRUE
+PLL_INTFB:0
+PLL_IO_CLKSRC:0
+PLL_LFHF:3
+PLL_LOCK_FB_DLY:3
+PLL_LOCK_REF_DLY:5
+PLL_MAN_LF_EN:TRUE
+PLL_NBTI_EN:TRUE
+PLL_PFD_CNTRL:8
+PLL_PFD_DLY:1
+PLL_PWRD_CFG:FALSE
+PLL_REG_INPUT:TRUE
+PLL_RES:1
+PLL_SEL_SLIPD:FALSE
+PLL_SKEW_CNTRL:0
+PLL_TEST_IN_WINDOW:FALSE
+PLL_VDD_SEL:0
+PLL_VLFHIGH_DIS:TRUE
+CLKFBOUT_MULT = 4
+CLKFBOUT_PHASE = 0.0
+CLKIN1_PERIOD = 10
+CLKIN2_PERIOD = 10
+CLKOUT0_DIVIDE = 2
+CLKOUT0_DUTY_CYCLE = 0.5
+CLKOUT0_PHASE = 0.0
+CLKOUT1_DIVIDE = 2
+CLKOUT1_DUTY_CYCLE = 0.5
+CLKOUT1_PHASE = 180.0
+CLKOUT2_DIVIDE = 16
+CLKOUT2_DUTY_CYCLE = 0.5
+CLKOUT2_PHASE = 0.0
+CLKOUT3_DIVIDE = 8
+CLKOUT3_DUTY_CYCLE = 0.5
+CLKOUT3_PHASE = 0.0
+CLKOUT4_DIVIDE = 1
+CLKOUT4_DUTY_CYCLE = 0.5
+CLKOUT4_PHASE = 0.0
+CLKOUT5_DIVIDE = 1
+CLKOUT5_DUTY_CYCLE = 0.5
+CLKOUT5_PHASE = 0.0
+DIVCLK_DIVIDE = 1
+REF_JITTER = 0.005
+
+
+
+Section 12 - Control Set Information
+------------------------------------
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Clock Signal   | Reset Signal                                                                                                                                                                 | Set Signal | Enable Signal                                                                                                                                             | Slice Load Count | Bel Load Count |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| c3_clk0        |                                                                                                                                                                              |            |                                                                                                                                                           | 54               | 143            |
+| c3_clk0        |                                                                                                                                                                              |            | GLOBAL_LOGIC1                                                                                                                                             | 1                | 2              |
+| c3_clk0        |                                                                                                                                                                              |            | memc3_tb_top_inst/init_mem_pattern_ctr_p0/_n0183_inv                                                                                                      | 2                | 14             |
+| c3_clk0        |                                                                                                                                                                              |            | memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2.sp6_data_gen_inst/_n0125_inv                                              | 8                | 32             |
+| c3_clk0        |                                                                                                                                                                              |            | memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo/wr_en                                                                      | 7                | 52             |
+| c3_clk0        |                                                                                                                                                                              |            | memc3_tb_top_inst/m_traffic_gen_p0/mcb_control/push_cmd                                                                                                   | 4                | 15             |
+| c3_clk0        |                                                                                                                                                                              |            | memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/_n0593_inv                                                                                                     | 1                | 2              |
+| c3_clk0        |                                                                                                                                                                              |            | memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/_n0696_inv                                                                                                     | 1                | 8              |
+| c3_clk0        |                                                                                                                                                                              |            | memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/_n0699_inv                                                                                                     | 1                | 6              |
+| c3_clk0        |                                                                                                                                                                              |            | memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/_n0702_inv                                                                                                     | 6                | 38             |
+| c3_clk0        |                                                                                                                                                                              |            | memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/mode_load_pulse                                                                                                | 1                | 2              |
+| c3_clk0        |                                                                                                                                                                              |            | memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/xhdl11.instr_prbs_gen_b/_n0020_inv                                                                             | 10               | 40             |
+| c3_clk0        |                                                                                                                                                                              |            | memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst/s6_wdgen.sp6_data_gen_inst/_n0125_inv                                     | 4                | 30             |
+| c3_clk0        | c3_sys_rst_i_IBUF                                                                                                                                                            |            | c3_pll_lock                                                                                                                                               | 1                | 1              |
+| c3_clk0        | memc3_infrastructure_inst/rst0_sync_r<24>                                                                                                                                    |            |                                                                                                                                                           | 1                | 4              |
+| c3_clk0        | memc3_infrastructure_inst/rst0_sync_r<24>_3                                                                                                                                  |            |                                                                                                                                                           | 1                | 1              |
+| c3_clk0        | memc3_infrastructure_inst/rst_tmp                                                                                                                                            |            |                                                                                                                                                           | 5                | 29             |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/cmp_data_en_inv                                                                                               |            |                                                                                                                                                           | 2                | 2              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_ra<0>                                                                                                                                 |            |                                                                                                                                                           | 6                | 8              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_ra<2>                                                                                                                                 |            |                                                                                                                                                           | 2                | 2              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_ra<4>                                                                                                                                 |            |                                                                                                                                                           | 2                | 2              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_ra<4>                                                                                                                                 |            | memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/instr_vld                                                                                                      | 1                | 4              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_ra<8>                                                                                                                                 |            |                                                                                                                                                           | 2                | 2              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_ra<9>                                                                                                                                 |            | memc3_tb_top_inst/m_traffic_gen_p0/mcb_control/xfer_cmd                                                                                                   | 5                | 15             |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_ra<0>_1                                                                                                                               |            | c3_p0_rd_en                                                                                                                                               | 2                | 7              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_ra<0>_1                                                                                                                               |            | memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/instr_vld_dly1_pipe_data_in[32]_AND_49_o                                                                       | 2                | 7              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<0>                                                                                                                                 |            |                                                                                                                                                           | 1                | 2              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<0>                                                                                                                                 |            | c3_p0_rd_en                                                                                                                                               | 1                | 3              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<0>                                                                                                                                 |            | memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/_n0066_inv                                                                      | 4                | 7              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<0>                                                                                                                                 |            | memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo/cmd_en_i_cmd_sent[0]_AND_132_o                                             | 2                | 7              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<5>                                                                                                                                 |            | memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst/_n0085_inv                                                                | 3                | 7              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<0>_1                                                                                                                               |            |                                                                                                                                                           | 3                | 3              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<0>_1                                                                                                                               |            | c3_p0_rd_en                                                                                                                                               | 1                | 4              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<0>_1                                                                                                                               |            | memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/cmd_start                                                                       | 1                | 5              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<0>_1                                                                                                                               |            | memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo/_n0093_inv                                                                 | 1                | 2              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/rst_rb<0>_1                                                                                                                               |            | memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo/wr_en                                                                      | 1                | 5              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/Reset_OR_DriverANDClockEnable1                                                                                                    |            | memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/_n0747_inv1                                                                                                    | 2                | 5              |
+| c3_clk0        | memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/_n0522                                                                                                                            |            | memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/_n0593_inv                                                                                                     | 1                | 6              |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| c3_mcb_drp_clk |                                                                                                                                                                              |            |                                                                                                                                                           | 18               | 31             |
+| c3_mcb_drp_clk |                                                                                                                                                                              |            | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_RDY_BUSY_N                       | 4                | 13             |
+| c3_mcb_drp_clk |                                                                                                                                                                              |            | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd8 | 3                | 12             |
+| c3_mcb_drp_clk | c3_sys_rst_i_IBUF                                                                                                                                                            |            | c3_pll_lock                                                                                                                                               | 1                | 1              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/IODRPCTRLR_RDY_BUSY_N_0                                 |            |                                                                                                                                                           | 3                | 3              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/IODRPCTRLR_RDY_BUSY_N_1                                 |            |                                                                                                                                                           | 2                | 2              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_RDY_BUSY_N_0                                        |            |                                                                                                                                                           | 9                | 12             |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/MCB_RDY_BUSY_N_1                                        |            |                                                                                                                                                           | 9                | 12             |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Mcount_count_val                                        |            |                                                                                                                                                           | 1                | 6              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg                                                 |            |                                                                                                                                                           | 36               | 77             |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg                                                 |            | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE__n1828_inv1                    | 3                | 7              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg                                                 |            | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/_n1004_inv                           | 1                | 3              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg                                                 |            | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/_n1239_inv                           | 3                | 7              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg                                                 |            | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/_n1315_inv                           | 6                | 13             |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg                                                 |            | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/_n1402_inv                           | 2                | 7              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg                                                 |            | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/_n1500_inv                           | 1                | 2              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg                                                 |            | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/_n1599_inv                           | 2                | 8              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg                                                 |            | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/_n1647_inv                           | 2                | 8              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg                                                 |            | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state_FSM_FFd4 | 2                | 8              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE[5]_PWR_14_o_equal_23_o_inv                        |            |                                                                                                                                                           | 1                | 4              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/state[2]_sync_rst_AND_5_o_inv     |            |                                                                                                                                                           | 1                | 3              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/GND_42_o_sync_rst_AND_7_o_inv |            |                                                                                                                                                           | 1                | 3              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/non_violating_rst                                       |            |                                                                                                                                                           | 1                | 1              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst                                                                                                                    |            |                                                                                                                                                           | 3                | 5              |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst                                                                                                                    |            | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/WAIT_200us_COUNTER<15>_inv           | 4                | 16             |
+| c3_mcb_drp_clk | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst                                                                                                                    |            | memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/_n0904_inv                           | 2                | 5              |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module                                          | Partition | Slices*       | Slice Reg     | LUTs          | LUTRAM        | BRAM/FIFO | DSP48A1 | BUFG  | BUFIO | BUFR  | DCM   | PLL_ADV   | Full Hierarchical Name                                                                                                                                      |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| example_top/                                    |           | 0/390         | 0/739         | 0/997         | 0/30          | 0/0       | 0/0     | 0/1   | 0/0   | 0/0   | 0/0   | 0/1       | example_top                                                                                                                                                 |
+| +memc3_infrastructure_inst                      |           | 7/7           | 31/31         | 12/12         | 0/0           | 0/0       | 0/0     | 1/1   | 0/0   | 0/0   | 0/0   | 1/1       | example_top/memc3_infrastructure_inst                                                                                                                       |
+| +memc3_tb_top_inst                              |           | 0/212         | 0/440         | 0/541         | 0/30          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst                                                                                                                               |
+| ++init_mem_pattern_ctr_p0                       |           | 18/18         | 24/24         | 34/34         | 1/1           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/init_mem_pattern_ctr_p0                                                                                                       |
+| ++m_traffic_gen_p0                              |           | 6/194         | 14/416        | 1/507         | 1/29          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0                                                                                                              |
+| +++RD_PATH.read_data_path_inst                  |           | 19/67         | 68/147        | 45/201        | 0/28          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst                                                                                  |
+| ++++rd_datagen                                  |           | 5/22          | 9/41          | 16/79         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen                                                                       |
+| +++++xhdl2.sp6_data_gen_inst                    |           | 17/17         | 32/32         | 63/63         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/rd_datagen/xhdl2.sp6_data_gen_inst                                               |
+| ++++read_postedfifo                             |           | 13/26         | 26/38         | 31/77         | 0/28          | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo                                                                  |
+| +++++rd_fifo                                    |           | 13/13         | 12/12         | 46/46         | 28/28         | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo/rd_fifo                                                          |
+| +++mcb_control                                  |           | 23/23         | 41/41         | 32/32         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/mcb_control                                                                                                  |
+| +++tg_status_inst                               |           | 1/1           | 2/2           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/tg_status_inst                                                                                               |
+| +++u_c_gen                                      |           | 59/75         | 99/171        | 163/219       | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen                                                                                                      |
+| ++++xhdl11.instr_prbs_gen_a                     |           | 6/6           | 20/20         | 19/19         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/xhdl11.instr_prbs_gen_a                                                                              |
+| ++++xhdl11.instr_prbs_gen_b                     |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/xhdl11.instr_prbs_gen_b                                                                              |
+| ++++xhdl13.bl_prbs_gen                          |           | 5/5           | 20/20         | 20/20         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/xhdl13.bl_prbs_gen                                                                                   |
+| ++++xhdl5.addr_prbs_gen                         |           | 4/4           | 32/32         | 16/16         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/u_c_gen/xhdl5.addr_prbs_gen                                                                                  |
+| +++xhdl18.write_data_path_inst                  |           | 1/22          | 0/41          | 1/53          | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst                                                                                  |
+| ++++wr_data_gen_inst                            |           | 8/21          | 11/41         | 19/52         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst                                                                 |
+| +++++s6_wdgen.sp6_data_gen_inst                 |           | 13/13         | 30/30         | 33/33         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_tb_top_inst/m_traffic_gen_p0/xhdl18.write_data_path_inst/wr_data_gen_inst/s6_wdgen.sp6_data_gen_inst                                      |
+| +memc3_wrapper_inst                             |           | 0/171         | 0/268         | 0/444         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_wrapper_inst                                                                                                                              |
+| ++memc3_mcb_raw_wrapper_inst                    |           | 3/171         | 2/268         | 2/444         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst                                                                                                   |
+| +++gen_term_calib.mcb_soft_calibration_top_inst |           | 1/168         | 0/266         | 1/442         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst                                                      |
+| ++++mcb_soft_calibration_inst                   |           | 137/167       | 192/266       | 391/441       | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst                            |
+| +++++iodrp_controller_inst                      |           | 15/15         | 42/42         | 22/22         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst      |
+| +++++iodrp_mcb_controller_inst                  |           | 15/15         | 32/32         | 28/28         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | example_top/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

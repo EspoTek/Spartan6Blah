@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/esposch/Git/Spartan6Blah/lpddr_demo/ipcore_dir/mig_100mhz_lpddr/example_design/par/example_top.ncd
+OUTFILE=/home/esposch/Git/Spartan6Blah/lpddr_demo/ipcore_dir/mig_100mhz_lpddr/example_design/par/example_top.bit
+FAMILY=Spartan6
+PART=xc6slx45-2csg324
+WORKINGDIR=/home/esposch/Git/Spartan6Blah/lpddr_demo/ipcore_dir/mig_100mhz_lpddr/example_design/par
+LICENSE=WebPack
+USER_INFO=211376204_0_0_935

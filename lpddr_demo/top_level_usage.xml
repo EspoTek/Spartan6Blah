@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="1">
+<DesignStatistics TimeStamp="Mon Jan  8 15:17:40 2018"><group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="1">
+<attrib name="value" value="45"/></item>
+<item name="AGG_IO" rev="1">
+<attrib name="value" value="45"/></item>
+<item name="AGG_LOCED_IO" rev="1">
+<attrib name="value" value="45"/></item>
+<item name="AGG_SLICE" rev="1">
+<attrib name="value" value="136"/></item>
+<item name="NUM_BONDED_IOB" rev="1">
+<attrib name="value" value="45"/></item>
+<item name="NUM_BSFULL" rev="1">
+<attrib name="value" value="177"/></item>
+<item name="NUM_BSLUTONLY" rev="1">
+<attrib name="value" value="198"/></item>
+<item name="NUM_BSREGONLY" rev="1">
+<attrib name="value" value="29"/></item>
+<item name="NUM_BSUSED" rev="1">
+<attrib name="value" value="404"/></item>
+<item name="NUM_BUFGMUX" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_BUFIO2" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_BUFPLL_MCB" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_IODRP2" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_IODRP2_MCB" rev="1">
+<attrib name="value" value="22"/></item>
+<item name="NUM_LOCED_IOB" rev="1">
+<attrib name="value" value="45"/></item>
+<item name="NUM_LOGIC_O5ANDO6" rev="1">
+<attrib name="value" value="67"/></item>
+<item name="NUM_LOGIC_O5ONLY" rev="1">
+<attrib name="value" value="14"/></item>
+<item name="NUM_LOGIC_O6ONLY" rev="1">
+<attrib name="value" value="293"/></item>
+<item name="NUM_LUT_RT_DRIVES_CARRY4" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_LUT_RT_EXO6" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_LUT_RT_O6" rev="1">
+<attrib name="value" value="14"/></item>
+<item name="NUM_MCB" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_OSERDES2" rev="1">
+<attrib name="value" value="43"/></item>
+<item name="NUM_PLL_ADV" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_SLICEL" rev="1">
+<attrib name="value" value="26"/></item>
+<item name="NUM_SLICEX" rev="1">
+<attrib name="value" value="110"/></item>
+<item name="NUM_SLICE_CARRY4" rev="1">
+<attrib name="value" value="16"/></item>
+<item name="NUM_SLICE_CONTROLSET" rev="1">
+<attrib name="value" value="26"/></item>
+<item name="NUM_SLICE_CYINIT" rev="1">
+<attrib name="value" value="459"/></item>
+<item name="NUM_SLICE_F7MUX" rev="1">
+<attrib name="value" value="10"/></item>
+<item name="NUM_SLICE_FF" rev="1">
+<attrib name="value" value="218"/></item>
+<item name="NUM_SLICE_UNUSEDCTRL" rev="1">
+<attrib name="value" value="45"/></item>
+<item name="NUM_UNUSABLE_FF_BELS" rev="1">
+<attrib name="value" value="86"/></item>
+</group>
+</DesignStatistics>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>
