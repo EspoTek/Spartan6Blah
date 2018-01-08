@@ -1,0 +1,32 @@
+Release 14.7 ngcbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngcbuild -dd
+/home/esposch/Git/Spartan6Blah/espodebugtest/_ngo -p xc6slx45-csg324-2 -i
+/home/esposch/Git/Spartan6Blah/espodebugtest/top_level.ngc
+/home/esposch/Git/Spartan6Blah/espodebugtest/top_level_cs.ngc
+
+Prepending components to an absolute path is invalid.
+Reading NGO file "/home/esposch/Git/Spartan6Blah/espodebugtest/top_level.ngc"
+...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 405368 kilobytes
+
+Writing NGC file "/home/esposch/Git/Spartan6Blah/espodebugtest/top_level_cs.ngc"
+...
+Total REAL time to NGCBUILD completion:  1 sec
+Total CPU time to NGCBUILD completion:   1 sec
+
+Writing NGCBUILD log file
+"/home/esposch/Git/Spartan6Blah/espodebugtest/top_level_cs.blc"...

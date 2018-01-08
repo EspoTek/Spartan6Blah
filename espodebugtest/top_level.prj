@@ -1,0 +1,3 @@
+vhdl work "one_hot_counter.vhd"
+vhdl work "binary_counter.vhd"
+vhdl work "top_level.vhd"

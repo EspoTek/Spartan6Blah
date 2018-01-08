@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/esposch/Git/Spartan6Blah/espodebugtest/impact.xsl
+OUTFILE=/home/esposch/Git/Spartan6Blah/espodebugtest/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/home/esposch/Git/Spartan6Blah/espodebugtest
+LICENSE=iMPACT
+USER_INFO=iMPACT

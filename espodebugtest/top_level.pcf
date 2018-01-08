@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Jan 08 13:48:14 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+CONFIG VCCAUX = "3.3";
+COMP "edb_led_yellow_out<0>" LOCATE = SITE "U15" LEVEL 1;
+COMP "edb_led_yellow_out<1>" LOCATE = SITE "U17" LEVEL 1;
+COMP "edb_led_yellow_out<2>" LOCATE = SITE "P15" LEVEL 1;
+COMP "edb_led_yellow_out<3>" LOCATE = SITE "N15" LEVEL 1;
+COMP "CLK_100" LOCATE = SITE "V10" LEVEL 1;
+COMP "edb_led_white_out<0>" LOCATE = SITE "L15" LEVEL 1;
+COMP "edb_led_white_out<1>" LOCATE = SITE "M14" LEVEL 1;
+COMP "edb_led_white_out<2>" LOCATE = SITE "L14" LEVEL 1;
+COMP "edb_led_green_out<0>" LOCATE = SITE "M8" LEVEL 1;
+COMP "edb_led_white_out<3>" LOCATE = SITE "K12" LEVEL 1;
+COMP "edb_led_green_out<1>" LOCATE = SITE "R8" LEVEL 1;
+COMP "edb_led_green_out<2>" LOCATE = SITE "M10" LEVEL 1;
+COMP "edb_led_green_out<3>" LOCATE = SITE "U11" LEVEL 1;
+COMP "edb_led_red_out<0>" LOCATE = SITE "N6" LEVEL 1;
+COMP "edb_led_red_out<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "edb_led_red_out<2>" LOCATE = SITE "M11" LEVEL 1;
+COMP "edb_led_red_out<3>" LOCATE = SITE "U13" LEVEL 1;
+SCHEMATIC END;
+
