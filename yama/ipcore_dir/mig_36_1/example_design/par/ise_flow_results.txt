@@ -2740,53 +2740,53 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 5 secs 
-Total CPU  time at the beginning of Placer: 5 secs 
+Total REAL time at the beginning of Placer: 4 secs 
+Total CPU  time at the beginning of Placer: 4 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:4f4198be) REAL time: 6 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:8aa89fef) REAL time: 5 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:4f4198be) REAL time: 6 secs 
+Phase 2.7  Design Feasibility Check (Checksum:8aa89fef) REAL time: 6 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:4f4198be) REAL time: 6 secs 
+Phase 3.31  Local Placement Optimization (Checksum:8aa89fef) REAL time: 6 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:9871a1e8) REAL time: 15 secs 
+(Checksum:8c78cfa8) REAL time: 14 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:9871a1e8) REAL time: 15 secs 
+Phase 5.36  Local Placement Optimization (Checksum:8c78cfa8) REAL time: 14 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:9871a1e8) REAL time: 15 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:8c78cfa8) REAL time: 14 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:9871a1e8) REAL time: 15 secs 
+Phase 7.3  Local Placement Optimization (Checksum:8c78cfa8) REAL time: 14 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:9871a1e8) REAL time: 15 secs 
+Phase 8.5  Local Placement Optimization (Checksum:8c78cfa8) REAL time: 14 secs 
 
 Phase 9.8  Global Placement
-............................
-...........................
-Phase 9.8  Global Placement (Checksum:13bdd082) REAL time: 16 secs 
+.........................................
+...........
+Phase 9.8  Global Placement (Checksum:98d73eb1) REAL time: 15 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:13bdd082) REAL time: 16 secs 
+Phase 10.5  Local Placement Optimization (Checksum:98d73eb1) REAL time: 15 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:14f2c36) REAL time: 17 secs 
+Phase 11.18  Placement Optimization (Checksum:83e55321) REAL time: 17 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:14f2c36) REAL time: 17 secs 
+Phase 12.5  Local Placement Optimization (Checksum:83e55321) REAL time: 17 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:be9ad518) REAL time: 17 secs 
+Phase 13.34  Placement Validation (Checksum:3700e07b) REAL time: 17 secs 
 
-Total REAL time to Placer completion: 18 secs 
+Total REAL time to Placer completion: 17 secs 
 Total CPU  time to Placer completion: 17 secs 
 Running post-placement packing...
 Writing output files...
@@ -2800,7 +2800,7 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        858 out of  27,288    3%
+  Number of Slice LUTs:                        851 out of  27,288    3%
     Number used as logic:                      782 out of  27,288    2%
       Number using O6 output only:             508
       Number using O5 output only:              86
@@ -2816,18 +2816,18 @@ Slice Logic Utilization:
         Number using O6 output only:             2
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:     46
-      Number with same-slice register load:     39
+    Number used exclusively as route-thrus:     39
+      Number with same-slice register load:     32
       Number with same-slice carry load:         7
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   297 out of   6,822    4%
+  Number of occupied Slices:                   298 out of   6,822    4%
   Number of MUXCYs used:                       268 out of  13,644    1%
-  Number of LUT Flip Flop pairs used:          943
-    Number with an unused Flip Flop:           370 out of     943   39%
-    Number with an unused LUT:                  85 out of     943    9%
-    Number of fully used LUT-FF pairs:         488 out of     943   51%
+  Number of LUT Flip Flop pairs used:          930
+    Number with an unused Flip Flop:           352 out of     930   37%
+    Number with an unused LUT:                  79 out of     930    8%
+    Number of fully used LUT-FF pairs:         499 out of     930   53%
     Number of unique control sets:              59
     Number of slice register sites lost
       to control set restrictions:             190 out of  54,576    1%
@@ -2905,7 +2905,7 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        858 out of  27,288    3%
+  Number of Slice LUTs:                        851 out of  27,288    3%
     Number used as logic:                      782 out of  27,288    2%
       Number using O6 output only:             508
       Number using O5 output only:              86
@@ -2921,18 +2921,18 @@ Slice Logic Utilization:
         Number using O6 output only:             2
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:     46
-      Number with same-slice register load:     39
+    Number used exclusively as route-thrus:     39
+      Number with same-slice register load:     32
       Number with same-slice carry load:         7
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   297 out of   6,822    4%
+  Number of occupied Slices:                   298 out of   6,822    4%
   Number of MUXCYs used:                       268 out of  13,644    1%
-  Number of LUT Flip Flop pairs used:          943
-    Number with an unused Flip Flop:           370 out of     943   39%
-    Number with an unused LUT:                  85 out of     943    9%
-    Number of fully used LUT-FF pairs:         488 out of     943   51%
+  Number of LUT Flip Flop pairs used:          930
+    Number with an unused Flip Flop:           352 out of     930   37%
+    Number with an unused LUT:                  79 out of     930    8%
+    Number of fully used LUT-FF pairs:         499 out of     930   53%
     Number of slice register sites lost
       to control set restrictions:               0 out of  54,576    0%
 
@@ -2985,9 +2985,11 @@ Router effort level (-rl):    Standard
 Starting initial Timing Analysis.  REAL time: 3 secs 
 Finished initial Timing Analysis.  REAL time: 3 secs 
 
-WARNING:Par:288 - The signal memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo/rd_fifo/Mram_mem1_RAMD_D1_O has
-   no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo/rd_fifo/Mram_mem2_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo/rd_fifo/Mram_mem6_RAMD_D1_O has
+   no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo/rd_fifo/Mram_mem1_RAMD_D1_O has
    no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo/rd_fifo/Mram_mem3_RAMD_D1_O has
    no load.  PAR will not attempt to route this signal.
@@ -2995,18 +2997,16 @@ WARNING:Par:288 - The signal memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_dat
    no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo/rd_fifo/Mram_mem5_RAMD_D1_O has
    no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfifo/rd_fifo/Mram_mem6_RAMD_D1_O has
-   no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 5582 unrouted;      REAL time: 4 secs 
+Phase  1  : 5577 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 4359 unrouted;      REAL time: 4 secs 
+Phase  2  : 4351 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 1378 unrouted;      REAL time: 5 secs 
+Phase  3  : 1361 unrouted;      REAL time: 5 secs 
 
-Phase  4  : 1378 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  4  : 1361 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
 
 Updating file: example_top.ncd with current fully routed design.
 
@@ -3040,9 +3040,9 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|             c3_clk0 | BUFGMUX_X3Y13| No   |  149 |  0.058     |  1.773      |
+|             c3_clk0 | BUFGMUX_X3Y13| No   |  151 |  0.041     |  1.772      |
 +---------------------+--------------+------+------+------------+-------------+
-|      c3_mcb_drp_clk |  BUFGMUX_X2Y3| No   |   91 |  0.079     |  1.809      |
+|      c3_mcb_drp_clk |  BUFGMUX_X2Y3| No   |   90 |  0.068     |  1.809      |
 +---------------------+--------------+------+------+------------+-------------+
 |        c3_sysclk_2x |         Local|      |   31 |  0.704     |  1.551      |
 +---------------------+--------------+------+------+------------+-------------+
@@ -3105,13 +3105,13 @@ Asterisk (*) preceding a constraint indicates it was not met.
   TS_SYS_CLK3 = PERIOD TIMEGRP "SYS_CLK3" 1 | MINLOWPULSE |     6.666ns|     3.334ns|       0|           0
   0 ns HIGH 50%                             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_memc3_infrastructure_inst_mcb_drp_clk_ | SETUP       |    12.441ns|     7.559ns|       0|           0
-  bufg_in = PERIOD TIMEGRP         "memc3_i | HOLD        |     0.404ns|            |       0|           0
+  TS_memc3_infrastructure_inst_mcb_drp_clk_ | SETUP       |    12.537ns|     7.463ns|       0|           0
+  bufg_in = PERIOD TIMEGRP         "memc3_i | HOLD        |     0.413ns|            |       0|           0
   nfrastructure_inst_mcb_drp_clk_bufg_in" T |             |            |            |        |            
   S_SYS_CLK3 / 0.5 HIGH         50%         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_memc3_infrastructure_inst_clk0_bufg_in | SETUP       |    16.813ns|    10.010ns|       0|           0
-   = PERIOD TIMEGRP         "memc3_infrastr | HOLD        |     0.390ns|            |       0|           0
+  TS_memc3_infrastructure_inst_clk0_bufg_in | SETUP       |    17.681ns|     8.700ns|       0|           0
+   = PERIOD TIMEGRP         "memc3_infrastr | HOLD        |     0.303ns|            |       0|           0
   ucture_inst_clk0_bufg_in" TS_SYS_CLK3 / 0 |             |            |            |        |            
   .25 HIGH 50%                              |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
@@ -3127,14 +3127,14 @@ Derived Constraints for TS_SYS_CLK3
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_SYS_CLK3                    |     10.000ns|      3.334ns|      3.780ns|            0|            0|            0|        21330|
-| TS_memc3_infrastructure_inst_m|     20.000ns|      7.559ns|          N/A|            0|            0|        12492|            0|
+|TS_SYS_CLK3                    |     10.000ns|      3.334ns|      3.732ns|            0|            0|            0|        21330|
+| TS_memc3_infrastructure_inst_m|     20.000ns|      7.463ns|          N/A|            0|            0|        12492|            0|
 | cb_drp_clk_bufg_in            |             |             |             |             |             |             |             |
 | TS_memc3_infrastructure_inst_c|      5.000ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | lk_2x_180                     |             |             |             |             |             |             |             |
 | TS_memc3_infrastructure_inst_c|      5.000ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | lk_2x_0                       |             |             |             |             |             |             |             |
-| TS_memc3_infrastructure_inst_c|     40.000ns|     10.010ns|          N/A|            0|            0|         8838|            0|
+| TS_memc3_infrastructure_inst_c|     40.000ns|      8.700ns|          N/A|            0|            0|         8838|            0|
 | lk0_bufg_in                   |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -3202,10 +3202,10 @@ Timing errors: 0  Score: 0 (Setup/Max: 0, Hold: 0)
 Constraints cover 21330 paths, 0 nets, and 3874 connections
 
 Design statistics:
-   Minimum period:  10.010ns (Maximum frequency:  99.900MHz)
+   Minimum period:   8.700ns (Maximum frequency: 114.943MHz)
 
 
-Analysis completed Tue Jan  2 16:40:22 2018
+Analysis completed Tue Jan  9 14:29:24 2018
 --------------------------------------------------------------------------------
 
 Generating Report ...
@@ -3215,11 +3215,15 @@ Number of info messages: 3
 Total time: 3 secs 
 WARNING:PhysDesignRules:367 - The signal
    <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
-   fo/rd_fifo/Mram_mem1_RAMD_D1_O> is incomplete. The signal does not drive any
+   fo/rd_fifo/Mram_mem2_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
-   fo/rd_fifo/Mram_mem2_RAMD_D1_O> is incomplete. The signal does not drive any
+   fo/rd_fifo/Mram_mem6_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
+   fo/rd_fifo/Mram_mem1_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
@@ -3232,8 +3236,4 @@ WARNING:PhysDesignRules:367 - The signal
 WARNING:PhysDesignRules:367 - The signal
    <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
    fo/rd_fifo/Mram_mem5_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
-   fo/rd_fifo/Mram_mem6_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.

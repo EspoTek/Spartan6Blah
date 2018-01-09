@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Jan 08 15:17:40 2018
+// Written by: Map P.20131013 on Tue Jan 09 14:27:26 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -48,6 +48,6 @@ COMP "mcb3_dram_dq<12>" LOCATE = SITE "T2" LEVEL 1;
 COMP "mcb3_dram_dq<13>" LOCATE = SITE "T1" LEVEL 1;
 COMP "mcb3_dram_dq<14>" LOCATE = SITE "U2" LEVEL 1;
 COMP "mcb3_dram_dq<15>" LOCATE = SITE "U1" LEVEL 1;
-COMP "c3_calib_done" LOCATE = SITE "K13" LEVEL 1;
+COMP "c3_calib_done" LOCATE = SITE "M8" LEVEL 1;
 SCHEMATIC END;
 

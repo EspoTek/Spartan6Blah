@@ -6,9 +6,9 @@ Loading device for application Rf_Device from file '6slx45.nph' in environment
 -2
 Opened constraints file example_top.pcf.
 
-Tue Jan  2 16:40:25 2018
+Tue Jan  9 14:29:26 2018
 
-/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g M2Pin:PullUp -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullNone -g UserID:0xFFFFFFFF -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:No -g DriveDone:No -g ConfigRate:6 example_top.ncd 
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:Yes -g CRC:Enable -g M2Pin:PullUp -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullNone -g UserID:0xFFFFFFFF -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:No -g DriveDone:No -g ConfigRate:6 example_top.ncd 
 
 Summary of Bitgen Options:
 +----------------------+----------------------+
@@ -120,23 +120,27 @@ Summary of Bitgen Options:
 +----------------------+----------------------+
 | IEEE1532             | No*                  |
 +----------------------+----------------------+
-| Binary               | No**                 |
+| Binary               | Yes                  |
 +----------------------+----------------------+
  *  Default setting.
  ** The specified setting matches the default setting.
 
 There were 1 CONFIG constraint(s) processed from example_top.pcf.
 
-   CONFIG VCCAUX = "2.5"
+   CONFIG VCCAUX = "3.3"
 
 Running DRC.
 WARNING:PhysDesignRules:367 - The signal
    <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
-   fo/rd_fifo/Mram_mem1_RAMD_D1_O> is incomplete. The signal does not drive any
+   fo/rd_fifo/Mram_mem2_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
-   fo/rd_fifo/Mram_mem2_RAMD_D1_O> is incomplete. The signal does not drive any
+   fo/rd_fifo/Mram_mem6_RAMD_D1_O> is incomplete. The signal does not drive any
+   load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
+   fo/rd_fifo/Mram_mem1_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
@@ -150,12 +154,9 @@ WARNING:PhysDesignRules:367 - The signal
    <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
    fo/rd_fifo/Mram_mem5_RAMD_D1_O> is incomplete. The signal does not drive any
    load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <memc3_tb_top_inst/m_traffic_gen_p0/RD_PATH.read_data_path_inst/read_postedfi
-   fo/rd_fifo/Mram_mem6_RAMD_D1_O> is incomplete. The signal does not drive any
-   load pins in the design.
 DRC detected 0 errors and 6 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 Creating bit map...
 Saving bit stream in "example_top.bit".
+Saving bit stream in "example_top.bin".
 Bitstream generation is complete.

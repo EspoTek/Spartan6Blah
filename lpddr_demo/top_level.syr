@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: top_level.prj
@@ -135,6 +135,9 @@ Parsing architecture <syn> of entity <memc3_infrastructure>.
 Parsing VHDL file "/home/esposch/Git/Spartan6Blah/lpddr_demo/ipcore_dir/mig_100mhz_lpddr/user_design/rtl/mig_100mhz_lpddr.vhd" into library work
 Parsing entity <mig_100mhz_lpddr>.
 Parsing architecture <arc> of entity <mig_100mhz_lpddr>.
+Parsing VHDL file "/home/esposch/Git/Spartan6Blah/lpddr_demo/dirty_ram_interface.vhd" into library work
+Parsing entity <dirty_ram_interface>.
+Parsing architecture <Behavioral> of entity <dirty_ram_interface>.
 Parsing VHDL file "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" into library work
 Parsing entity <top_level>.
 Parsing architecture <Behavioral> of entity <top_level>.
@@ -144,6 +147,8 @@ Parsing architecture <Behavioral> of entity <top_level>.
 =========================================================================
 
 Elaborating entity <top_level> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <dirty_ram_interface> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <mig_100mhz_lpddr> (architecture <arc>) with generics from library <work>.
 
@@ -181,17 +186,9 @@ WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/ipcore_dir/
 WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/ipcore_dir/mig_100mhz_lpddr/user_design/rtl/mcb_raw_wrapper.vhd" Line 7075: Comparison between arrays of unequal length always returns FALSE.
 WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/ipcore_dir/mig_100mhz_lpddr/user_design/rtl/mcb_raw_wrapper.vhd" Line 7086: Comparison between arrays of unequal length always returns FALSE.
 WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/ipcore_dir/mig_100mhz_lpddr/user_design/rtl/mcb_raw_wrapper.vhd" Line 7091: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 75: Net <c3_p0_cmd_clk> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 76: Net <c3_p0_cmd_en> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 77: Net <c3_p0_cmd_instr[2]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 78: Net <c3_p0_cmd_bl[5]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 79: Net <c3_p0_cmd_byte_addr[29]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 82: Net <c3_p0_wr_clk> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 83: Net <c3_p0_wr_en> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 84: Net <c3_p0_wr_mask[3]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 85: Net <c3_p0_wr_data[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 91: Net <c3_p0_rd_clk> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 92: Net <c3_p0_rd_en> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 76: Net <ram_instruction_pulse> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 77: Net <ram_address[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 79: Net <uart_data_to_write[7]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -213,35 +210,44 @@ Synthesizing Unit <top_level>.
         C3_NUM_DQ_PINS = 16
         C3_MEM_ADDR_WIDTH = 13
         C3_MEM_BANKADDR_WIDTH = 2
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_p0_wr_count> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_p0_rd_data> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_p0_rd_count> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_clk0> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_rst0> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_p0_cmd_empty> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_p0_cmd_full> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_p0_wr_full> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_p0_wr_empty> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_p0_wr_underrun> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_p0_wr_error> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_p0_rd_full> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_p0_rd_empty> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_p0_rd_overflow> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 166: Output port <c3_p0_rd_error> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <c3_p0_cmd_instr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <c3_p0_cmd_bl> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <c3_p0_cmd_byte_addr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <c3_p0_wr_mask> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <c3_p0_wr_data> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <c3_p0_cmd_clk> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <c3_p0_cmd_en> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <c3_p0_wr_clk> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <c3_p0_wr_en> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <c3_p0_rd_clk> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <c3_p0_rd_en> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 196: Output port <grant_access> of the instance <u_dirty> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_wr_count> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_rd_data> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_rd_count> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_cmd_full> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_wr_full> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_wr_underrun> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_wr_error> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_rd_full> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_rd_overflow> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_rd_error> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <ram_address> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <uart_data_to_write> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <ram_instruction_pulse> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <top_level> synthesized.
+
+Synthesizing Unit <dirty_ram_interface>.
+    Related source file is "/home/esposch/Git/Spartan6Blah/lpddr_demo/dirty_ram_interface.vhd".
+        C3_P0_MASK_SIZE = 4
+        C3_P0_DATA_PORT_SIZE = 32
+        C3_P1_MASK_SIZE = 4
+        C3_P1_DATA_PORT_SIZE = 32
+        C3_MEMCLK_PERIOD = 10000
+        C3_RST_ACT_LOW = 0
+        C3_INPUT_CLK_TYPE = "SINGLE_ENDED"
+        C3_CALIB_SOFT_IP = "TRUE"
+        C3_SIMULATION = "FALSE"
+        DEBUG_EN = 0
+        C3_MEM_ADDR_ORDER = "ROW_BANK_COLUMN"
+        C3_NUM_DQ_PINS = 16
+        C3_MEM_ADDR_WIDTH = 13
+        C3_MEM_BANKADDR_WIDTH = 2
+WARNING:Xst:647 - Input <c3_rst0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <dirty_ram_interface> synthesized.
 
 Synthesizing Unit <mig_100mhz_lpddr>.
     Related source file is "/home/esposch/Git/Spartan6Blah/lpddr_demo/ipcore_dir/mig_100mhz_lpddr/user_design/rtl/mig_100mhz_lpddr.vhd".
@@ -627,7 +633,7 @@ WARNING:Xst:653 - Signal <mcbx_dram_ddr3_rst> is used but never assigned. This s
     Found 1-bit tristate buffer for signal <mcbx_dram_udqs_n> created at line 418
     WARNING:Xst:2404 -  FFs/Latches <selfrefresh_enter_r1<0:0>> (without init value) have a constant value of 0 in block <mcb_raw_wrapper>.
     WARNING:Xst:2404 -  FFs/Latches <selfrefresh_enter_r2<0:0>> (without init value) have a constant value of 0 in block <mcb_raw_wrapper>.
-    WARNING:Xst:2404 -  FFs/Latches <selfrefresh_enter_r3<5:5>> (without init value) have a constant value of 0 in block <mcb_raw_wrapper>.
+    WARNING:Xst:2404 -  FFs/Latches <selfrefresh_enter_r3<0:0>> (without init value) have a constant value of 0 in block <mcb_raw_wrapper>.
     Summary:
 	inferred   3 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
@@ -773,35 +779,35 @@ INFO:Xst:1799 - State 111010 is never reached in FSM <STATE>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 16-bit adder for signal <WAIT_200us_COUNTER[15]_GND_40_o_add_13_OUT> created at line 632.
-    Found 10-bit adder for signal <RstCounter[9]_GND_40_o_add_17_OUT> created at line 694.
-    Found 4-bit adder for signal <pre_sysrst_cnt[3]_GND_40_o_add_23_OUT> created at line 761.
-    Found 8-bit adder for signal <WaitTimer[7]_GND_40_o_add_32_OUT> created at line 936.
-    Found 6-bit adder for signal <count[5]_GND_40_o_add_40_OUT> created at line 958.
-    Found 6-bit adder for signal <P_Term[5]_GND_40_o_add_53_OUT> created at line 1134.
-    Found 7-bit adder for signal <N_Term[6]_GND_40_o_add_84_OUT> created at line 1187.
-    Found 8-bit adder for signal <counter_inc[7]_GND_40_o_add_323_OUT> created at line 1699.
-    Found 8-bit adder for signal <DQS_DELAY[7]_GND_40_o_add_326_OUT> created at line 1705.
-    Found 8-bit adder for signal <counter_dec[7]_GND_40_o_add_336_OUT> created at line 1724.
+    Found 16-bit adder for signal <WAIT_200us_COUNTER[15]_GND_41_o_add_13_OUT> created at line 632.
+    Found 10-bit adder for signal <RstCounter[9]_GND_41_o_add_17_OUT> created at line 694.
+    Found 4-bit adder for signal <pre_sysrst_cnt[3]_GND_41_o_add_23_OUT> created at line 761.
+    Found 8-bit adder for signal <WaitTimer[7]_GND_41_o_add_32_OUT> created at line 936.
+    Found 6-bit adder for signal <count[5]_GND_41_o_add_40_OUT> created at line 958.
+    Found 6-bit adder for signal <P_Term[5]_GND_41_o_add_53_OUT> created at line 1134.
+    Found 7-bit adder for signal <N_Term[6]_GND_41_o_add_84_OUT> created at line 1187.
+    Found 8-bit adder for signal <counter_inc[7]_GND_41_o_add_323_OUT> created at line 1699.
+    Found 8-bit adder for signal <DQS_DELAY[7]_GND_41_o_add_326_OUT> created at line 1705.
+    Found 8-bit adder for signal <counter_dec[7]_GND_41_o_add_336_OUT> created at line 1724.
     Found 8-bit subtractor for signal <Max_Value_Delta_Up> created at line 433.
     Found 8-bit subtractor for signal <Max_Value_Delta_Dn> created at line 435.
-    Found 6-bit subtractor for signal <GND_40_o_GND_40_o_sub_71_OUT<5:0>> created at line 1139.
-    Found 7-bit subtractor for signal <GND_40_o_GND_40_o_sub_178_OUT<6:0>> created at line 1197.
-    Found 8-bit subtractor for signal <GND_40_o_GND_40_o_sub_340_OUT<7:0>> created at line 1730.
-    Found 15-bit adder for signal <_n0862> created at line 501.
-    Found 15-bit adder for signal <n0478[14:0]> created at line 501.
-    Found 15-bit adder for signal <n0480> created at line 501.
+    Found 6-bit subtractor for signal <GND_41_o_GND_41_o_sub_71_OUT<5:0>> created at line 1139.
+    Found 7-bit subtractor for signal <GND_41_o_GND_41_o_sub_178_OUT<6:0>> created at line 1197.
+    Found 8-bit subtractor for signal <GND_41_o_GND_41_o_sub_340_OUT<7:0>> created at line 1730.
     Found 15-bit adder for signal <n0537> created at line 501.
-    Found 15-bit adder for signal <_n0874> created at line 501.
+    Found 15-bit adder for signal <_n0865> created at line 501.
     Found 15-bit adder for signal <n0737> created at line 501.
     Found 15-bit adder for signal <n0489> created at line 501.
-    Found 15-bit adder for signal <_n0883> created at line 501.
+    Found 15-bit adder for signal <_n0874> created at line 501.
     Found 15-bit adder for signal <n0470> created at line 501.
-    Found 10-bit comparator greater for signal <RstCounter[9]_GND_40_o_LessThan_17_o> created at line 692
+    Found 15-bit adder for signal <_n0880> created at line 501.
+    Found 15-bit adder for signal <n0478[14:0]> created at line 501.
+    Found 15-bit adder for signal <n0480> created at line 501.
+    Found 10-bit comparator greater for signal <RstCounter[9]_GND_41_o_LessThan_17_o> created at line 692
     Found 8-bit comparator greater for signal <Dec_Flag> created at line 946
     Found 8-bit comparator greater for signal <Inc_Flag> created at line 947
     Found 7-bit comparator equal for signal <n0168> created at line 1237
-    Found 6-bit comparator greater for signal <count[5]_PWR_15_o_LessThan_299_o> created at line 1642
+    Found 6-bit comparator greater for signal <count[5]_PWR_16_o_LessThan_299_o> created at line 1642
     Found 8-bit comparator greater for signal <Max_Value_int[7]_Max_Value_Previous[7]_LessThan_305_o> created at line 1675
     Found 8-bit comparator greater for signal <n0249> created at line 1675
     Found 8-bit comparator greater for signal <Max_Value_Previous[7]_Max_Value_int[7]_LessThan_310_o> created at line 1679
@@ -846,7 +852,7 @@ Synthesizing Unit <iodrp_controller>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit adder for signal <bit_cnt[2]_GND_41_o_add_12_OUT> created at line 238.
+    Found 3-bit adder for signal <bit_cnt[2]_GND_42_o_add_12_OUT> created at line 238.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  40 D-type flip-flop(s).
@@ -885,7 +891,7 @@ WARNING:Xst:647 - Input <drp_ioi_addr> is never used. This port will be preserve
     | Encoding           | gray                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit adder for signal <bit_cnt[2]_GND_43_o_add_13_OUT> created at line 372.
+    Found 3-bit adder for signal <bit_cnt[2]_GND_44_o_add_13_OUT> created at line 372.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  41 D-type flip-flop(s).
@@ -1159,8 +1165,6 @@ INFO:Xst:2261 - The FF/Latch <MCB_UIADDR_int_2> in Unit <mcb_soft_calibration> i
 
 Optimizing unit <top_level> ...
 
-Optimizing unit <memc3_infrastructure> ...
-
 Optimizing unit <mcb_soft_calibration> ...
 WARNING:Xst:1293 - FF/Latch <N_Term_s_6> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <N_Term_s_5> has a constant value of 0 in block <mcb_soft_calibration>. This FF/Latch will be trimmed during the optimization process.
@@ -1192,6 +1196,8 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <P_Term_s_0> has a c
 Optimizing unit <iodrp_controller> ...
 
 Optimizing unit <iodrp_mcb_controller> ...
+
+Optimizing unit <memc3_infrastructure> ...
 WARNING:Xst:1710 - FF/Latch <u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_controller_inst/data_reg_7> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/iodrp_mcb_controller_inst/data_reg_7> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/RZQ_IN_R1> of sequential type is unconnected in block <top_level>.
@@ -1273,11 +1279,11 @@ Top Level Output File Name         : top_level.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 549
+# BELS                             : 551
 #      GND                         : 1
-#      INV                         : 9
+#      INV                         : 10
 #      LUT1                        : 15
-#      LUT2                        : 65
+#      LUT2                        : 66
 #      LUT3                        : 59
 #      LUT4                        : 43
 #      LUT5                        : 58
@@ -1323,14 +1329,14 @@ Selected Device : 6slx45csg324-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:             244  out of  54576     0%  
- Number of Slice LUTs:                  418  out of  27288     1%  
-    Number used as Logic:               418  out of  27288     1%  
+ Number of Slice LUTs:                  420  out of  27288     1%  
+    Number used as Logic:               420  out of  27288     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    488
-   Number with an unused Flip Flop:     244  out of    488    50%  
-   Number with an unused LUT:            70  out of    488    14%  
-   Number of fully used LUT-FF pairs:   174  out of    488    35%  
+ Number of LUT Flip Flop pairs used:    489
+   Number with an unused Flip Flop:     245  out of    489    50%  
+   Number with an unused LUT:            69  out of    489    14%  
+   Number of fully used LUT-FF pairs:   175  out of    489    35%  
    Number of unique control sets:        28
 
 IO Utilization: 
@@ -1453,7 +1459,7 @@ Offset:              4.118ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 768 / 686
+  Total number of paths / destination ports: 771 / 688
 -------------------------------------------------------------------------
 Delay:               5.075ns (Levels of Logic = 3)
   Source:            c3_sys_rst_i (PAD)
@@ -1488,14 +1494,14 @@ c3_sys_clk     |    6.738|         |         |         |
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.94 secs
+Total CPU time to Xst completion: 8.09 secs
  
 --> 
 
 
-Total memory usage is 425424 kilobytes
+Total memory usage is 426060 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  260 (   0 filtered)
-Number of infos    :  111 (   0 filtered)
+Number of warnings :  245 (   0 filtered)
+Number of infos    :  107 (   0 filtered)
 

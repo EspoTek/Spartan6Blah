@@ -69,6 +69,17 @@ entity top_level is
 end top_level;
 
 architecture Behavioral of top_level is
+-------------------------------------
+--My signals
+-------------------------------------
+  signal mig_calibration_complete : std_logic;
+  signal ram_instruction_pulse : std_logic;
+  signal ram_address : std_logic_vector (15 downto 0);
+  signal uart_grant_bus_access : std_logic;
+  signal uart_data_to_write : std_logic_vector (7 downto 0);
+-------------------------------------
+-- MCB signals
+-------------------------------------
 	signal c3_clk0 : std_logic;
 	signal c3_rst0 : std_logic;
    
@@ -96,7 +107,9 @@ architecture Behavioral of top_level is
 	signal c3_p0_rd_count : std_logic_vector (6 downto 0);
 	signal c3_p0_rd_overflow : std_logic;
 	signal c3_p0_rd_error : std_logic;
-
+-------------------------------------
+--MCB component def
+-------------------------------------
 	component mig_100mhz_lpddr
  generic(
     C3_P0_MASK_SIZE           : integer := 4;
@@ -160,9 +173,72 @@ architecture Behavioral of top_level is
    c3_p0_rd_error                          : out std_logic
 );
 end component;
-
+-------------------------------------
+--End declarations
+-------------------------------------
+-------------------------------------
+-------------------------------------
+-------------------------------------
+-------------------------------------
+-------------------------------------
+-------------------------------------
+-------------------------------------
+-------------------------------------
 begin
+-------------------------------------
+--Random assigns
+-------------------------------------
+c3_calib_done <= mig_calibration_complete;
 
+-------------------------------------
+--Instantiate dirty ram interface
+-------------------------------------
+u_dirty :entity work.dirty_ram_interface 
+    generic map (
+    C3_P0_MASK_SIZE => C3_P0_MASK_SIZE,
+    C3_P0_DATA_PORT_SIZE => C3_P0_DATA_PORT_SIZE,
+    C3_P1_MASK_SIZE => C3_P1_MASK_SIZE,
+    C3_P1_DATA_PORT_SIZE => C3_P1_DATA_PORT_SIZE,
+    C3_MEMCLK_PERIOD => C3_MEMCLK_PERIOD,
+    C3_RST_ACT_LOW => C3_RST_ACT_LOW,
+    C3_INPUT_CLK_TYPE => C3_INPUT_CLK_TYPE,
+    C3_CALIB_SOFT_IP => C3_CALIB_SOFT_IP,
+    C3_SIMULATION => C3_SIMULATION,
+    DEBUG_EN => DEBUG_EN,
+    C3_MEM_ADDR_ORDER => C3_MEM_ADDR_ORDER,
+    C3_NUM_DQ_PINS => C3_NUM_DQ_PINS,
+    C3_MEM_ADDR_WIDTH => C3_MEM_ADDR_WIDTH,
+    C3_MEM_BANKADDR_WIDTH => C3_MEM_BANKADDR_WIDTH
+)
+    Port map (
+	--My signals
+	instruction_pulse => ram_instruction_pulse,
+   address => ram_address,
+   grant_access => uart_grant_bus_access, 
+   write_data_in => uart_data_to_write,	
+	--MIG signals
+   c3_clk0 => c3_clk0,
+	c3_rst0 => c3_rst0,
+   
+	c3_p0_cmd_clk => c3_p0_cmd_clk,  
+	c3_p0_cmd_en => c3_p0_cmd_en,
+	c3_p0_cmd_instr => c3_p0_cmd_instr,
+	c3_p0_cmd_bl => c3_p0_cmd_bl,
+	c3_p0_cmd_byte_addr => c3_p0_cmd_byte_addr,
+	c3_p0_cmd_empty => c3_p0_cmd_empty,
+	c3_p0_wr_clk => c3_p0_wr_clk,
+	c3_p0_wr_en => c3_p0_wr_en,
+	c3_p0_wr_mask => c3_p0_wr_mask,
+	c3_p0_wr_data => c3_p0_wr_data, 
+	c3_p0_wr_empty => c3_p0_wr_empty,
+	c3_p0_rd_clk => c3_p0_rd_clk,
+	c3_p0_rd_en => c3_p0_rd_en,
+	c3_p0_rd_empty => c3_p0_rd_empty
+);
+
+-------------------------------------
+--Instantiate mig
+-------------------------------------
   u_mig_100mhz_lpddr : mig_100mhz_lpddr
     generic map (
     C3_P0_MASK_SIZE => C3_P0_MASK_SIZE,
@@ -202,7 +278,7 @@ begin
   c3_rst0		=>        c3_rst0,
 	
  
-  c3_calib_done      =>    c3_calib_done,
+  c3_calib_done      =>    mig_calibration_complete,
   
    mcb3_rzq         =>            rzq3,
    
@@ -231,6 +307,8 @@ begin
    c3_p0_rd_overflow                       =>  c3_p0_rd_overflow,
    c3_p0_rd_error                          =>  c3_p0_rd_error
 );
+
+
 
 end Behavioral;
 

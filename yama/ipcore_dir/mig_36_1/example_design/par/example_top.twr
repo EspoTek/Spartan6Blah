@@ -41,7 +41,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  12492 paths analyzed, 1173 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.559ns.
+ Minimum period is   7.463ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -72,7 +72,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  8838 paths analyzed, 2107 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is  10.010ns.
+ Minimum period is   8.700ns.
 --------------------------------------------------------------------------------
 
 
@@ -83,14 +83,14 @@ Derived Constraints for TS_SYS_CLK3
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_SYS_CLK3                    |     10.000ns|      3.334ns|      3.780ns|            0|            0|            0|        21330|
-| TS_memc3_infrastructure_inst_m|     20.000ns|      7.559ns|          N/A|            0|            0|        12492|            0|
+|TS_SYS_CLK3                    |     10.000ns|      3.334ns|      3.732ns|            0|            0|            0|        21330|
+| TS_memc3_infrastructure_inst_m|     20.000ns|      7.463ns|          N/A|            0|            0|        12492|            0|
 | cb_drp_clk_bufg_in            |             |             |             |             |             |             |             |
 | TS_memc3_infrastructure_inst_c|      5.000ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | lk_2x_180                     |             |             |             |             |             |             |             |
 | TS_memc3_infrastructure_inst_c|      5.000ns|      1.599ns|          N/A|            0|            0|            0|            0|
 | lk_2x_0                       |             |             |             |             |             |             |             |
-| TS_memc3_infrastructure_inst_c|     40.000ns|     10.010ns|          N/A|            0|            0|         8838|            0|
+| TS_memc3_infrastructure_inst_c|     40.000ns|      8.700ns|          N/A|            0|            0|         8838|            0|
 | lk0_bufg_in                   |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -106,7 +106,7 @@ Clock to Setup on destination clock c3_sys_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-c3_sys_clk     |   10.010|         |         |         |
+c3_sys_clk     |    8.700|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -118,10 +118,10 @@ Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 Constraints cover 21330 paths, 0 nets, and 3874 connections
 
 Design statistics:
-   Minimum period:  10.010ns   (Maximum frequency:  99.900MHz)
+   Minimum period:   8.700ns   (Maximum frequency: 114.943MHz)
 
 
-Analysis completed Tue Jan  2 16:40:22 2018 
+Analysis completed Tue Jan  9 14:29:24 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:

@@ -21,7 +21,7 @@
 ############################################################################
 # VCC AUX VOLTAGE 
 ############################################################################
-CONFIG VCCAUX=2.5; # Valid values are 2.5 and 3.3
+CONFIG VCCAUX=3.3; # Valid values are 2.5 and 3.3
 
 ############################################################################
 # Extended MCB performance mode requires a different Vccint specification to
@@ -65,10 +65,10 @@ TIMESPEC "TS_SYS_CLK3" = PERIOD "SYS_CLK3"  10  ns HIGH 50 %;
 # Status Signals 
 ############################################################################
 
-NET  "error"                                    IOSTANDARD = LVCMOS18;
-NET  "calib_done"                               IOSTANDARD = LVCMOS18;
-NET  "calib_done"                               LOC = "B2" ;
-NET  "error"                                    LOC = "A2" ;
+NET  "error"                                    IOSTANDARD = LVCMOS33;
+NET  "calib_done"                               IOSTANDARD = LVCMOS33;
+NET  "calib_done"                               LOC = "U11";
+NET  "error"                                    LOC = "U13";
 
 ############################################################################
 # I/O STANDARDS 
@@ -88,8 +88,8 @@ NET  "mcb3_dram_we_n"                                IOSTANDARD = MOBILE_DDR;
 NET  "mcb3_dram_dm"                                  IOSTANDARD = MOBILE_DDR;
 NET  "mcb3_dram_udm"                                 IOSTANDARD = MOBILE_DDR;
 NET  "mcb3_rzq"                                      IOSTANDARD = MOBILE_DDR;
-NET  "c3_sys_clk"                                  IOSTANDARD = LVCMOS25;
-NET  "c3_sys_rst_n"                                IOSTANDARD = LVCMOS18;
+NET  "c3_sys_clk"                                  IOSTANDARD = LVCMOS33;
+NET  "c3_sys_rst_n"                                IOSTANDARD = LVCMOS33 | PULLDOWN;
 ############################################################################
 # MCB 3
 # Pin Location Constraints for Clock, Masks, Address, and Controls
@@ -133,8 +133,8 @@ NET  "mcb3_dram_dq[8]"                           LOC = "M3" ;
 NET  "mcb3_dram_dq[9]"                           LOC = "M1" ;
 NET  "mcb3_dram_dqs"                             LOC = "L4" ;
 NET  "mcb3_dram_ras_n"                           LOC = "L5" ;
-NET  "c3_sys_clk"                                LOC = "R10" ;
-NET  "c3_sys_rst_n"                              LOC = "M8" ;
+NET  "c3_sys_clk"                                LOC = "V10";
+NET  "c3_sys_rst_n"                              LOC = "M13";
 NET  "mcb3_dram_udm"                             LOC = "K4" ;
 NET  "mcb3_dram_udqs"                            LOC = "P2" ;
 NET  "mcb3_dram_we_n"                            LOC = "E3" ;

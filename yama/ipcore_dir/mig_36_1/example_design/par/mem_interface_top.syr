@@ -5,14 +5,14 @@ Parameter TMPDIR set to ../synth/__projnav
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to ../synth/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: ../synth/example_top.prj
@@ -2991,12 +2991,12 @@ c3_sys_clk     |    7.816|         |         |         |
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.02 secs
+Total CPU time to Xst completion: 8.90 secs
  
 --> 
 
 
-Total memory usage is 443248 kilobytes
+Total memory usage is 443116 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  977 (   0 filtered)

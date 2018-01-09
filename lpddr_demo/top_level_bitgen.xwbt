@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.ncd
+OUTFILE=/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.bit
+FAMILY=Spartan6
+PART=xc6slx45-2csg324
+WORKINGDIR=/home/esposch/Git/Spartan6Blah/lpddr_demo
+LICENSE=WebPack
+USER_INFO=211376204_0_0_935

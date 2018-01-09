@@ -37,8 +37,8 @@ Setup/Hold to clock c3_sys_clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                                                                | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                                               | Phase  |
 ------------+------------+------------+------------+------------+----------------------------------------------------------------+--------+
-c3_sys_rst_i|    6.571(R)|      SLOW  |    0.025(R)|      SLOW  |u_mig_100mhz_lpddr/c3_mcb_drp_clk                               |   0.000|
-            |    6.629(R)|      SLOW  |   -3.291(R)|      FAST  |u_mig_100mhz_lpddr/memc3_infrastructure_inst/mcb_drp_clk_bufg_in|   0.000|
+c3_sys_rst_i|    4.770(R)|      SLOW  |   -0.204(R)|      SLOW  |u_mig_100mhz_lpddr/c3_mcb_drp_clk                               |   0.000|
+            |    6.424(R)|      SLOW  |   -3.200(R)|      FAST  |u_mig_100mhz_lpddr/memc3_infrastructure_inst/mcb_drp_clk_bufg_in|   0.000|
 ------------+------------+------------+------------+------------+----------------------------------------------------------------+--------+
 
 Clock c3_sys_clk to Pad
@@ -46,7 +46,7 @@ Clock c3_sys_clk to Pad
                 |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                   | Clock  |
 Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                  | Phase  |
 ----------------+-----------------+------------+-----------------+------------+-----------------------------------+--------+
-c3_calib_done   |        16.014(R)|      SLOW  |         7.576(R)|      FAST  |u_mig_100mhz_lpddr/c3_mcb_drp_clk  |   0.000|
+c3_calib_done   |        16.501(R)|      SLOW  |         7.656(R)|      FAST  |u_mig_100mhz_lpddr/c3_mcb_drp_clk  |   0.000|
 mcb3_dram_a<0>  |        12.791(R)|      SLOW  |         6.164(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
 mcb3_dram_a<1>  |        12.791(R)|      SLOW  |         6.164(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
 mcb3_dram_a<2>  |        12.781(R)|      SLOW  |         6.154(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
@@ -88,7 +88,7 @@ mcb3_dram_ras_n |        12.791(R)|      SLOW  |         6.164(R)|      FAST  |u
 mcb3_dram_udm   |        12.934(R)|      SLOW  |         6.255(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x_180|   0.000|
 mcb3_dram_udqs  |        12.916(R)|      SLOW  |         6.237(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
 mcb3_dram_we_n  |        12.781(R)|      SLOW  |         6.154(R)|      FAST  |u_mig_100mhz_lpddr/c3_sysclk_2x    |   0.000|
-rzq3            |        19.342(R)|      SLOW  |         8.552(R)|      FAST  |u_mig_100mhz_lpddr/c3_mcb_drp_clk  |   0.000|
+rzq3            |        20.464(R)|      SLOW  |         8.735(R)|      FAST  |u_mig_100mhz_lpddr/c3_mcb_drp_clk  |   0.000|
 ----------------+-----------------+------------+-----------------+------------+-----------------------------------+--------+
 
 Clock to Setup on destination clock c3_sys_clk
@@ -96,19 +96,19 @@ Clock to Setup on destination clock c3_sys_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-c3_sys_clk     |    8.960|    8.960|         |         |
+c3_sys_clk     |    7.702|    7.183|         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-c3_sys_clk     |rzq3           |   21.267|
-c3_sys_rst_i   |rzq3           |   18.878|
+c3_sys_clk     |rzq3           |   21.428|
+c3_sys_rst_i   |rzq3           |   19.015|
 ---------------+---------------+---------+
 
 
-Analysis completed Mon Jan  8 15:17:52 2018 
+Analysis completed Tue Jan  9 14:27:39 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:

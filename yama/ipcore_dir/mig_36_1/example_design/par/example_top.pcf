@@ -1,11 +1,11 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Jan 02 16:40:08 2018
+// Written by: Map P.20131013 on Tue Jan 09 14:29:10 2018
 //! **************************************************************************
 
 SCHEMATIC START;
-CONFIG VCCAUX = "2.5";
+CONFIG VCCAUX = "3.3";
 PROHIBIT = SITE "P1" SITE "L3";
-COMP "c3_sys_clk" LOCATE = SITE "R10" LEVEL 1;
+COMP "c3_sys_clk" LOCATE = SITE "V10" LEVEL 1;
 COMP "mcb3_dram_a<0>" LOCATE = SITE "J7" LEVEL 1;
 COMP "mcb3_dram_a<1>" LOCATE = SITE "J6" LEVEL 1;
 COMP "mcb3_dram_a<2>" LOCATE = SITE "H5" LEVEL 1;
@@ -19,8 +19,8 @@ COMP "mcb3_dram_a<9>" LOCATE = SITE "D1" LEVEL 1;
 COMP "mcb3_dram_ck_n" LOCATE = SITE "G1" LEVEL 1;
 COMP "mcb3_dram_we_n" LOCATE = SITE "E3" LEVEL 1;
 COMP "mcb3_dram_udqs" LOCATE = SITE "P2" LEVEL 1;
-COMP "c3_sys_rst_n" LOCATE = SITE "M8" LEVEL 1;
-COMP "calib_done" LOCATE = SITE "B2" LEVEL 1;
+COMP "c3_sys_rst_n" LOCATE = SITE "M13" LEVEL 1;
+COMP "calib_done" LOCATE = SITE "U11" LEVEL 1;
 COMP "mcb3_dram_ck" LOCATE = SITE "G3" LEVEL 1;
 COMP "mcb3_dram_dm" LOCATE = SITE "K3" LEVEL 1;
 COMP "mcb3_dram_a<10>" LOCATE = SITE "F4" LEVEL 1;
@@ -28,7 +28,7 @@ COMP "mcb3_dram_a<11>" LOCATE = SITE "D3" LEVEL 1;
 COMP "mcb3_dram_a<12>" LOCATE = SITE "G6" LEVEL 1;
 COMP "mcb3_dram_ba<0>" LOCATE = SITE "F2" LEVEL 1;
 COMP "mcb3_dram_ba<1>" LOCATE = SITE "F1" LEVEL 1;
-COMP "error" LOCATE = SITE "A2" LEVEL 1;
+COMP "error" LOCATE = SITE "U13" LEVEL 1;
 COMP "mcb3_dram_dq<0>" LOCATE = SITE "L2" LEVEL 1;
 COMP "mcb3_dram_dq<1>" LOCATE = SITE "L1" LEVEL 1;
 COMP "mcb3_dram_dq<2>" LOCATE = SITE "K2" LEVEL 1;
