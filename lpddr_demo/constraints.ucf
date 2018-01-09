@@ -79,29 +79,29 @@ NET  "rzq3"                                  LOC = "N4"  | IOSTANDARD = MOBILE_D
 NET  "c3_sys_clk"                                LOC = "V10" | IOSTANDARD = LVCMOS33;
 NET  "c3_sys_rst_i"                              LOC = "M13" | IOSTANDARD = LVCMOS33 | PULLDOWN;
 
-NET  "c3_calib_done"                               LOC = M8  | IOSTANDARD = LVCMOS33;
+#NET  "c3_calib_done"                               LOC = "K13"  | IOSTANDARD = LVCMOS33;
 #NET  "error"                                    LOC = "K12"  | IOSTANDARD = LVCMOS33;
 
 ############################################################################
 # EDB
 ############################################################################
 
-#NET "edb_led_white_out(3)"  LOC = K12 | IOSTANDARD = LVTTL;
-#NET "edb_led_white_out(2)"  LOC = L14 | IOSTANDARD = LVTTL;
-#NET "edb_led_white_out(1)"  LOC = M14 | IOSTANDARD = LVTTL;
-#NET "edb_led_white_out(0)"  LOC = L15 | IOSTANDARD = LVTTL;
-#NET "edb_led_yellow_out(3)"  LOC = N15 | IOSTANDARD = LVTTL ;
-#NET "edb_led_yellow_out(2)"  LOC = P15 | IOSTANDARD = LVTTL;
-#NET "edb_led_yellow_out(1)"  LOC = U17 | IOSTANDARD = LVTTL;
-#NET "edb_led_yellow_out(0)"  LOC = U15 | IOSTANDARD = LVTTL;
-#NET "edb_led_red_out(3)"  LOC = U13 | IOSTANDARD = LVTTL;
-#NET "edb_led_red_out(2)"  LOC = M11 | IOSTANDARD = LVTTL;
-#NET "edb_led_red_out(1)"  LOC = U8 | IOSTANDARD = LVTTL;
-#NET "edb_led_red_out(0)"  LOC = N6 | IOSTANDARD = LVTTL;
-#NET "edb_led_green_out(3)"  LOC = U11 | IOSTANDARD = LVTTL;
-#NET "edb_led_green_out(2)"  LOC = M10 | IOSTANDARD = LVTTL;
-#NET "edb_led_green_out(1)"  LOC = R8 | IOSTANDARD = LVTTL;
-#NET "edb_led_green_out(0)"  LOC = M8 | IOSTANDARD = LVTTL;
+NET "edb_led_white_out(3)"  LOC = K12 | IOSTANDARD = LVCMOS33;
+NET "edb_led_white_out(2)"  LOC = L14 | IOSTANDARD = LVCMOS33;
+NET "edb_led_white_out(1)"  LOC = M14 | IOSTANDARD = LVCMOS33;
+NET "edb_led_white_out(0)"  LOC = L15 | IOSTANDARD = LVCMOS33;
+NET "edb_led_yellow_out(3)"  LOC = N15 | IOSTANDARD = LVCMOS33 ;
+NET "edb_led_yellow_out(2)"  LOC = P15 | IOSTANDARD = LVCMOS33;
+NET "edb_led_yellow_out(1)"  LOC = U17 | IOSTANDARD = LVCMOS33;
+NET "edb_led_yellow_out(0)"  LOC = U15 | IOSTANDARD = LVCMOS33;
+NET "edb_led_red_out(3)"  LOC = U13 | IOSTANDARD = LVCMOS33;
+NET "edb_led_red_out(2)"  LOC = M11 | IOSTANDARD = LVCMOS33;
+NET "edb_led_red_out(1)"  LOC = U8 | IOSTANDARD = LVCMOS33;
+NET "edb_led_red_out(0)"  LOC = N6 | IOSTANDARD = LVCMOS33;
+NET "edb_led_green_out(3)"  LOC = U11 | IOSTANDARD = LVCMOS33;
+NET "edb_led_green_out(2)"  LOC = M10 | IOSTANDARD = LVCMOS33;
+NET "edb_led_green_out(1)"  LOC = R8 | IOSTANDARD = LVCMOS33;
+NET "edb_led_green_out(0)"  LOC = M8 | IOSTANDARD = LVCMOS33;
 
 ############################################################################
 # GPIOs

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Jan 09 14:27:26 2018
+// Written by: Map P.20131013 on Tue Jan 09 14:59:30 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -15,6 +15,10 @@ COMP "mcb3_dram_a<6>" LOCATE = SITE "H3" LEVEL 1;
 COMP "mcb3_dram_a<7>" LOCATE = SITE "H6" LEVEL 1;
 COMP "mcb3_dram_a<8>" LOCATE = SITE "D2" LEVEL 1;
 COMP "mcb3_dram_a<9>" LOCATE = SITE "D1" LEVEL 1;
+COMP "edb_led_red_out<0>" LOCATE = SITE "N6" LEVEL 1;
+COMP "edb_led_red_out<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "edb_led_red_out<2>" LOCATE = SITE "M11" LEVEL 1;
+COMP "edb_led_red_out<3>" LOCATE = SITE "U13" LEVEL 1;
 COMP "rzq3" LOCATE = SITE "N4" LEVEL 1;
 COMP "mcb3_dram_ck_n" LOCATE = SITE "G1" LEVEL 1;
 COMP "mcb3_dram_we_n" LOCATE = SITE "E3" LEVEL 1;
@@ -42,12 +46,23 @@ COMP "mcb3_dram_ras_n" LOCATE = SITE "L5" LEVEL 1;
 COMP "mcb3_dram_cke" LOCATE = SITE "H7" LEVEL 1;
 COMP "mcb3_dram_dqs" LOCATE = SITE "L4" LEVEL 1;
 COMP "mcb3_dram_udm" LOCATE = SITE "K4" LEVEL 1;
+COMP "edb_led_white_out<0>" LOCATE = SITE "L15" LEVEL 1;
+COMP "edb_led_white_out<1>" LOCATE = SITE "M14" LEVEL 1;
+COMP "edb_led_white_out<2>" LOCATE = SITE "L14" LEVEL 1;
+COMP "edb_led_white_out<3>" LOCATE = SITE "K12" LEVEL 1;
 COMP "mcb3_dram_dq<10>" LOCATE = SITE "N2" LEVEL 1;
 COMP "mcb3_dram_dq<11>" LOCATE = SITE "N1" LEVEL 1;
 COMP "mcb3_dram_dq<12>" LOCATE = SITE "T2" LEVEL 1;
 COMP "mcb3_dram_dq<13>" LOCATE = SITE "T1" LEVEL 1;
 COMP "mcb3_dram_dq<14>" LOCATE = SITE "U2" LEVEL 1;
 COMP "mcb3_dram_dq<15>" LOCATE = SITE "U1" LEVEL 1;
-COMP "c3_calib_done" LOCATE = SITE "M8" LEVEL 1;
+COMP "edb_led_yellow_out<0>" LOCATE = SITE "U15" LEVEL 1;
+COMP "edb_led_yellow_out<1>" LOCATE = SITE "U17" LEVEL 1;
+COMP "edb_led_yellow_out<2>" LOCATE = SITE "P15" LEVEL 1;
+COMP "edb_led_yellow_out<3>" LOCATE = SITE "N15" LEVEL 1;
+COMP "edb_led_green_out<0>" LOCATE = SITE "M8" LEVEL 1;
+COMP "edb_led_green_out<1>" LOCATE = SITE "R8" LEVEL 1;
+COMP "edb_led_green_out<2>" LOCATE = SITE "M10" LEVEL 1;
+COMP "edb_led_green_out<3>" LOCATE = SITE "U11" LEVEL 1;
 SCHEMATIC END;
 

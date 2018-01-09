@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: top_level.prj
@@ -186,9 +186,9 @@ WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/ipcore_dir/
 WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/ipcore_dir/mig_100mhz_lpddr/user_design/rtl/mcb_raw_wrapper.vhd" Line 7075: Comparison between arrays of unequal length always returns FALSE.
 WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/ipcore_dir/mig_100mhz_lpddr/user_design/rtl/mcb_raw_wrapper.vhd" Line 7086: Comparison between arrays of unequal length always returns FALSE.
 WARNING:HDLCompiler:321 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/ipcore_dir/mig_100mhz_lpddr/user_design/rtl/mcb_raw_wrapper.vhd" Line 7091: Comparison between arrays of unequal length always returns FALSE.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 76: Net <ram_instruction_pulse> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 77: Net <ram_address[15]> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 79: Net <uart_data_to_write[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 83: Net <ram_instruction_pulse> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 84: Net <ram_address[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" Line 86: Net <uart_data_to_write[7]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -210,17 +210,17 @@ Synthesizing Unit <top_level>.
         C3_NUM_DQ_PINS = 16
         C3_MEM_ADDR_WIDTH = 13
         C3_MEM_BANKADDR_WIDTH = 2
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 196: Output port <grant_access> of the instance <u_dirty> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_wr_count> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_rd_data> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_rd_count> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_cmd_full> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_wr_full> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_wr_underrun> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_wr_error> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_rd_full> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_rd_overflow> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 242: Output port <c3_p0_rd_error> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 212: Output port <grant_access> of the instance <u_dirty> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 258: Output port <c3_p0_wr_count> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 258: Output port <c3_p0_rd_data> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 258: Output port <c3_p0_rd_count> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 258: Output port <c3_p0_cmd_full> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 258: Output port <c3_p0_wr_full> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 258: Output port <c3_p0_wr_underrun> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 258: Output port <c3_p0_wr_error> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 258: Output port <c3_p0_rd_full> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 258: Output port <c3_p0_rd_overflow> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/esposch/Git/Spartan6Blah/lpddr_demo/top_level.vhd" line 258: Output port <c3_p0_rd_error> of the instance <u_mig_100mhz_lpddr> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <ram_address> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <uart_data_to_write> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <ram_instruction_pulse> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -1305,11 +1305,11 @@ Primitive and Black Box Usage:
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGMUX                     : 1
-# IO Buffers                       : 44
+# IO Buffers                       : 59
 #      IBUF                        : 1
 #      IBUFG                       : 1
 #      IOBUF                       : 19
-#      OBUF                        : 1
+#      OBUF                        : 16
 #      OBUFT                       : 21
 #      OBUFTDS                     : 1
 # Others                           : 70
@@ -1340,8 +1340,8 @@ Slice Logic Distribution:
    Number of unique control sets:        28
 
 IO Utilization: 
- Number of IOs:                          45
- Number of bonded IOBs:                  45  out of    218    20%  
+ Number of IOs:                          60
+ Number of bonded IOBs:                  60  out of    218    27%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
@@ -1381,9 +1381,9 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 3.369ns (Maximum Frequency: 296.824MHz)
-   Minimum input arrival time before clock: 6.215ns
+   Minimum input arrival time before clock: 6.250ns
    Maximum output required time after clock: 4.118ns
-   Maximum combinational path delay: 5.075ns
+   Maximum combinational path delay: 5.115ns
 
 Timing Details:
 ---------------
@@ -1421,7 +1421,7 @@ Delay:               6.738ns (Levels of Logic = 7)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'c3_sys_clk'
   Total number of paths / destination ports: 175 / 113
 -------------------------------------------------------------------------
-Offset:              6.215ns (Levels of Logic = 3)
+Offset:              6.250ns (Levels of Logic = 3)
   Source:            c3_sys_rst_i (PAD)
   Destination:       u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg (FF)
   Destination Clock: c3_sys_clk rising 0.5X
@@ -1430,13 +1430,13 @@ Offset:              6.215ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   1.328   1.271  c3_sys_rst_i_IBUF (c3_sys_rst_i_IBUF)
+     IBUF:I->O             6   1.328   1.306  c3_sys_rst_i_IBUF (edb_led_green_out_1_OBUF)
      LUT5:I0->O           69   0.254   1.968  u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1 (u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst)
      LUT2:I1->O            1   0.254   0.681  u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/non_violating_rst1 (u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/non_violating_rst)
      FDP:PRE                   0.459          u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/RST_reg
     ----------------------------------------
-    Total                      6.215ns (2.295ns logic, 3.920ns route)
-                                       (36.9% logic, 63.1% route)
+    Total                      6.250ns (2.295ns logic, 3.955ns route)
+                                       (36.7% logic, 63.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'c3_sys_clk'
@@ -1444,38 +1444,36 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'c3_sys_clk'
 -------------------------------------------------------------------------
 Offset:              4.118ns (Levels of Logic = 1)
   Source:            u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL (FF)
-  Destination:       c3_calib_done (PAD)
+  Destination:       edb_led_green_out<0> (PAD)
   Source Clock:      c3_sys_clk rising 0.5X
 
-  Data Path: u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL to c3_calib_done
+  Data Path: u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL to edb_led_green_out<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               1   0.525   0.681  u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL (u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DONE_SOFTANDHARD_CAL)
-     OBUF:I->O                 2.912          c3_calib_done_OBUF (c3_calib_done)
+     OBUF:I->O                 2.912          edb_led_green_out_0_OBUF (edb_led_green_out<0>)
     ----------------------------------------
     Total                      4.118ns (3.437ns logic, 0.681ns route)
                                        (83.5% logic, 16.5% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 771 / 688
+  Total number of paths / destination ports: 772 / 689
 -------------------------------------------------------------------------
-Delay:               5.075ns (Levels of Logic = 3)
+Delay:               5.115ns (Levels of Logic = 2)
   Source:            c3_sys_rst_i (PAD)
-  Destination:       u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/IODRP2_RZQ:T (PAD)
+  Destination:       edb_led_green_out<1> (PAD)
 
-  Data Path: c3_sys_rst_i to u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/IODRP2_RZQ:T
+  Data Path: c3_sys_rst_i to edb_led_green_out<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   1.328   1.271  c3_sys_rst_i_IBUF (c3_sys_rst_i_IBUF)
-     LUT5:I0->O           69   0.254   1.967  u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst1 (u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst)
-     INV:I->O              0   0.255   0.000  u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/RZQ_ZIO_ODATAIN1_INV_0 (u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/RZQ_ZIO_ODATAIN)
-    IODRP2:ODATAIN             0.000          u_mig_100mhz_lpddr/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/IODRP2_RZQ
+     IBUF:I->O             6   1.328   0.875  c3_sys_rst_i_IBUF (edb_led_green_out_1_OBUF)
+     OBUF:I->O                 2.912          edb_led_green_out_1_OBUF (edb_led_green_out<1>)
     ----------------------------------------
-    Total                      5.075ns (1.837ns logic, 3.238ns route)
-                                       (36.2% logic, 63.8% route)
+    Total                      5.115ns (4.240ns logic, 0.875ns route)
+                                       (82.9% logic, 17.1% route)
 
 =========================================================================
 
@@ -1494,12 +1492,12 @@ c3_sys_clk     |    6.738|         |         |         |
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.09 secs
+Total CPU time to Xst completion: 7.99 secs
  
 --> 
 
 
-Total memory usage is 426060 kilobytes
+Total memory usage is 425848 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  245 (   0 filtered)

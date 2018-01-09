@@ -47,6 +47,7 @@ entity top_level is
     C3_MEM_BANKADDR_WIDTH     : integer := 2
 );
     Port (
+	 --MIG
 	c3_sys_clk : in STD_LOGIC;
 	c3_sys_rst_i : in STD_LOGIC;
 	mcb3_dram_dq : inout  std_logic_vector(C3_NUM_DQ_PINS-1 downto 0);   
@@ -63,8 +64,14 @@ entity top_level is
 	mcb3_dram_udm : out  std_logic;     -- for X16 parts
 	mcb3_dram_dm : out  std_logic;
 
-	c3_calib_done  : out  std_logic;
-	rzq3  : inout  std_logic
+	rzq3  : inout  std_logic;
+	
+	--edb
+	edb_led_white_out : out  STD_LOGIC_VECTOR (3 downto 0);
+	edb_led_yellow_out : out  STD_LOGIC_VECTOR (3 downto 0);
+	edb_led_red_out : out  STD_LOGIC_VECTOR (3 downto 0);
+	edb_led_green_out : out  STD_LOGIC_VECTOR (3 downto 0)
+	
 	 );
 end top_level;
 
@@ -188,7 +195,16 @@ begin
 -------------------------------------
 --Random assigns
 -------------------------------------
-c3_calib_done <= mig_calibration_complete;
+edb_led_green_out(0) <= mig_calibration_complete;
+edb_led_green_out(1) <= c3_sys_rst_i;
+edb_led_green_out(2) <= '0';
+edb_led_green_out(3) <= '0';
+
+edb_led_yellow_out <= "0000";
+edb_led_red_out <= "0000";
+edb_led_white_out <= "0000";
+
+
 
 -------------------------------------
 --Instantiate dirty ram interface
